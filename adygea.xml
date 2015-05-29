@@ -247,7 +247,7 @@
 			<city name="Семено-Макаренский" type="хутор" population="20" closestRailwayStationName="Дондуковская" size="16" />
 			<city name="Тихонов" type="хутор" population="37" closestRailwayStationName="Гиагинская" size="19" />
 			<city name="Ульский" type="поселок" population="23" closestRailwayStationName="Гиагинская" size="24" />
-			<city name="Хакуринохабль " type="аул" population="-" closestRailwayStationName="Дондуковская" size="21" />
+			<city name="Хакуринохабль " type="аул" population="-" closestRailwayStationName="Дондуковская" size="21" regionalCenter="true" />
 			<city name="Хапачев" type="хутор" population="13" closestRailwayStationName="Дондуковская" size="34" />
 			<city name="Хатажукай" type="аул" population="8,4" closestRailwayStationName="Дондуковская" size="29" />
 			<city name="Чернышев" type="хутор" population="27" closestRailwayStationName="Гиагинская" size="28" />
