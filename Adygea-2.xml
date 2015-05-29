@@ -68,10 +68,8 @@
 		<city OCATO="79 215 815 002" type="х." name="Соколов" population="-" foundationYear="" size="44,9" comment="" />
 		<city OCATO="79 215 812 009" type="а." name="Хачемзий" population="704" foundationYear="1862" size="168" comment="" />
 		<city OCATO="79 215 845 001" type="а." name="Ходзь " population="2853" foundationYear="1861" size="385,6" comment="" />
-		<city OCATO="79 215 812 010" type="п." name="Чехрак" population="506" foundationYear="1902" size="13,4" comment="" />
-		Дмитриевское сельское поселение
-		<city OCATO="79 215 825 001" type="х." name="Чехрак" population="12" foundationYear="1894" size="48,1" comment="" />
-		Майское сельское поселение
+		<city OCATO="79 215 812 010" type="п." name="Чехрак" population="506" foundationYear="1902" size="13,4" comment="Дмитриевское сельское поселение" />
+		<city OCATO="79 215 825 001" type="х." name="Чехрак" population="12" foundationYear="1894" size="48,1" comment="Майское сельское поселение" />
 		<city OCATO="79 215 808 003" type="х." name="Шелковников" population="265" foundationYear="1891" size="98,6" comment="" />
 	</region>
 
@@ -83,8 +81,7 @@
 		<city OCATO="79 218 808 001" type="с." name="Большесидоровское " population="1501" foundationYear="1881" size="335,1" comment="" />
 		<city OCATO="79 218 825 003" type="с." name="Верхненазаровское" population="561" foundationYear="1884" size="179" comment="" />
 		<city OCATO="79 218 835 002" type="п." name="Водный" population="-" foundationYear="1879" size="-" comment="" />
-		<city OCATO="79 218 808 002" type="а." name="Джамбечи" population="586" foundationYear="1857" size="235,3" comment="" />
-		в ОКАТО значится как Джамбичи
+		<city OCATO="79 218 808 002" type="а." name="Джамбечи" population="586" foundationYear="1857" size="235,3" comment="в ОКАТО значится как Джамбичи" />
 		<city OCATO="79 218 815 002" type="х." name="Догужиев" population="14" foundationYear="1879" size="56,7" comment="" />
 		<city OCATO="79 218 815 001" type="с." name="Еленовское " population="2640" foundationYear="1888" size="620" comment="" />
 		<city OCATO="79 218 820 001" type="с." name="Красногвардейское " population="9419" foundationYear="1884" size="1210,9" comment="" />
@@ -105,20 +102,15 @@
 	</region>
 
 	<region name="Майкопский район" OCATO="79 222">
-
 		<city OCATO="79 222 820 014" type="х." name="17 лет Октября" population="191" foundationYear="" size="56,62" comment="" />
 		<city OCATO="79 222 802 001" type="ст." name="Абадзехская " population="3676" foundationYear="1862" size="634,7" comment="" />
 		<city OCATO="79 222 000 004" type="ст." name="Безводная" population="54" foundationYear="1863" size="126,3" comment="" />
-		<city OCATO="79 222 802 003" type="х." name="Веселый" population="319" foundationYear="" size="79,3" comment="" />
-		Абадзехское сельское поселение
-		<city OCATO="79 222 555 002" type="х." name="Веселый" population="10" foundationYear="" size="50,7" comment="" />
-		Каменномостское сельское поселение
+		<city OCATO="79 222 802 003" type="х." name="Веселый" population="319" foundationYear="" size="79,3" comment="Абадзехское сельское поселение" />
+		<city OCATO="79 222 555 002" type="х." name="Веселый" population="10" foundationYear="" size="50,7" comment="Каменномостское сельское поселение" />
 		<city OCATO="79 222 828 002" type="х." name="Вольный" population="273" foundationYear="" size="60,3" comment="" />
 		<city OCATO="79 222 828 003" type="х." name="Гражданский" population="358" foundationYear="" size="94,9" comment="" />
-		<city OCATO="79 222 820 002" type="х." name="Грозный" population="413" foundationYear="1890" size="89,22" comment="" />
-		Кировское сельское поселение
-		<city OCATO="79 222 847 001" type="х." name="Грозный" population="665" foundationYear="" size="259" comment="" />
-		Победенское сельское поселение
+		<city OCATO="79 222 820 002" type="х." name="Грозный" population="413" foundationYear="1890" size="89,22" comment="Кировское сельское поселение" />
+		<city OCATO="79 222 847 001" type="х." name="Грозный" population="665" foundationYear="" size="259" comment="Победенское сельское поселение" />
 		<city OCATO="79 222 000 002" type="п." name="Гузерипль" population="107" foundationYear="" size="610" comment="" />
 		<city OCATO="79 222 825 008" type="ст." name="Дагестанская" population="519" foundationYear="1863" size="272,15" comment="" />
 		<city OCATO="79 222 807 001" type="ст." name="Даховская " population="1399" foundationYear="1862" size="1112" comment="" />
@@ -142,18 +134,14 @@
 		<city OCATO="79 222 802 007" type="ст." name="Новосвободная" population="623" foundationYear="1862" size="385,5" comment="" />
 		<city OCATO="79 222 820 004" type="х." name="Октябрьский" population="49" foundationYear="" size="26,93" comment="" />
 		<city OCATO="" type="п." name="Первомайский" population="1293" foundationYear="" size="120,8" comment="" />
-		<city OCATO="79 222 847 001" type="п." name="Победа" population="931" foundationYear="1958*" size="91,18" comment="" />
-		Победенское сельское поселение
-		<city OCATO="79 222 555 001" type="п." name="Победа" population="145" foundationYear="" size="50,1" comment="" />
-		Каменномостское сельское поселение
+		<city OCATO="79 222 847 001" type="п." name="Победа" population="931" foundationYear="1958*" size="91,18" comment="Победенское сельское поселение" />
+		<city OCATO="79 222 555 001" type="п." name="Победа" population="145" foundationYear="" size="50,1" comment="Каменномостское сельское поселение" />
 		<city OCATO="79 222 852 003" type="п." name="Подгорный" population="116" foundationYear="1958*" size="8,42" comment="" />
 		<city OCATO="79 222 825 004" type="п." name="Приречный" population="334" foundationYear="" size="42,22" comment="" />
 		<city OCATO="79 222 847 004" type="х." name="Причтовский" population="388" foundationYear="" size="81,3" comment="" />
 		<city OCATO="79 222 820 003" type="х." name="Пролетарский" population="1062" foundationYear="" size="201,65" comment="" />
-		<city OCATO="79 222 825 005" type="х." name="Садовый" population="418" foundationYear="1958*" size="82,75" comment="" />
-		Краснооктябрьское сельское поселение
-		<city OCATO="79 222 852 004" type="п." name="Садовый" population="157" foundationYear="" size="17,3" comment="" />
-		Тимирязевское сельское поселение
+		<city OCATO="79 222 825 005" type="х." name="Садовый" population="418" foundationYear="1958*" size="82,75" comment="Краснооктябрьское сельское поселение" />
+		<city OCATO="79 222 852 004" type="п." name="Садовый" population="157" foundationYear="" size="17,3" comment="Тимирязевское сельское поселение" />
 		<city OCATO="79 222 802 006" type="ст." name="Севастопольская" population="644" foundationYear="1862" size="323" comment="" />
 		<city OCATO="79 222 820 001" type="х." name="Северо-Восточные Сады " population="3547" foundationYear="1933" size="451,3" comment="" />
 		<city OCATO="79 222 820 018" type="х." name="Советский" population="486" foundationYear="" size="58" comment="" />
@@ -201,12 +189,9 @@
 		<city OCATO="79 230 826 001" type="а." name="Шенджий " population="1979" foundationYear="1860" size="489" comment="" />
 		<city OCATO="79 230 557" type="п.г.т." name="Энем" population="18251" foundationYear="1906" size="2631,9" comment="" />
 		<city OCATO="79 230 559" type="п.г.т." name="Яблоновский " population="27792" foundationYear="1908" size="979,6" comment="" />
-		;;;;;;
-		Список населенных пунктов Теучежского района Республики Адыгея;;;;;;
-		;;;;;;
-		Код по ОКАТО- 79 233;;;;;;
-		№ п/п;Код по ОКАТО;Наименование населенного пункта;Количество жителей, человек;Дата образования, год;Площадь, га ;Примечание
-		;;;;;;
+	</region>
+
+	<region name="Теучежский район" OCATO="79 233">
 		<city OCATO="79 233 805 001" type="а." name="Ассоколай " population="1556" foundationYear="1850" size="521" comment="" />
 		<city OCATO="79 233 810 001" type="а." name="Вочепший " population="1362" foundationYear="1860" size="454" comment="" />
 		<city OCATO="79 233 845 001" type="а." name="Габукай " population="1855" foundationYear="1842" size="485,4" comment="" />
@@ -215,12 +200,9 @@
 		<city OCATO="79 233 830 002" type="п." name="Заря" population="-" foundationYear="" size="8,2" comment="" />
 		<city OCATO="79 233 833 003" type="х." name="Казазов" population="283" foundationYear="1901" size="27,9" comment="" />
 		<city OCATO="79 233 830 003" type="х." name="Колос" population="174" foundationYear="" size="44,46" comment="" />
-		<city OCATO="79 233 833 004" type="х." name="Кочкин" population="7" foundationYear="" size="20,9" comment="" />
-		Пчегатлукайское сельское поселение
-		<city OCATO="79 233 830 004" type="х." name="Кочкин" population="-" foundationYear="1911" size="7,79" comment="" />
-		Понежукайское сельское поселение
-		<city OCATO="79 233 833 005" type="х." name="Красненский" population="386" foundationYear="1958*" size="39,4" comment="" />
-		в ОКАТО значится как х. Красный
+		<city OCATO="79 233 833 004" type="х." name="Кочкин" population="7" foundationYear="" size="20,9" comment="Пчегатлукайское сельское поселение" />
+		<city OCATO="79 233 830 004" type="х." name="Кочкин" population="-" foundationYear="1911" size="7,79" comment="Понежукайское сельское поселение" />
+		<city OCATO="79 233 833 005" type="х." name="Красненский" population="386" foundationYear="1958*" size="39,4" comment="в ОКАТО значится как х. Красный" />
 		<city OCATO="79 233 805 002" type="с." name="Красное" population="311" foundationYear="1870" size="161" comment="" />
 		<city OCATO="79 233 815 003" type="а." name="Кунчукохабль" population="553" foundationYear="1830" size="183" comment="" />
 		<city OCATO="79 233 830 005" type="а." name="Начерезий" population="339" foundationYear="1976*" size="95,6" comment="" />
@@ -237,11 +219,9 @@
 		<city OCATO="79 233 833 007" type="п." name="Четук" population="261" foundationYear="1958*" size="57,8" comment="" />
 		<city OCATO="79 233 845 004" type="х." name="Шевченко" population="640" foundationYear="1901" size="166,4" comment="" />
 		<city OCATO="79 233 830 007" type="х." name="Шундук" population="17" foundationYear="1907" size="40,84" comment="" />
-		;;;;;;
-		Список населенных пунктов Шовгеновского района Республики Адыгея;;;;;;
-		;;;;;;
-		Код по ОКАТО- 79 240;;;;;;
-		№ п/п;Код по ОКАТО;Наименование населенного пункта;Количество жителей, человек;Дата образования, год;Площадь, га;Примечание
+	</region>
+
+	<region name="Шовгеновский район" OCATO="79 240">
 		<city OCATO="79 240 812 002" type="х." name="Веселый" population="281" foundationYear="1936" size="97,5" comment="" />
 		<city OCATO="79 240 805 001" type="а." name="Джерокай " population="1157" foundationYear="1864" size="215" comment="" />
 		<city OCATO="79 240 812 003" type="х." name="Дорошенко" population="149" foundationYear="1888" size="46" comment="" />
@@ -274,4 +254,5 @@
 		<city OCATO="79 240 812 010" type="х." name="Чернышев" population="830" foundationYear="1880" size="220,4" comment="" />
 		<city OCATO="79 240 808 010" type="х." name="Чикалов" population="122" foundationYear="1885" size="36,9" comment="" />
 	</region>
+
 </republic>
