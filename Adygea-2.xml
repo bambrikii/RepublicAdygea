@@ -1,264 +1,265 @@
-<republic name="Ðåñïóáëèêà Àäûãåÿ">
+<?xml version="1.0" encoding="utf-8" ?>
+<republic name="Ð ÐµÑÐ¿ÑƒÐ±Ð»Ð¸ÐºÐ° ÐÐ´Ñ‹Ð³ÐµÑ">
 
-	<region name="Ìàéêîïñêèé ðåñïóáëèêàíñêèé ãîðîäñêîé îêðóã">
-		<city OCATO="79 401 000 006" type="õ." name="Âåñåëûé" population="646" foundationYear="" size="105,08" comment="" />
-		<city OCATO="79 401 000 002" type="õ." name="Ãàâåðäîâñêèé" population="3744" foundationYear="1889" size="559,06" comment="" />
-		<city OCATO="79 401 000 001" type="ï." name="Çàïàäíûé" population="3236" foundationYear="" size="145,66" comment="" />
-		<city OCATO="79 401 000 005" type="õ." name="Êîñèíîâ" population="334" foundationYear="" size="56,52" comment="" />
-		<city OCATO="79 401" type="ã." name="Ìàéêîï" population="144683" foundationYear="1858" size="6964" comment="" regionalCenter="true" />
-		<city OCATO="79 401 000 004" type="ï." name="Ïîäãîðíûé" population="764" foundationYear="" size="152,37" comment="" />
-		<city OCATO="79 401 000 007" type="ï." name="Ðîäíèêîâûé" population="1309" foundationYear="" size="335,89" comment="" />
-		<city OCATO="79 401 000 003" type="ï." name="Ñåâåðíûé" population="1294" foundationYear="" size="450,81" comment="" />
-		<city OCATO="79 401 000 008" type="ñò." name="Õàíñêàÿ" population="11549" foundationYear="1862" size="2192,33" comment="" />
+	<region name="ÐœÐ°Ð¹ÐºÐ¾Ð¿ÑÐºÐ¸Ð¹ Ñ€ÐµÑÐ¿ÑƒÐ±Ð»Ð¸ÐºÐ°Ð½ÑÐºÐ¸Ð¹ Ð³Ð¾Ñ€Ð¾Ð´ÑÐºÐ¾Ð¹ Ð¾ÐºÑ€ÑƒÐ³">
+		<city OCATO="79Â 401Â 000 006" type="Ñ…." name="Ð’ÐµÑÐµÐ»Ñ‹Ð¹" population="646" foundationYear="" size="105,08" comment="" />
+		<city OCATO="79Â 401Â 000 002" type="Ñ…." name="Ð“Ð°Ð²ÐµÑ€Ð´Ð¾Ð²ÑÐºÐ¸Ð¹" population="3744" foundationYear="1889" size="559,06" comment="" />
+		<city OCATO="79Â 401Â 000 001" type="Ð¿." name="Ð—Ð°Ð¿Ð°Ð´Ð½Ñ‹Ð¹" population="3236" foundationYear="" size="145,66" comment="" />
+		<city OCATO="79Â 401Â 000 005" type="Ñ…." name="ÐšÐ¾ÑÐ¸Ð½Ð¾Ð²" population="334" foundationYear="" size="56,52" comment="" />
+		<city OCATO="79 401" type="Ð³." name="ÐœÐ°Ð¹ÐºÐ¾Ð¿" population="144683" foundationYear="1858" size="6964" comment="" regionalCenter="true" />
+		<city OCATO="79Â 401Â 000 004" type="Ð¿." name="ÐŸÐ¾Ð´Ð³Ð¾Ñ€Ð½Ñ‹Ð¹" population="764" foundationYear="" size="152,37" comment="" />
+		<city OCATO="79Â 401Â 000 007" type="Ð¿." name="Ð Ð¾Ð´Ð½Ð¸ÐºÐ¾Ð²Ñ‹Ð¹" population="1309" foundationYear="" size="335,89" comment="" />
+		<city OCATO="79Â 401Â 000 003" type="Ð¿." name="Ð¡ÐµÐ²ÐµÑ€Ð½Ñ‹Ð¹" population="1294" foundationYear="" size="450,81" comment="" />
+		<city OCATO="79Â 401Â 000 008" type="ÑÑ‚." name="Ð¥Ð°Ð½ÑÐºÐ°Ñ" population="11549" foundationYear="1862" size="2192,33" comment="" />
 	</region>
 
-	<region name="Àäûãåéñêèé ðåñïóáëèêàíñêèé ãîðîäñêîé îêðóã">
-		<city OCATO="79 403" type="ã." name="Àäûãåéñê" population="12444" foundationYear="" size="1256,62" comment="" regionalCenter="true" />
-		<city OCATO="79 403 000 001" type="à." name="Ãàòëóêàé" population="1535" foundationYear="1851" size="602,93" comment="" />
-		<city OCATO="79 403 000 002" type="õ." name="Ïñåêóïñ" population="922" foundationYear="" size="264,03" comment="" />
+	<region name="ÐÐ´Ñ‹Ð³ÐµÐ¹ÑÐºÐ¸Ð¹ Ñ€ÐµÑÐ¿ÑƒÐ±Ð»Ð¸ÐºÐ°Ð½ÑÐºÐ¸Ð¹ Ð³Ð¾Ñ€Ð¾Ð´ÑÐºÐ¾Ð¹ Ð¾ÐºÑ€ÑƒÐ³">
+		<city OCATO="79 403" type="Ð³." name="ÐÐ´Ñ‹Ð³ÐµÐ¹ÑÐº" population="12444" foundationYear="" size="1256,62" comment="" regionalCenter="true" />
+		<city OCATO="79Â 403Â 000 001" type="Ð°." name="Ð“Ð°Ñ‚Ð»ÑƒÐºÐ°Ð¹" population="1535" foundationYear="1851" size="602,93" comment="" />
+		<city OCATO="79Â 403Â 000 002" type="Ñ…." name="ÐŸÑÐµÐºÑƒÐ¿Ñ" population="922" foundationYear="" size="264,03" comment="" />
 	</region>
 
-	<region name="Ãèàãèíñêèé ðàéîí" OCATO="79 205">
-		<city OCATO="79 205 815 002" type="ñ." name="Âëàäèìèðîâñêîå" population="76" foundationYear="1924" size="68,5" comment="" />
-		<city OCATO="79 205 810 002" type="õ." name="Âîëüíî-Âåñåëûé" population="79" foundationYear="" size="79,3" comment="" />
-		<city OCATO="79 205 820 002" type="ñ." name="Ãåîðãèåâñêîå" population="215" foundationYear="" size="143,2" comment="" />
-		<city OCATO="79 205 807 001" type="ñò." name="Ãèàãèíñêàÿ" population="13954" foundationYear="1862" size="3263,1" comment="" regionalCenter="true" />
-		<city OCATO="79 205 807 002" type="ï." name="Ãîí÷àðêà" population="1530" foundationYear="1959*" size="225,2" comment="" />
-		<city OCATO="79 205 820 003" type="õ." name="Äíåïðîâñêèé" population="162" foundationYear="" size="51,5" comment="" />
-		<city OCATO="79 205 810 001" type="ñò." name="Äîíäóêîâñêàÿ" population="6538" foundationYear="1889" size="1398" comment="" />
-		<city OCATO="79 205 820 009" type="õ." name="Åêàòåðèíîâñêèé" population="155" foundationYear="" size="47,5" comment="" />
-		<city OCATO="79 205 820 006" type="õ." name="Êàðöåâ" population="82" foundationYear="" size="26,7" comment="" />
-		<city OCATO="79 205 815 001" type="ñò." name="Êåëåðìåññêàÿ" population="2721" foundationYear="1863" size="9,13" comment="" />
-		<city OCATO="79 205 820 005" type="õ." name="Êîçîïîëÿíñêèé" population="67" foundationYear="" size="23,9" comment="" />
-		<city OCATO="79 205 820 007" type="õ." name="Êîëõîçíûé" population="71" foundationYear="1966*" size="17,3" comment="" />
-		<city OCATO="79 205 820 008" type="õ." name="Êðàñíûé Ïàõàðü" population="29" foundationYear="" size="22,3" comment="" />
-		<city OCATO="79 205 802 003" type="õ." name="Êðàñíûé Õëåáîðîá" population="42" foundationYear="1925" size="19,3" comment="" />
-		<city OCATO="79 205 820 004" type="õ." name="Êóðñêèé" population="114" foundationYear="" size="82,5" comment="" />
-		<city OCATO="79 205 815 003" type="ï." name="Ëåñíîé" population="183" foundationYear="1895" size="41,1" comment="" />
-		<city OCATO="79 205 820 011" type="õ." name="Ìèõåëüñîíîâñêèé" population="22" foundationYear="" size="21,1" comment="" />
-		<city OCATO="79 205 810 004" type="õ." name="Íå÷àåâñêèé" population="23" foundationYear="" size="12,3" comment="" />
-		<city OCATO="79 205 802 004" type="ñ." name="Íèæíèé Àéðþì" population="278" foundationYear="" size="69,5" comment="" />
-		<city OCATO="79 205 802 001" type="ï." name="Íîâûé" population="1326" foundationYear="1962*" size="303,5" comment="" />
-		<city OCATO="79 205 802 005" type="ñ." name="Îáðàçöîâîå" population="353" foundationYear="" size="92,8" comment="" />
-		<city OCATO="79 205 807 003" type="õ." name="Ïåðâîìàéñêèé" population="-" foundationYear="" size="42,9" comment="" />
-		<city OCATO="79 205 802 006" type="õ." name="Ïðîãðåññ" population="956" foundationYear="1951" size="192" comment="" />
-		<city OCATO="79 205 802 007" type="õ." name="Ñàäîâûé" population="197" foundationYear="" size="27,1" comment="" />
-		<city OCATO="79 205 820 001" type="ñ." name="Ñåðãèåâñêîå" population="1364" foundationYear="1883" size="676,8" comment="" />
-		<city OCATO="79 205 810 003" type="õ." name="Ñìîëü÷åâ-Ìàëèíîâñêèé" population="102" foundationYear="" size="107" comment="" />
-		<city OCATO="79 205 820 010" type="õ." name="Òàìáîâñêèé" population="613" foundationYear="" size="132,3" comment="" />
-		<city OCATO="79 205 820 012" type="õ." name="Ôàðñîâñêèé" population="13" foundationYear="1966*" size="10,1" comment="" />
-		<city OCATO="79 205 807 005" type="õ." name="×åðåìóøêèí" population="85" foundationYear="1959*" size="13,5" comment="" />
-		<city OCATO="79 205 820 013" type="õ." name="Øèøêèíñêèé" population="40" foundationYear="" size="35,9" comment="" />
+	<region name="Ð“Ð¸Ð°Ð³Ð¸Ð½ÑÐºÐ¸Ð¹ Ñ€Ð°Ð¹Ð¾Ð½" OCATO="79Â 205">
+		<city OCATO="79Â 205Â 815 002" type="Ñ." name="Ð’Ð»Ð°Ð´Ð¸Ð¼Ð¸Ñ€Ð¾Ð²ÑÐºÐ¾Ðµ" population="76" foundationYear="1924" size="68,5" comment="" />
+		<city OCATO="79Â 205Â 810 002" type="Ñ…." name="Ð’Ð¾Ð»ÑŒÐ½Ð¾-Ð’ÐµÑÐµÐ»Ñ‹Ð¹" population="79" foundationYear="" size="79,3" comment="" />
+		<city OCATO="79Â 205Â 820 002" type="Ñ." name="Ð“ÐµÐ¾Ñ€Ð³Ð¸ÐµÐ²ÑÐºÐ¾Ðµ" population="215" foundationYear="" size="143,2" comment="" />
+		<city OCATO="79Â 205Â 807 001" type="ÑÑ‚." name="Ð“Ð¸Ð°Ð³Ð¸Ð½ÑÐºÐ°Ñ" population="13954" foundationYear="1862" size="3263,1" comment="" regionalCenter="true" />
+		<city OCATO="79Â 205Â 807 002" type="Ð¿." name="Ð“Ð¾Ð½Ñ‡Ð°Ñ€ÐºÐ°" population="1530" foundationYear="1959*" size="225,2" comment="" />
+		<city OCATO="79Â 205Â 820 003" type="Ñ…." name="Ð”Ð½ÐµÐ¿Ñ€Ð¾Ð²ÑÐºÐ¸Ð¹" population="162" foundationYear="" size="51,5" comment="" />
+		<city OCATO="79Â 205Â 810 001" type="ÑÑ‚." name="Ð”Ð¾Ð½Ð´ÑƒÐºÐ¾Ð²ÑÐºÐ°Ñ" population="6538" foundationYear="1889" size="1398" comment="" />
+		<city OCATO="79Â 205Â 820 009" type="Ñ…." name="Ð•ÐºÐ°Ñ‚ÐµÑ€Ð¸Ð½Ð¾Ð²ÑÐºÐ¸Ð¹" population="155" foundationYear="" size="47,5" comment="" />
+		<city OCATO="79Â 205Â 820 006" type="Ñ…." name="ÐšÐ°Ñ€Ñ†ÐµÐ²" population="82" foundationYear="" size="26,7" comment="" />
+		<city OCATO="79Â 205Â 815 001" type="ÑÑ‚." name="ÐšÐµÐ»ÐµÑ€Ð¼ÐµÑÑÐºÐ°Ñ" population="2721" foundationYear="1863" size="9,13" comment="" />
+		<city OCATO="79Â 205Â 820 005" type="Ñ…." name="ÐšÐ¾Ð·Ð¾Ð¿Ð¾Ð»ÑÐ½ÑÐºÐ¸Ð¹" population="67" foundationYear="" size="23,9" comment="" />
+		<city OCATO="79Â 205Â 820 007" type="Ñ…." name="ÐšÐ¾Ð»Ñ…Ð¾Ð·Ð½Ñ‹Ð¹" population="71" foundationYear="1966*" size="17,3" comment="" />
+		<city OCATO="79Â 205Â 820 008" type="Ñ…." name="ÐšÑ€Ð°ÑÐ½Ñ‹Ð¹ ÐŸÐ°Ñ…Ð°Ñ€ÑŒ" population="29" foundationYear="" size="22,3" comment="" />
+		<city OCATO="79Â 205Â 802 003" type="Ñ…." name="ÐšÑ€Ð°ÑÐ½Ñ‹Ð¹ Ð¥Ð»ÐµÐ±Ð¾Ñ€Ð¾Ð±" population="42" foundationYear="1925" size="19,3" comment="" />
+		<city OCATO="79Â 205Â 820 004" type="Ñ…." name="ÐšÑƒÑ€ÑÐºÐ¸Ð¹" population="114" foundationYear="" size="82,5" comment="" />
+		<city OCATO="79Â 205Â 815 003" type="Ð¿." name="Ð›ÐµÑÐ½Ð¾Ð¹" population="183" foundationYear="1895" size="41,1" comment="" />
+		<city OCATO="79Â 205Â 820 011" type="Ñ…." name="ÐœÐ¸Ñ…ÐµÐ»ÑŒÑÐ¾Ð½Ð¾Ð²ÑÐºÐ¸Ð¹" population="22" foundationYear="" size="21,1" comment="" />
+		<city OCATO="79Â 205Â 810 004" type="Ñ…." name="ÐÐµÑ‡Ð°ÐµÐ²ÑÐºÐ¸Ð¹" population="23" foundationYear="" size="12,3" comment="" />
+		<city OCATO="79Â 205Â 802 004" type="Ñ." name="ÐÐ¸Ð¶Ð½Ð¸Ð¹ ÐÐ¹Ñ€ÑŽÐ¼" population="278" foundationYear="" size="69,5" comment="" />
+		<city OCATO="79Â 205Â 802 001" type="Ð¿." name="ÐÐ¾Ð²Ñ‹Ð¹" population="1326" foundationYear="1962*" size="303,5" comment="" />
+		<city OCATO="79Â 205Â 802 005" type="Ñ." name="ÐžÐ±Ñ€Ð°Ð·Ñ†Ð¾Ð²Ð¾Ðµ" population="353" foundationYear="" size="92,8" comment="" />
+		<city OCATO="79Â 205Â 807 003" type="Ñ…." name="ÐŸÐµÑ€Ð²Ð¾Ð¼Ð°Ð¹ÑÐºÐ¸Ð¹" population="-" foundationYear="" size="42,9" comment="" />
+		<city OCATO="79Â 205Â 802 006" type="Ñ…." name="ÐŸÑ€Ð¾Ð³Ñ€ÐµÑÑ" population="956" foundationYear="1951" size="192" comment="" />
+		<city OCATO="79Â 205Â 802 007" type="Ñ…." name="Ð¡Ð°Ð´Ð¾Ð²Ñ‹Ð¹" population="197" foundationYear="" size="27,1" comment="" />
+		<city OCATO="79Â 205Â 820 001" type="Ñ." name="Ð¡ÐµÑ€Ð³Ð¸ÐµÐ²ÑÐºÐ¾Ðµ" population="1364" foundationYear="1883" size="676,8" comment="" />
+		<city OCATO="79Â 205Â 810 003" type="Ñ…." name="Ð¡Ð¼Ð¾Ð»ÑŒÑ‡ÐµÐ²-ÐœÐ°Ð»Ð¸Ð½Ð¾Ð²ÑÐºÐ¸Ð¹" population="102" foundationYear="" size="107" comment="" />
+		<city OCATO="79Â 205Â 820 010" type="Ñ…." name="Ð¢Ð°Ð¼Ð±Ð¾Ð²ÑÐºÐ¸Ð¹" population="613" foundationYear="" size="132,3" comment="" />
+		<city OCATO="79Â 205Â 820 012" type="Ñ…." name="Ð¤Ð°Ñ€ÑÐ¾Ð²ÑÐºÐ¸Ð¹" population="13" foundationYear="1966*" size="10,1" comment="" />
+		<city OCATO="79Â 205Â 807 005" type="Ñ…." name="Ð§ÐµÑ€ÐµÐ¼ÑƒÑˆÐºÐ¸Ð½" population="85" foundationYear="1959*" size="13,5" comment="" />
+		<city OCATO="79Â 205Â 820 013" type="Ñ…." name="Ð¨Ð¸ÑˆÐºÐ¸Ð½ÑÐºÐ¸Ð¹" population="40" foundationYear="" size="35,9" comment="" />
 	</region>
 
-	<region name="Êîøåõàáëüñêèé ðàéîí" OCATO="79 215">
-		<city OCATO="79 215 804 001" type="à." name="Áëå÷åïñèí" population="3096" foundationYear="1868" size="433,7" comment="" />
-		<city OCATO="79 215 808 001" type="ñ." name="Âîëüíîå" population="3680" foundationYear="1892" size="389" comment="" />
-		<city OCATO="79 215 812 002" type="õ." name="Äìèòðèåâñêèé" population="513" foundationYear="1904" size="79,5" comment="" />
-		<city OCATO="79 215 812 001" type="ï." name="Äðóæáà" population="780" foundationYear="1958*" size="96,9" comment="" />
-		<city OCATO="79 215 815 001" type="à." name="Åãåðóõàé" population="1614" foundationYear="1864" size="273" comment="" />
-		<city OCATO="79 215 818 001" type="õ." name="Èãíàòüåâñêèé" population="983" foundationYear="1889" size="360,6" comment="" />
-		<city OCATO="79 215 830 005" type="õ." name="Êàçåííî-Êóæîðñêèé" population="803" foundationYear="1892" size="238" comment="" />
-		<city OCATO="79 215 808 002" type="õ." name="Êàðìîëèíî-Ãèäðîèöêèé" population="212" foundationYear="1880" size="90,7" comment="" />
-		<city OCATO="79 215 812 003" type="ï." name="Êîìñîìîëüñêèé" population="170" foundationYear="1958*" size="17,7" comment="" />
-		<city OCATO="79 215 820 001" type="à." name="Êîøåõàáëü" population="7321" foundationYear="1868" size="1342" comment="" regionalCenter="true" />
-		<city OCATO="79 215 825 002" type="õ." name="Êðàñíûé" population="210" foundationYear="" size="64,7" comment="" />
-		<city OCATO="79 215 812 004" type="õ." name="Êðàñíûé Ôàðñ" population="165" foundationYear="1924" size="48,6" comment="" />
-		<city OCATO="79 215 825 001" type="ï." name="Ìàéñêèé" population="2430" foundationYear="1931" size="124" comment="" />
-		<city OCATO="79 215 830 001" type="ñ." name="Íàòûðáîâî" population="3098" foundationYear="1895" size="542" comment="" />
-		<city OCATO="79 215 812 005" type="õ." name="Íîâîàëåêñååâñêèé" population="384" foundationYear="1881" size="62,3" comment="" />
-		<city OCATO="79 215 812 006" type="õ." name="Îòðàäíûé" population="178" foundationYear="1895" size="200,4" comment="" />
-		<city OCATO="79 215 812 008" type="ï." name="Ïëîäîïèòîìíèê" population="94" foundationYear="1903" size="27,4" comment="" />
-		<city OCATO="79 215 812 007" type="õ." name="Ïîëèòîòäåë" population="246" foundationYear="" size="33" comment="" />
-		<city OCATO="79 215 815 002" type="õ." name="Ñîêîëîâ" population="-" foundationYear="" size="44,9" comment="" />
-		<city OCATO="79 215 812 009" type="à." name="Õà÷åìçèé" population="704" foundationYear="1862" size="168" comment="" />
-		<city OCATO="79 215 845 001" type="à." name="Õîäçü" population="2853" foundationYear="1861" size="385,6" comment="" />
-		<city OCATO="79 215 812 010" type="ï." name="×åõðàê" population="506" foundationYear="1902" size="13,4" comment="Äìèòðèåâñêîå ñåëüñêîå ïîñåëåíèå" />
-		<city OCATO="79 215 825 001" type="õ." name="×åõðàê" population="12" foundationYear="1894" size="48,1" comment="Ìàéñêîå ñåëüñêîå ïîñåëåíèå" />
-		<city OCATO="79 215 808 003" type="õ." name="Øåëêîâíèêîâ" population="265" foundationYear="1891" size="98,6" comment="" />
+	<region name="ÐšÐ¾ÑˆÐµÑ…Ð°Ð±Ð»ÑŒÑÐºÐ¸Ð¹ Ñ€Ð°Ð¹Ð¾Ð½" OCATO="79 215">
+		<city OCATO="79Â 215Â 804 001" type="Ð°." name="Ð‘Ð»ÐµÑ‡ÐµÐ¿ÑÐ¸Ð½" population="3096" foundationYear="1868" size="433,7" comment="" />
+		<city OCATO="79Â 215Â 808 001" type="Ñ." name="Ð’Ð¾Ð»ÑŒÐ½Ð¾Ðµ" population="3680" foundationYear="1892" size="389" comment="" />
+		<city OCATO="79Â 215Â 812 002" type="Ñ…." name="Ð”Ð¼Ð¸Ñ‚Ñ€Ð¸ÐµÐ²ÑÐºÐ¸Ð¹" population="513" foundationYear="1904" size="79,5" comment="" />
+		<city OCATO="79Â 215Â 812 001" type="Ð¿." name="Ð”Ñ€ÑƒÐ¶Ð±Ð°" population="780" foundationYear="1958*" size="96,9" comment="" />
+		<city OCATO="79Â 215Â 815 001" type="Ð°." name="Ð•Ð³ÐµÑ€ÑƒÑ…Ð°Ð¹" population="1614" foundationYear="1864" size="273" comment="" />
+		<city OCATO="79Â 215Â 818 001" type="Ñ…." name="Ð˜Ð³Ð½Ð°Ñ‚ÑŒÐµÐ²ÑÐºÐ¸Ð¹" population="983" foundationYear="1889" size="360,6" comment="" />
+		<city OCATO="79Â 215Â 830 005" type="Ñ…." name="ÐšÐ°Ð·ÐµÐ½Ð½Ð¾-ÐšÑƒÐ¶Ð¾Ñ€ÑÐºÐ¸Ð¹" population="803" foundationYear="1892" size="238" comment="" />
+		<city OCATO="79Â 215Â 808 002" type="Ñ…." name="ÐšÐ°Ñ€Ð¼Ð¾Ð»Ð¸Ð½Ð¾-Ð“Ð¸Ð´Ñ€Ð¾Ð¸Ñ†ÐºÐ¸Ð¹" population="212" foundationYear="1880" size="90,7" comment="" />
+		<city OCATO="79Â 215Â 812 003" type="Ð¿." name="ÐšÐ¾Ð¼ÑÐ¾Ð¼Ð¾Ð»ÑŒÑÐºÐ¸Ð¹" population="170" foundationYear="1958*" size="17,7" comment="" />
+		<city OCATO="79Â 215Â 820 001" type="Ð°." name="ÐšÐ¾ÑˆÐµÑ…Ð°Ð±Ð»ÑŒ" population="7321" foundationYear="1868" size="1342" comment="" regionalCenter="true" />
+		<city OCATO="79Â 215Â 825 002" type="Ñ…." name="ÐšÑ€Ð°ÑÐ½Ñ‹Ð¹" population="210" foundationYear="" size="64,7" comment="" />
+		<city OCATO="79Â 215Â 812 004" type="Ñ…." name="ÐšÑ€Ð°ÑÐ½Ñ‹Ð¹ Ð¤Ð°Ñ€Ñ" population="165" foundationYear="1924" size="48,6" comment="" />
+		<city OCATO="79Â 215Â 825 001" type="Ð¿." name="ÐœÐ°Ð¹ÑÐºÐ¸Ð¹" population="2430" foundationYear="1931" size="124" comment="" />
+		<city OCATO="79Â 215Â 830 001" type="Ñ." name="ÐÐ°Ñ‚Ñ‹Ñ€Ð±Ð¾Ð²Ð¾" population="3098" foundationYear="1895" size="542" comment="" />
+		<city OCATO="79Â 215Â 812 005" type="Ñ…." name="ÐÐ¾Ð²Ð¾Ð°Ð»ÐµÐºÑÐµÐµÐ²ÑÐºÐ¸Ð¹" population="384" foundationYear="1881" size="62,3" comment="" />
+		<city OCATO="79Â 215Â 812Â 006" type="Ñ…." name="ÐžÑ‚Ñ€Ð°Ð´Ð½Ñ‹Ð¹" population="178" foundationYear="1895" size="200,4" comment="" />
+		<city OCATO="79Â 215Â 812 008" type="Ð¿." name="ÐŸÐ»Ð¾Ð´Ð¾Ð¿Ð¸Ñ‚Ð¾Ð¼Ð½Ð¸Ðº" population="94" foundationYear="1903" size="27,4" comment="" />
+		<city OCATO="79Â 215Â 812 007" type="Ñ…." name="ÐŸÐ¾Ð»Ð¸Ñ‚Ð¾Ñ‚Ð´ÐµÐ»" population="246" foundationYear="" size="33" comment="" />
+		<city OCATO="79Â 215Â 815 002" type="Ñ…." name="Ð¡Ð¾ÐºÐ¾Ð»Ð¾Ð²" population="-" foundationYear="" size="44,9" comment="" />
+		<city OCATO="79Â 215Â 812 009" type="Ð°." name="Ð¥Ð°Ñ‡ÐµÐ¼Ð·Ð¸Ð¹" population="704" foundationYear="1862" size="168" comment="" />
+		<city OCATO="79Â 215Â 845 001" type="Ð°." name="Ð¥Ð¾Ð´Ð·ÑŒ" population="2853" foundationYear="1861" size="385,6" comment="" />
+		<city OCATO="79Â 215Â 812 010" type="Ð¿." name="Ð§ÐµÑ…Ñ€Ð°Ðº" population="506" foundationYear="1902" size="13,4" comment="Ð”Ð¼Ð¸Ñ‚Ñ€Ð¸ÐµÐ²ÑÐºÐ¾Ðµ ÑÐµÐ»ÑŒÑÐºÐ¾Ðµ Ð¿Ð¾ÑÐµÐ»ÐµÐ½Ð¸Ðµ" />
+		<city OCATO="79Â 215Â 825 001" type="Ñ…." name="Ð§ÐµÑ…Ñ€Ð°Ðº" population="12" foundationYear="1894" size="48,1" comment="ÐœÐ°Ð¹ÑÐºÐ¾Ðµ ÑÐµÐ»ÑŒÑÐºÐ¾Ðµ Ð¿Ð¾ÑÐµÐ»ÐµÐ½Ð¸Ðµ" />
+		<city OCATO="79Â 215Â 808 003" type="Ñ…." name="Ð¨ÐµÐ»ÐºÐ¾Ð²Ð½Ð¸ÐºÐ¾Ð²" population="265" foundationYear="1891" size="98,6" comment="" />
 	</region>
 
-	<region name="Êðàñíîãâàðäåéñêèé ðàéîí" OCATO="79 218">
-		<city OCATO="79 218 820 002" type="à." name="Àäàìèé" population="1322" foundationYear="1868" size="224" comment="" />
-		<city OCATO="79 218 804 001" type="ñ." name="Áåëîå" population="2956" foundationYear="1894" size="440" comment="" />
-		<city OCATO="79 218 825 002" type="à." name="Áæåäóãõàáëü" population="947" foundationYear="1871" size="198" comment="" />
-		<city OCATO="79 218 804 002" type="õ." name="Áîãóðñóêîâ" population="163" foundationYear="1905" size="25,5" comment="" />
-		<city OCATO="79 218 808 001" type="ñ." name="Áîëüøåñèäîðîâñêîå" population="1501" foundationYear="1881" size="335,1" comment="" />
-		<city OCATO="79 218 825 003" type="ñ." name="Âåðõíåíàçàðîâñêîå" population="561" foundationYear="1884" size="179" comment="" />
-		<city OCATO="79 218 835 002" type="ï." name="Âîäíûé" population="-" foundationYear="1879" size="-" comment="" />
-		<city OCATO="79 218 808 002" type="à." name="Äæàìáå÷è" population="586" foundationYear="1857" size="235,3" comment="â ÎÊÀÒÎ çíà÷èòñÿ êàê Äæàìáè÷è" />
-		<city OCATO="79 218 815 002" type="õ." name="Äîãóæèåâ" population="14" foundationYear="1879" size="56,7" comment="" />
-		<city OCATO="79 218 815 001" type="ñ." name="Åëåíîâñêîå" population="2640" foundationYear="1888" size="620" comment="" />
-		<city OCATO="79 218 820 001" type="ñ." name="Êðàñíîãâàðäåéñêîå" population="9419" foundationYear="1884" size="1210,9" comment=""
+	<region name="ÐšÑ€Ð°ÑÐ½Ð¾Ð³Ð²Ð°Ñ€Ð´ÐµÐ¹ÑÐºÐ¸Ð¹ Ñ€Ð°Ð¹Ð¾Ð½" OCATO="79Â 218">
+		<city OCATO="79Â 218Â 820 002" type="Ð°." name="ÐÐ´Ð°Ð¼Ð¸Ð¹" population="1322" foundationYear="1868" size="224" comment="" />
+		<city OCATO="79Â 218Â 804 001" type="Ñ." name="Ð‘ÐµÐ»Ð¾Ðµ" population="2956" foundationYear="1894" size="440" comment="" />
+		<city OCATO="79Â 218Â 825 002" type="Ð°." name="Ð‘Ð¶ÐµÐ´ÑƒÐ³Ñ…Ð°Ð±Ð»ÑŒ" population="947" foundationYear="1871" size="198" comment="" />
+		<city OCATO="79Â 218Â 804 002" type="Ñ…." name="Ð‘Ð¾Ð³ÑƒÑ€ÑÑƒÐºÐ¾Ð²" population="163" foundationYear="1905" size="25,5" comment="" />
+		<city OCATO="79Â 218Â 808 001" type="Ñ." name="Ð‘Ð¾Ð»ÑŒÑˆÐµÑÐ¸Ð´Ð¾Ñ€Ð¾Ð²ÑÐºÐ¾Ðµ" population="1501" foundationYear="1881" size="335,1" comment="" />
+		<city OCATO="79Â 218Â 825 003" type="Ñ." name="Ð’ÐµÑ€Ñ…Ð½ÐµÐ½Ð°Ð·Ð°Ñ€Ð¾Ð²ÑÐºÐ¾Ðµ" population="561" foundationYear="1884" size="179" comment="" />
+		<city OCATO="79Â 218Â 835 002" type="Ð¿." name="Ð’Ð¾Ð´Ð½Ñ‹Ð¹" population="-" foundationYear="1879" size="-" comment="" />
+		<city OCATO="79Â 218Â 808 002" type="Ð°." name="Ð”Ð¶Ð°Ð¼Ð±ÐµÑ‡Ð¸" population="586" foundationYear="1857" size="235,3" comment="Ð² ÐžÐšÐÐ¢Ðž Ð·Ð½Ð°Ñ‡Ð¸Ñ‚ÑÑ ÐºÐ°Ðº Ð”Ð¶Ð°Ð¼Ð±Ð¸Ñ‡Ð¸" />
+		<city OCATO="79Â 218Â 815 002" type="Ñ…." name="Ð”Ð¾Ð³ÑƒÐ¶Ð¸ÐµÐ²" population="14" foundationYear="1879" size="56,7" comment="" />
+		<city OCATO="79Â 218Â 815 001" type="Ñ." name="Ð•Ð»ÐµÐ½Ð¾Ð²ÑÐºÐ¾Ðµ" population="2640" foundationYear="1888" size="620" comment="" />
+		<city OCATO="79Â 218Â 820 001" type="Ñ." name="ÐšÑ€Ð°ÑÐ½Ð¾Ð³Ð²Ð°Ñ€Ð´ÐµÐ¹ÑÐºÐ¾Ðµ" population="9419" foundationYear="1884" size="1210,9" comment=""
 			regionalCenter="true" />
-		<city OCATO="79 218 835 003" type="ï." name="Ëåñíîé" population="-" foundationYear="1937" size="-" comment="" />
-		<city OCATO="79 218 804 003" type="ï." name="Ìèðíûé" population="11" foundationYear="1958*" size="32,9" comment="" />
-		<city OCATO="79 218 835 004" type="ï." name="Íàáåðåæíûé" population="94" foundationYear="1930" size="17" comment="" />
-		<city OCATO="79 218 804 004" type="ñ." name="Íîâîñåâàñòîïîëüñêîå" population="778" foundationYear="1910" size="149" comment="" />
-		<city OCATO="79 218 804 006" type="õ." name="Ïàïåíêîâ" population="27" foundationYear="1907" size="22,5" comment="" />
-		<city OCATO="79 218 804 005" type="ñ." name="Ïðåîáðàæåíñêîå" population="1426" foundationYear="1911" size="211" comment="" />
-		<city OCATO="79 218 815 004" type="õ." name="Ïóñòîñåëîâ" population="9" foundationYear="1871" size="127,9" comment="" />
-		<city OCATO="79 218 825 001" type="ñ." name="Ñàäîâîå" population="1340" foundationYear="1921" size="238" comment="" />
-		<city OCATO="79 218 815 003" type="õ." name="Ñàðàòîâñêèé" population="470" foundationYear="1879" size="92,8" comment="" />
-		<city OCATO="79 218 835 005" type="ï." name="Ñâîáîäíûé" population="6" foundationYear="1902" size="3,1" comment="" />
-		<city OCATO="79 218 830 001" type="à." name="Óëÿï" population="1259" foundationYear="1867" size="420" comment="" />
-		<city OCATO="79 218 835 001" type="à." name="Õàòóêàé" population="4903" foundationYear="1859" size="424" comment="" />
-		<city OCATO="79 218 820 003" type="õ." name="×óìàêîâ" population="73" foundationYear="1896" size="20" comment="" />
-		<city OCATO="79 218 830 002" type="ñ." name="Øòóðáèíî" population="500" foundationYear="1885" size="244" comment="" />
+		<city OCATO="79Â 218Â 835 003" type="Ð¿." name="Ð›ÐµÑÐ½Ð¾Ð¹" population="-" foundationYear="1937" size="-" comment="" />
+		<city OCATO="79Â 218Â 804 003" type="Ð¿." name="ÐœÐ¸Ñ€Ð½Ñ‹Ð¹" population="11" foundationYear="1958*" size="32,9" comment="" />
+		<city OCATO="79Â 218Â 835 004" type="Ð¿." name="ÐÐ°Ð±ÐµÑ€ÐµÐ¶Ð½Ñ‹Ð¹" population="94" foundationYear="1930" size="17" comment="" />
+		<city OCATO="79Â 218Â 804 004" type="Ñ." name="ÐÐ¾Ð²Ð¾ÑÐµÐ²Ð°ÑÑ‚Ð¾Ð¿Ð¾Ð»ÑŒÑÐºÐ¾Ðµ" population="778" foundationYear="1910" size="149" comment="" />
+		<city OCATO="79Â 218Â 804 006" type="Ñ…." name="ÐŸÐ°Ð¿ÐµÐ½ÐºÐ¾Ð²" population="27" foundationYear="1907" size="22,5" comment="" />
+		<city OCATO="79Â 218Â 804 005" type="Ñ." name="ÐŸÑ€ÐµÐ¾Ð±Ñ€Ð°Ð¶ÐµÐ½ÑÐºÐ¾Ðµ" population="1426" foundationYear="1911" size="211" comment="" />
+		<city OCATO="79Â 218Â 815 004" type="Ñ…." name="ÐŸÑƒÑÑ‚Ð¾ÑÐµÐ»Ð¾Ð²" population="9" foundationYear="1871" size="127,9" comment="" />
+		<city OCATO="79Â 218Â 825 001" type="Ñ." name="Ð¡Ð°Ð´Ð¾Ð²Ð¾Ðµ" population="1340" foundationYear="1921" size="238" comment="" />
+		<city OCATO="79Â 218Â 815 003" type="Ñ…." name="Ð¡Ð°Ñ€Ð°Ñ‚Ð¾Ð²ÑÐºÐ¸Ð¹" population="470" foundationYear="1879" size="92,8" comment="" />
+		<city OCATO="79Â 218Â 835 005" type="Ð¿." name="Ð¡Ð²Ð¾Ð±Ð¾Ð´Ð½Ñ‹Ð¹" population="6" foundationYear="1902" size="3,1" comment="" />
+		<city OCATO="79Â 218Â 830 001" type="Ð°." name="Ð£Ð»ÑÐ¿" population="1259" foundationYear="1867" size="420" comment="" />
+		<city OCATO="79Â 218Â 835 001" type="Ð°." name="Ð¥Ð°Ñ‚ÑƒÐºÐ°Ð¹" population="4903" foundationYear="1859" size="424" comment="" />
+		<city OCATO="79Â 218Â 820 003" type="Ñ…." name="Ð§ÑƒÐ¼Ð°ÐºÐ¾Ð²" population="73" foundationYear="1896" size="20" comment="" />
+		<city OCATO="79Â 218Â 830 002" type="Ñ." name="Ð¨Ñ‚ÑƒÑ€Ð±Ð¸Ð½Ð¾" population="500" foundationYear="1885" size="244" comment="" />
 	</region>
 
-	<region name="Ìàéêîïñêèé ðàéîí" OCATO="79 222">
-		<city OCATO="79 222 820 014" type="õ." name="17 ëåò Îêòÿáðÿ" population="191" foundationYear="" size="56,62" comment="" />
-		<city OCATO="79 222 802 001" type="ñò." name="Àáàäçåõñêàÿ" population="3676" foundationYear="1862" size="634,7" comment="" />
-		<city OCATO="79 222 000 004" type="ñò." name="Áåçâîäíàÿ" population="54" foundationYear="1863" size="126,3" comment="" />
-		<city OCATO="79 222 802 003" type="õ." name="Âåñåëûé" population="319" foundationYear="" size="79,3" comment="Àáàäçåõñêîå ñåëüñêîå ïîñåëåíèå" />
-		<city OCATO="79 222 555 002" type="õ." name="Âåñåëûé" population="10" foundationYear="" size="50,7" comment="Êàìåííîìîñòñêîå ñåëüñêîå ïîñåëåíèå" />
-		<city OCATO="79 222 828 002" type="õ." name="Âîëüíûé" population="273" foundationYear="" size="60,3" comment="" />
-		<city OCATO="79 222 828 003" type="õ." name="Ãðàæäàíñêèé" population="358" foundationYear="" size="94,9" comment="" />
-		<city OCATO="79 222 820 002" type="õ." name="Ãðîçíûé" population="413" foundationYear="1890" size="89,22" comment="Êèðîâñêîå ñåëüñêîå ïîñåëåíèå" />
-		<city OCATO="79 222 847 001" type="õ." name="Ãðîçíûé" population="665" foundationYear="" size="259" comment="Ïîáåäåíñêîå ñåëüñêîå ïîñåëåíèå" />
-		<city OCATO="79 222 000 002" type="ï." name="Ãóçåðèïëü" population="107" foundationYear="" size="610" comment="" />
-		<city OCATO="79 222 825 008" type="ñò." name="Äàãåñòàíñêàÿ" population="519" foundationYear="1863" size="272,15" comment="" />
-		<city OCATO="79 222 807 001" type="ñò." name="Äàõîâñêàÿ" population="1399" foundationYear="1862" size="1112" comment="" />
-		<city OCATO="79 222 820 005" type="õ." name="Äüÿêîâ" population="131" foundationYear="" size="31,49" comment="" />
-		<city OCATO="79 222 828 004" type="õ." name="Êàëèíèí" population="263" foundationYear="" size="96,9" comment="" />
-		<city OCATO="79 222 555" type="ï." name="Êàìåííîìîñòñêèé" population="7178" foundationYear="1864" size="1300" comment="" />
-		<city OCATO="79 222 834 002" type="õ." name="Êàðìèð-Àñòõ" population="24" foundationYear="" size="18,9" comment="" />
-		<city OCATO="79 222 828 005" type="õ." name="Êîìèíòåðí" population="276" foundationYear="" size="62,5" comment="" />
-		<city OCATO="79 222 828 001" type="õ." name="Êðàñíàÿ Óëüêà" population="388" foundationYear="" size="64,1" comment="" />
-		<city OCATO="79 222 825 001" type="ï." name="Êðàñíîîêòÿáðüñêèé" population="6060" foundationYear="" size="472" comment="" />
-		<city OCATO="79 222 825 002" type="õ." name="Êðàñíûé Ìîñò" population="41" foundationYear="" size="32,22" comment="" />
-		<city OCATO="79 222 834 001" type="ñò." name="Êóæîðñêàÿ" population="3549" foundationYear="1861" size="908,1" comment="" />
-		<city OCATO="79 222 825 009" type="ñò." name="Êóðäæèïñêàÿ" population="1574" foundationYear="1863" size="636,3" comment="" />
-		<city OCATO="" type="à." name="Ìàôýõàáëü" population="117" foundationYear="2006" size="98,45" comment="" />
-		<city OCATO="79 222 551 001" type="ñ." name="Ìàõîøåïîëÿíà" population="13" foundationYear="" size="0,3" comment="" />
-		<city OCATO="79 222 807 002" type="ï." name="Ìåðêóëàåâêà" population="64" foundationYear="" size="9" comment="" />
-		<city OCATO="79 222 825 003" type="ï." name="Ìèðíûé" population="22" foundationYear="1958*" size="17,34" comment="" />
-		<city OCATO="79 222 852 002" type="ï." name="Ìè÷óðèíà" population="79" foundationYear="" size="15,7" comment="" />
-		<city OCATO="" type="ï." name="Íèêåëü" population="-" foundationYear="-" size="42" comment="" />
-		<city OCATO="79 222 807 003" type="ñ." name="Íîâîïðîõëàäíîå" population="170" foundationYear="" size="185" comment="" />
-		<city OCATO="79 222 802 007" type="ñò." name="Íîâîñâîáîäíàÿ" population="623" foundationYear="1862" size="385,5" comment="" />
-		<city OCATO="79 222 820 004" type="õ." name="Îêòÿáðüñêèé" population="49" foundationYear="" size="26,93" comment="" />
-		<city OCATO="" type="ï." name="Ïåðâîìàéñêèé" population="1293" foundationYear="" size="120,8" comment="" />
-		<city OCATO="79 222 847 001" type="ï." name="Ïîáåäà" population="931" foundationYear="1958*" size="91,18" comment="Ïîáåäåíñêîå ñåëüñêîå ïîñåëåíèå" />
-		<city OCATO="79 222 555 001" type="ï." name="Ïîáåäà" population="145" foundationYear="" size="50,1" comment="Êàìåííîìîñòñêîå ñåëüñêîå ïîñåëåíèå" />
-		<city OCATO="79 222 852 003" type="ï." name="Ïîäãîðíûé" population="116" foundationYear="1958*" size="8,42" comment="" />
-		<city OCATO="79 222 825 004" type="ï." name="Ïðèðå÷íûé" population="334" foundationYear="" size="42,22" comment="" />
-		<city OCATO="79 222 847 004" type="õ." name="Ïðè÷òîâñêèé" population="388" foundationYear="" size="81,3" comment="" />
-		<city OCATO="79 222 820 003" type="õ." name="Ïðîëåòàðñêèé" population="1062" foundationYear="" size="201,65" comment="" />
-		<city OCATO="79 222 825 005" type="õ." name="Ñàäîâûé" population="418" foundationYear="1958*" size="82,75" comment="Êðàñíîîêòÿáðüñêîå ñåëüñêîå ïîñåëåíèå" />
-		<city OCATO="79 222 852 004" type="ï." name="Ñàäîâûé" population="157" foundationYear="" size="17,3" comment="Òèìèðÿçåâñêîå ñåëüñêîå ïîñåëåíèå" />
-		<city OCATO="79 222 802 006" type="ñò." name="Ñåâàñòîïîëüñêàÿ" population="644" foundationYear="1862" size="323" comment="" />
-		<city OCATO="79 222 820 001" type="õ." name="Ñåâåðî-Âîñòî÷íûå Ñàäû" population="3547" foundationYear="1933" size="451,3" comment="" />
-		<city OCATO="79 222 820 018" type="õ." name="Ñîâåòñêèé" population="486" foundationYear="" size="58" comment="" />
-		<city OCATO="79 222 847 005" type="ï." name="Ñîâõîçíûé" population="1378" foundationYear="1958*" size="141,8" comment="" />
-		<city OCATO="79 222 825 006" type="ï." name="Ñïîêîéíûé" population="37" foundationYear="1958*" size="7,63" comment="" />
-		<city OCATO="79 222 825 007" type="ï." name="Òàáà÷íûé" population="1823" foundationYear="" size="448,6" comment="" />
-		<city OCATO="79 222 852 001" type="ï." name="Òèìèðÿçåâà" population="1145" foundationYear="" size="130,9" comment="" />
-		<city OCATO="79 222 828 006" type="õ." name="Òêà÷åâ" population="218" foundationYear="" size="52,1" comment="" />
-		<city OCATO="79 222 834 003" type="ï." name="Òðåõðå÷íûé" population="569" foundationYear="" size="208,6" comment="" />
-		<city OCATO="79 222 551" type="ï." name="Òóëüñêèé" population="10825" foundationYear="1862" size="1918,2" comment="" regionalCenter="true" />
-		<city OCATO="79 222 847 003" type="ï." name="Óäîáíûé" population="1355" foundationYear="1958*" size="213,9" comment="" />
-		<city OCATO="79 222 807 005" type="ï." name="Óñòü-Ñàõðàé" population="304" foundationYear="1959*" size="43" comment="" />
-		<city OCATO="79 222 000 003" type="ï." name="Õàêîäçü" population="-" foundationYear="" size="25" comment="" />
-		<city OCATO="79 222 807 006" type="ñ." name="Õàìûøêè" population="769" foundationYear="1869" size="240" comment="" />
-		<city OCATO="79 222 852 006" type="ï." name="Öâåòî÷íûé" population="1442" foundationYear="1958*" size="181" comment="" />
-		<city OCATO="79 222 847 006" type="õ." name="Øàóìÿí" population="394" foundationYear="" size="152,7" comment="" />
-		<city OCATO="79 222 852 005" type="õ." name="Øóíòóê" population="861" foundationYear="" size="214,4" comment="" />
+	<region name="ÐœÐ°Ð¹ÐºÐ¾Ð¿ÑÐºÐ¸Ð¹ Ñ€Ð°Ð¹Ð¾Ð½" OCATO="79Â 222">
+		<city OCATO="79Â 222Â 820 014" type="Ñ…." name="17 Ð»ÐµÑ‚ ÐžÐºÑ‚ÑÐ±Ñ€Ñ" population="191" foundationYear="" size="56,62" comment="" />
+		<city OCATO="79Â 222Â 802 001" type="ÑÑ‚." name="ÐÐ±Ð°Ð´Ð·ÐµÑ…ÑÐºÐ°Ñ" population="3676" foundationYear="1862" size="634,7" comment="" />
+		<city OCATO="79Â 222Â 000 004" type="ÑÑ‚." name="Ð‘ÐµÐ·Ð²Ð¾Ð´Ð½Ð°Ñ" population="54" foundationYear="1863" size="126,3" comment="" />
+		<city OCATO="79Â 222Â 802 003" type="Ñ…." name="Ð’ÐµÑÐµÐ»Ñ‹Ð¹" population="319" foundationYear="" size="79,3" comment="ÐÐ±Ð°Ð´Ð·ÐµÑ…ÑÐºÐ¾Ðµ ÑÐµÐ»ÑŒÑÐºÐ¾Ðµ Ð¿Ð¾ÑÐµÐ»ÐµÐ½Ð¸Ðµ" />
+		<city OCATO="79Â 222Â 555 002" type="Ñ…." name="Ð’ÐµÑÐµÐ»Ñ‹Ð¹" population="10" foundationYear="" size="50,7" comment="ÐšÐ°Ð¼ÐµÐ½Ð½Ð¾Ð¼Ð¾ÑÑ‚ÑÐºÐ¾Ðµ ÑÐµÐ»ÑŒÑÐºÐ¾Ðµ Ð¿Ð¾ÑÐµÐ»ÐµÐ½Ð¸Ðµ" />
+		<city OCATO="79Â 222Â 828 002" type="Ñ…." name="Ð’Ð¾Ð»ÑŒÐ½Ñ‹Ð¹" population="273" foundationYear="" size="60,3" comment="" />
+		<city OCATO="79Â 222Â 828 003" type="Ñ…." name="Ð“Ñ€Ð°Ð¶Ð´Ð°Ð½ÑÐºÐ¸Ð¹" population="358" foundationYear="" size="94,9" comment="" />
+		<city OCATO="79Â 222Â 820 002" type="Ñ…." name="Ð“Ñ€Ð¾Ð·Ð½Ñ‹Ð¹" population="413" foundationYear="1890" size="89,22" comment="ÐšÐ¸Ñ€Ð¾Ð²ÑÐºÐ¾Ðµ ÑÐµÐ»ÑŒÑÐºÐ¾Ðµ Ð¿Ð¾ÑÐµÐ»ÐµÐ½Ð¸Ðµ" />
+		<city OCATO="79Â 222Â 847 001" type="Ñ…." name="Ð“Ñ€Ð¾Ð·Ð½Ñ‹Ð¹" population="665" foundationYear="" size="259" comment="ÐŸÐ¾Ð±ÐµÐ´ÐµÐ½ÑÐºÐ¾Ðµ ÑÐµÐ»ÑŒÑÐºÐ¾Ðµ Ð¿Ð¾ÑÐµÐ»ÐµÐ½Ð¸Ðµ" />
+		<city OCATO="79Â 222Â 000 002" type="Ð¿." name="Ð“ÑƒÐ·ÐµÑ€Ð¸Ð¿Ð»ÑŒ" population="107" foundationYear="" size="610" comment="" />
+		<city OCATO="79Â 222Â 825 008" type="ÑÑ‚." name="Ð”Ð°Ð³ÐµÑÑ‚Ð°Ð½ÑÐºÐ°Ñ" population="519" foundationYear="1863" size="272,15" comment="" />
+		<city OCATO="79Â 222Â 807 001" type="ÑÑ‚." name="Ð”Ð°Ñ…Ð¾Ð²ÑÐºÐ°Ñ" population="1399" foundationYear="1862" size="1112" comment="" />
+		<city OCATO="79Â 222Â 820 005" type="Ñ…." name="Ð”ÑŒÑÐºÐ¾Ð²" population="131" foundationYear="" size="31,49" comment="" />
+		<city OCATO="79Â 222Â 828 004" type="Ñ…." name="ÐšÐ°Ð»Ð¸Ð½Ð¸Ð½" population="263" foundationYear="" size="96,9" comment="" />
+		<city OCATO="79Â 222 555" type="Ð¿." name="ÐšÐ°Ð¼ÐµÐ½Ð½Ð¾Ð¼Ð¾ÑÑ‚ÑÐºÐ¸Ð¹" population="7178" foundationYear="1864" size="1300" comment="" />
+		<city OCATO="79Â 222Â 834 002" type="Ñ…." name="ÐšÐ°Ñ€Ð¼Ð¸Ñ€-ÐÑÑ‚Ñ…" population="24" foundationYear="" size="18,9" comment="" />
+		<city OCATO="79Â 222Â 828 005" type="Ñ…." name="ÐšÐ¾Ð¼Ð¸Ð½Ñ‚ÐµÑ€Ð½" population="276" foundationYear="" size="62,5" comment="" />
+		<city OCATO="79Â 222Â 828 001" type="Ñ…." name="ÐšÑ€Ð°ÑÐ½Ð°Ñ Ð£Ð»ÑŒÐºÐ°" population="388" foundationYear="" size="64,1" comment="" />
+		<city OCATO="79Â 222Â 825 001" type="Ð¿." name="ÐšÑ€Ð°ÑÐ½Ð¾Ð¾ÐºÑ‚ÑÐ±Ñ€ÑŒÑÐºÐ¸Ð¹" population="6060" foundationYear="" size="472" comment="" />
+		<city OCATO="79Â 222Â 825 002" type="Ñ…." name="ÐšÑ€Ð°ÑÐ½Ñ‹Ð¹ ÐœÐ¾ÑÑ‚" population="41" foundationYear="" size="32,22" comment="" />
+		<city OCATO="79Â 222Â 834 001" type="ÑÑ‚." name="ÐšÑƒÐ¶Ð¾Ñ€ÑÐºÐ°Ñ" population="3549" foundationYear="1861" size="908,1" comment="" />
+		<city OCATO="79Â 222Â 825 009" type="ÑÑ‚." name="ÐšÑƒÑ€Ð´Ð¶Ð¸Ð¿ÑÐºÐ°Ñ" population="1574" foundationYear="1863" size="636,3" comment="" />
+		<city OCATO="" type="Ð°." name="ÐœÐ°Ñ„ÑÑ…Ð°Ð±Ð»ÑŒ" population="117" foundationYear="2006" size="98,45" comment="" />
+		<city OCATO="79Â 222Â 551 001" type="Ñ." name="ÐœÐ°Ñ…Ð¾ÑˆÐµÐ¿Ð¾Ð»ÑÐ½Ð°" population="13" foundationYear="" size="0,3" comment="" />
+		<city OCATO="79Â 222Â 807 002" type="Ð¿." name="ÐœÐµÑ€ÐºÑƒÐ»Ð°ÐµÐ²ÐºÐ°" population="64" foundationYear="" size="9" comment="" />
+		<city OCATO="79Â 222Â 825 003" type="Ð¿." name="ÐœÐ¸Ñ€Ð½Ñ‹Ð¹" population="22" foundationYear="1958*" size="17,34" comment="" />
+		<city OCATO="79Â 222Â 852 002" type="Ð¿." name="ÐœÐ¸Ñ‡ÑƒÑ€Ð¸Ð½Ð°" population="79" foundationYear="" size="15,7" comment="" />
+		<city OCATO="" type="Ð¿." name="ÐÐ¸ÐºÐµÐ»ÑŒ" population="-" foundationYear="-" size="42" comment="" />
+		<city OCATO="79Â 222Â 807 003" type="Ñ." name="ÐÐ¾Ð²Ð¾Ð¿Ñ€Ð¾Ñ…Ð»Ð°Ð´Ð½Ð¾Ðµ" population="170" foundationYear="" size="185" comment="" />
+		<city OCATO="79Â 222Â 802 007" type="ÑÑ‚." name="ÐÐ¾Ð²Ð¾ÑÐ²Ð¾Ð±Ð¾Ð´Ð½Ð°Ñ" population="623" foundationYear="1862" size="385,5" comment="" />
+		<city OCATO="79Â 222Â 820 004" type="Ñ…." name="ÐžÐºÑ‚ÑÐ±Ñ€ÑŒÑÐºÐ¸Ð¹" population="49" foundationYear="" size="26,93" comment="" />
+		<city OCATO="" type="Ð¿." name="ÐŸÐµÑ€Ð²Ð¾Ð¼Ð°Ð¹ÑÐºÐ¸Ð¹" population="1293" foundationYear="" size="120,8" comment="" />
+		<city OCATO="79Â 222Â 847 001" type="Ð¿." name="ÐŸÐ¾Ð±ÐµÐ´Ð°" population="931" foundationYear="1958*" size="91,18" comment="ÐŸÐ¾Ð±ÐµÐ´ÐµÐ½ÑÐºÐ¾Ðµ ÑÐµÐ»ÑŒÑÐºÐ¾Ðµ Ð¿Ð¾ÑÐµÐ»ÐµÐ½Ð¸Ðµ" />
+		<city OCATO="79Â 222Â 555 001" type="Ð¿." name="ÐŸÐ¾Ð±ÐµÐ´Ð°" population="145" foundationYear="" size="50,1" comment="ÐšÐ°Ð¼ÐµÐ½Ð½Ð¾Ð¼Ð¾ÑÑ‚ÑÐºÐ¾Ðµ ÑÐµÐ»ÑŒÑÐºÐ¾Ðµ Ð¿Ð¾ÑÐµÐ»ÐµÐ½Ð¸Ðµ" />
+		<city OCATO="79Â 222Â 852 003" type="Ð¿." name="ÐŸÐ¾Ð´Ð³Ð¾Ñ€Ð½Ñ‹Ð¹" population="116" foundationYear="1958*" size="8,42" comment="" />
+		<city OCATO="79Â 222Â 825 004" type="Ð¿." name="ÐŸÑ€Ð¸Ñ€ÐµÑ‡Ð½Ñ‹Ð¹" population="334" foundationYear="" size="42,22" comment="" />
+		<city OCATO="79Â 222Â 847 004" type="Ñ…." name="ÐŸÑ€Ð¸Ñ‡Ñ‚Ð¾Ð²ÑÐºÐ¸Ð¹" population="388" foundationYear="" size="81,3" comment="" />
+		<city OCATO="79Â 222Â 820 003" type="Ñ…." name="ÐŸÑ€Ð¾Ð»ÐµÑ‚Ð°Ñ€ÑÐºÐ¸Ð¹" population="1062" foundationYear="" size="201,65" comment="" />
+		<city OCATO="79Â 222Â 825 005" type="Ñ…." name="Ð¡Ð°Ð´Ð¾Ð²Ñ‹Ð¹" population="418" foundationYear="1958*" size="82,75" comment="ÐšÑ€Ð°ÑÐ½Ð¾Ð¾ÐºÑ‚ÑÐ±Ñ€ÑŒÑÐºÐ¾Ðµ ÑÐµÐ»ÑŒÑÐºÐ¾Ðµ Ð¿Ð¾ÑÐµÐ»ÐµÐ½Ð¸Ðµ" />
+		<city OCATO="79Â 222Â 852 004" type="Ð¿." name="Ð¡Ð°Ð´Ð¾Ð²Ñ‹Ð¹" population="157" foundationYear="" size="17,3" comment="Ð¢Ð¸Ð¼Ð¸Ñ€ÑÐ·ÐµÐ²ÑÐºÐ¾Ðµ ÑÐµÐ»ÑŒÑÐºÐ¾Ðµ Ð¿Ð¾ÑÐµÐ»ÐµÐ½Ð¸Ðµ" />
+		<city OCATO="79Â 222Â 802 006" type="ÑÑ‚." name="Ð¡ÐµÐ²Ð°ÑÑ‚Ð¾Ð¿Ð¾Ð»ÑŒÑÐºÐ°Ñ" population="644" foundationYear="1862" size="323" comment="" />
+		<city OCATO="79Â 222Â 820 001" type="Ñ…." name="Ð¡ÐµÐ²ÐµÑ€Ð¾-Ð’Ð¾ÑÑ‚Ð¾Ñ‡Ð½Ñ‹Ðµ Ð¡Ð°Ð´Ñ‹" population="3547" foundationYear="1933" size="451,3" comment="" />
+		<city OCATO="79Â 222Â 820 018" type="Ñ…." name="Ð¡Ð¾Ð²ÐµÑ‚ÑÐºÐ¸Ð¹" population="486" foundationYear="" size="58" comment="" />
+		<city OCATO="79Â 222Â 847 005" type="Ð¿." name="Ð¡Ð¾Ð²Ñ…Ð¾Ð·Ð½Ñ‹Ð¹" population="1378" foundationYear="1958*" size="141,8" comment="" />
+		<city OCATO="79Â 222Â 825 006" type="Ð¿." name="Ð¡Ð¿Ð¾ÐºÐ¾Ð¹Ð½Ñ‹Ð¹" population="37" foundationYear="1958*" size="7,63" comment="" />
+		<city OCATO="79Â 222Â 825 007" type="Ð¿." name="Ð¢Ð°Ð±Ð°Ñ‡Ð½Ñ‹Ð¹" population="1823" foundationYear="" size="448,6" comment="" />
+		<city OCATO="79Â 222Â 852 001" type="Ð¿." name="Ð¢Ð¸Ð¼Ð¸Ñ€ÑÐ·ÐµÐ²Ð°" population="1145" foundationYear="" size="130,9" comment="" />
+		<city OCATO="79Â 222Â 828 006" type="Ñ…." name="Ð¢ÐºÐ°Ñ‡ÐµÐ²" population="218" foundationYear="" size="52,1" comment="" />
+		<city OCATO="79Â 222Â 834 003" type="Ð¿." name="Ð¢Ñ€ÐµÑ…Ñ€ÐµÑ‡Ð½Ñ‹Ð¹" population="569" foundationYear="" size="208,6" comment="" />
+		<city OCATO="79Â 222 551" type="Ð¿." name="Ð¢ÑƒÐ»ÑŒÑÐºÐ¸Ð¹" population="10825" foundationYear="1862" size="1918,2" comment="" regionalCenter="true" />
+		<city OCATO="79Â 222Â 847 003" type="Ð¿." name="Ð£Ð´Ð¾Ð±Ð½Ñ‹Ð¹" population="1355" foundationYear="1958*" size="213,9" comment="" />
+		<city OCATO="79Â 222Â 807 005" type="Ð¿." name="Ð£ÑÑ‚ÑŒ-Ð¡Ð°Ñ…Ñ€Ð°Ð¹" population="304" foundationYear="1959*" size="43" comment="" />
+		<city OCATO="79Â 222Â 000 003" type="Ð¿." name="Ð¥Ð°ÐºÐ¾Ð´Ð·ÑŒ" population="-" foundationYear="" size="25" comment="" />
+		<city OCATO="79Â 222Â 807 006" type="Ñ." name="Ð¥Ð°Ð¼Ñ‹ÑˆÐºÐ¸" population="769" foundationYear="1869" size="240" comment="" />
+		<city OCATO="79Â 222Â 852 006" type="Ð¿." name="Ð¦Ð²ÐµÑ‚Ð¾Ñ‡Ð½Ñ‹Ð¹" population="1442" foundationYear="1958*" size="181" comment="" />
+		<city OCATO="79Â 222Â 847 006" type="Ñ…." name="Ð¨Ð°ÑƒÐ¼ÑÐ½" population="394" foundationYear="" size="152,7" comment="" />
+		<city OCATO="79Â 222Â 852 005" type="Ñ…." name="Ð¨ÑƒÐ½Ñ‚ÑƒÐº" population="861" foundationYear="" size="214,4" comment="" />
 	</region>
 
-	<region name="Òàõòàìóêàéñêèé ðàéîí" OCATO="79 230">
-		<city OCATO="79 230 820 003" type="õ." name="Àïîñòîëèäè" population="75" foundationYear="1917" size="30,7" comment="" />
-		<city OCATO="79 230 805 001" type="à." name="Àôèïñèï" population="2147" foundationYear="1863" size="743" comment="" />
-		<city OCATO="79 230 557 004" type="ï." name="Äðóæíûé" population="433" foundationYear="1958*" size="26,1" comment="" />
-		<city OCATO="79 230 809 001" type="à." name="Êîçåò" population="1818" foundationYear="1789" size="190" comment="" />
-		<city OCATO="79 230 826 004" type="õ." name="Êðàñíîàðìåéñêèé" population="52" foundationYear="1923" size="41,6" comment="" />
-		<city OCATO="79 230 805 002" type="ï." name="Êóáàíüñòðîé" population="387" foundationYear="1940" size="60,4" comment="" />
-		<city OCATO="79 230 820 002" type="à." name="Íàòóõàé" population="341" foundationYear="1924" size="110" comment="" />
-		<city OCATO="79 230 815 002" type="ï." name="Íîâàÿ Àäûãåÿ" population="2209" foundationYear="1879" size="732" comment="" />
-		<city OCATO="79 230 557 001" type="à." name="Íîâîáæåãîêàé" population="368" foundationYear="1881" size="322,9" comment="" />
-		<city OCATO="79 230 826 002" type="õ." name="Íîâîìîãèëåâñêèé" population="27" foundationYear="1911" size="82,2" comment="" />
-		<city OCATO="79 230 559 002" type="ï." name="Íîâûé" population="1917" foundationYear="1958*" size="158,6" comment="" />
-		<city OCATO="79 230 557 002" type="õ." name="Íîâûé Ñàä" population="1316" foundationYear="1909" size="170,5" comment="" />
-		<city OCATO="79 230 820 004" type="ï." name="Îòðàäíûé" population="680" foundationYear="1888" size="199" comment="" />
-		<city OCATO="79 203 805 003" type="à." name="Ïàíàõåñ" population="1488" foundationYear="1883" size="614" comment="" />
-		<city OCATO="79 230 559 001" type="ï." name="Ïåðåêàòíûé" population="237" foundationYear="1991" size="42,6" comment="" />
-		<city OCATO="79 230 820 005" type="ï." name="Ïðèêóáàíñêèé" population="1076" foundationYear="1958*" size="116,2" comment="" />
-		<city OCATO="79 230 805 004" type="à." name="Ïñåéòóê" population="611" foundationYear="1864" size="302" comment="" />
-		<city OCATO="79 230 815 001" type="à." name="Ñòàðîáæåãîêàé" population="2104" foundationYear="1826" size="347" comment="" />
-		<city OCATO="79 230 826 003" type="õ." name="Ñòàðîìîãèëåâñêèé" population="36" foundationYear="1860" size="87,3" comment="" />
-		<city OCATO="79 230 557 006" type="õ." name="Ñóïîâñêèé" population="554" foundationYear="1899" size="335,6" comment="" />
-		<city OCATO="79 230 820 006" type="ï." name="Ñóïñ" population="71" foundationYear="1963" size="141,6" comment="" />
-		<city OCATO="79 230 820 001" type="à." name="Òàõòàìóêàé" population="5413" foundationYear="1860" size="2684,4" comment="" regionalCenter="true" />
-		<city OCATO="79 203 805 005" type="à." name="Õàøòóê" population="277" foundationYear="1864" size="85,6" comment="" />
-		<city OCATO="79 230 815 003" type="õ." name="Õîìóòû" population="580" foundationYear="1930" size="365" comment="" />
-		<city OCATO="79 230 826 001" type="à." name="Øåíäæèé" population="1979" foundationYear="1860" size="489" comment="" />
-		<city OCATO="79 230 557" type="ï.ã.ò." name="Ýíåì" population="18251" foundationYear="1906" size="2631,9" comment="" />
-		<city OCATO="79 230 559" type="ï.ã.ò." name="ßáëîíîâñêèé" population="27792" foundationYear="1908" size="979,6" comment="" />
+	<region name="Ð¢Ð°Ñ…Ñ‚Ð°Ð¼ÑƒÐºÐ°Ð¹ÑÐºÐ¸Ð¹ Ñ€Ð°Ð¹Ð¾Ð½" OCATO="79Â 230">
+		<city OCATO="79Â 230Â 820 003" type="Ñ…." name="ÐÐ¿Ð¾ÑÑ‚Ð¾Ð»Ð¸Ð´Ð¸" population="75" foundationYear="1917" size="30,7" comment="" />
+		<city OCATO="79Â 230Â 805 001" type="Ð°." name="ÐÑ„Ð¸Ð¿ÑÐ¸Ð¿" population="2147" foundationYear="1863" size="743" comment="" />
+		<city OCATO="79Â 230Â 557 004" type="Ð¿." name="Ð”Ñ€ÑƒÐ¶Ð½Ñ‹Ð¹" population="433" foundationYear="1958*" size="26,1" comment="" />
+		<city OCATO="79Â 230Â 809 001" type="Ð°." name="ÐšÐ¾Ð·ÐµÑ‚" population="1818" foundationYear="1789" size="190" comment="" />
+		<city OCATO="79Â 230Â 826 004" type="Ñ…." name="ÐšÑ€Ð°ÑÐ½Ð¾Ð°Ñ€Ð¼ÐµÐ¹ÑÐºÐ¸Ð¹" population="52" foundationYear="1923" size="41,6" comment="" />
+		<city OCATO="79Â 230Â 805 002" type="Ð¿." name="ÐšÑƒÐ±Ð°Ð½ÑŒÑÑ‚Ñ€Ð¾Ð¹" population="387" foundationYear="1940" size="60,4" comment="" />
+		<city OCATO="79Â 230Â 820 002" type="Ð°." name="ÐÐ°Ñ‚ÑƒÑ…Ð°Ð¹" population="341" foundationYear="1924" size="110" comment="" />
+		<city OCATO="79Â 230Â 815 002" type="Ð¿." name="ÐÐ¾Ð²Ð°Ñ ÐÐ´Ñ‹Ð³ÐµÑ" population="2209" foundationYear="1879" size="732" comment="" />
+		<city OCATO="79Â 230Â 557 001" type="Ð°." name="ÐÐ¾Ð²Ð¾Ð±Ð¶ÐµÐ³Ð¾ÐºÐ°Ð¹" population="368" foundationYear="1881" size="322,9" comment="" />
+		<city OCATO="79Â 230Â 826 002" type="Ñ…." name="ÐÐ¾Ð²Ð¾Ð¼Ð¾Ð³Ð¸Ð»ÐµÐ²ÑÐºÐ¸Ð¹" population="27" foundationYear="1911" size="82,2" comment="" />
+		<city OCATO="79Â 230Â 559 002" type="Ð¿." name="ÐÐ¾Ð²Ñ‹Ð¹" population="1917" foundationYear="1958*" size="158,6" comment="" />
+		<city OCATO="79Â 230Â 557 002" type="Ñ…." name="ÐÐ¾Ð²Ñ‹Ð¹ Ð¡Ð°Ð´" population="1316" foundationYear="1909" size="170,5" comment="" />
+		<city OCATO="79Â 230Â 820 004" type="Ð¿." name="ÐžÑ‚Ñ€Ð°Ð´Ð½Ñ‹Ð¹" population="680" foundationYear="1888" size="199" comment="" />
+		<city OCATO="79Â 203Â 805 003" type="Ð°." name="ÐŸÐ°Ð½Ð°Ñ…ÐµÑ" population="1488" foundationYear="1883" size="614" comment="" />
+		<city OCATO="79Â 230Â 559 001" type="Ð¿." name="ÐŸÐµÑ€ÐµÐºÐ°Ñ‚Ð½Ñ‹Ð¹" population="237" foundationYear="1991" size="42,6" comment="" />
+		<city OCATO="79Â 230Â 820 005" type="Ð¿." name="ÐŸÑ€Ð¸ÐºÑƒÐ±Ð°Ð½ÑÐºÐ¸Ð¹" population="1076" foundationYear="1958*" size="116,2" comment="" />
+		<city OCATO="79Â 230Â 805 004" type="Ð°." name="ÐŸÑÐµÐ¹Ñ‚ÑƒÐº" population="611" foundationYear="1864" size="302" comment="" />
+		<city OCATO="79Â 230Â 815 001" type="Ð°." name="Ð¡Ñ‚Ð°Ñ€Ð¾Ð±Ð¶ÐµÐ³Ð¾ÐºÐ°Ð¹" population="2104" foundationYear="1826" size="347" comment="" />
+		<city OCATO="79Â 230Â 826 003" type="Ñ…." name="Ð¡Ñ‚Ð°Ñ€Ð¾Ð¼Ð¾Ð³Ð¸Ð»ÐµÐ²ÑÐºÐ¸Ð¹" population="36" foundationYear="1860" size="87,3" comment="" />
+		<city OCATO="79Â 230Â 557 006" type="Ñ…." name="Ð¡ÑƒÐ¿Ð¾Ð²ÑÐºÐ¸Ð¹" population="554" foundationYear="1899" size="335,6" comment="" />
+		<city OCATO="79Â 230Â 820 006" type="Ð¿." name="Ð¡ÑƒÐ¿Ñ" population="71" foundationYear="1963" size="141,6" comment="" />
+		<city OCATO="79Â 230Â 820 001" type="Ð°." name="Ð¢Ð°Ñ…Ñ‚Ð°Ð¼ÑƒÐºÐ°Ð¹" population="5413" foundationYear="1860" size="2684,4" comment="" regionalCenter="true" />
+		<city OCATO="79Â 203Â 805 005" type="Ð°." name="Ð¥Ð°ÑˆÑ‚ÑƒÐº" population="277" foundationYear="1864" size="85,6" comment="" />
+		<city OCATO="79Â 230Â 815 003" type="Ñ…." name="Ð¥Ð¾Ð¼ÑƒÑ‚Ñ‹" population="580" foundationYear="1930" size="365" comment="" />
+		<city OCATO="79Â 230Â 826 001" type="Ð°." name="Ð¨ÐµÐ½Ð´Ð¶Ð¸Ð¹" population="1979" foundationYear="1860" size="489" comment="" />
+		<city OCATO="79Â 230 557" type="Ð¿.Ð³.Ñ‚." name="Ð­Ð½ÐµÐ¼" population="18251" foundationYear="1906" size="2631,9" comment="" />
+		<city OCATO="79Â 230 559" type="Ð¿.Ð³.Ñ‚." name="Ð¯Ð±Ð»Ð¾Ð½Ð¾Ð²ÑÐºÐ¸Ð¹" population="27792" foundationYear="1908" size="979,6" comment="" />
 	</region>
 
-	<region name="Òåó÷åæñêèé ðàéîí" OCATO="79 233">
-		<city OCATO="79 233 805 001" type="à." name="Àññîêîëàé" population="1556" foundationYear="1850" size="521" comment="" />
-		<city OCATO="79 233 810 001" type="à." name="Âî÷åïøèé" population="1362" foundationYear="1860" size="454" comment="" />
-		<city OCATO="79 233 845 001" type="à." name="Ãàáóêàé" population="1855" foundationYear="1842" size="485,4" comment="" />
-		<city OCATO="79 233 815 002" type="õ." name="Ãîðîäñêîé" population="297" foundationYear="1880" size="93,4" comment="" />
-		<city OCATO="79 233 815 001" type="à." name="Äæèäæèõàáëü" population="751" foundationYear="1840" size="285" comment="" />
-		<city OCATO="79 233 830 002" type="ï." name="Çàðÿ" population="-" foundationYear="" size="8,2" comment="" />
-		<city OCATO="79 233 833 003" type="õ." name="Êàçàçîâ" population="283" foundationYear="1901" size="27,9" comment="" />
-		<city OCATO="79 233 830 003" type="õ." name="Êîëîñ" population="174" foundationYear="" size="44,46" comment="" />
-		<city OCATO="79 233 833 004" type="õ." name="Êî÷êèí" population="7" foundationYear="" size="20,9" comment="Ï÷åãàòëóêàéñêîå ñåëüñêîå ïîñåëåíèå" />
-		<city OCATO="79 233 830 004" type="õ." name="Êî÷êèí" population="-" foundationYear="1911" size="7,79" comment="Ïîíåæóêàéñêîå ñåëüñêîå ïîñåëåíèå" />
-		<city OCATO="79 233 833 005" type="õ." name="Êðàñíåíñêèé" population="386" foundationYear="1958*" size="39,4" comment="â ÎÊÀÒÎ çíà÷èòñÿ êàê õ. Êðàñíûé" />
-		<city OCATO="79 233 805 002" type="ñ." name="Êðàñíîå" population="311" foundationYear="1870" size="161" comment="" />
-		<city OCATO="79 233 815 003" type="à." name="Êóí÷óêîõàáëü" population="553" foundationYear="1830" size="183" comment="" />
-		<city OCATO="79 233 830 005" type="à." name="Íà÷åðåçèé" population="339" foundationYear="1976*" size="95,6" comment="" />
-		<city OCATO="79 233 830 008" type="à." name="Íåøóêàé" population="945" foundationYear="1845" size="211,38" comment="" />
-		<city OCATO="79 233 810 002" type="õ." name="Íîâîâî÷åïøèé" population="170" foundationYear="" size="722" comment="" />
-		<city OCATO="79 233 845 002" type="õ." name="Ïåòðîâ" population="295" foundationYear="1900" size="85,5" comment="" />
-		<city OCATO="79 233 830 001" type="à." name="Ïîíåæóêàé" population="3424" foundationYear="1800" size="647,15" comment="" regionalCenter="true" />
-		<city OCATO="79 233 833 001" type="à." name="Ï÷åãàòëóêàé" population="831" foundationYear="1856" size="250,7" comment="" />
-		<city OCATO="79 233 830 006" type="à." name="Ïøèêóéõàáëü" population="280" foundationYear="1850" size="98,77" comment="" />
-		<city OCATO="79 233 815 005" type="à." name="Òàóéõàáëü" population="206" foundationYear="1850" size="74,2" comment="" />
-		<city OCATO="79 233 555" type="ï.ã.ò." name="Òëþñòåíõàáëü" population="5555" foundationYear="1840" size="585,87" comment="" />
-		<city OCATO="79 233 555 001" type="à." name="Òóãóðãîé" population="353" foundationYear="1883" size="128,44" comment="" />
-		<city OCATO="79 233 845 003" type="õ." name="×àáàíîâ" population="36" foundationYear="" size="69,9" comment="" />
-		<city OCATO="79 233 833 007" type="ï." name="×åòóê" population="261" foundationYear="1958*" size="57,8" comment="" />
-		<city OCATO="79 233 845 004" type="õ." name="Øåâ÷åíêî" population="640" foundationYear="1901" size="166,4" comment="" />
-		<city OCATO="79 233 830 007" type="õ." name="Øóíäóê" population="17" foundationYear="1907" size="40,84" comment="" />
+	<region name="Ð¢ÐµÑƒÑ‡ÐµÐ¶ÑÐºÐ¸Ð¹ Ñ€Ð°Ð¹Ð¾Ð½" OCATO="79Â 233">
+		<city OCATO="79Â 233Â 805 001" type="Ð°." name="ÐÑÑÐ¾ÐºÐ¾Ð»Ð°Ð¹" population="1556" foundationYear="1850" size="521" comment="" />
+		<city OCATO="79Â 233Â 810 001" type="Ð°." name="Ð’Ð¾Ñ‡ÐµÐ¿ÑˆÐ¸Ð¹" population="1362" foundationYear="1860" size="454" comment="" />
+		<city OCATO="79Â 233Â 845 001" type="Ð°." name="Ð“Ð°Ð±ÑƒÐºÐ°Ð¹" population="1855" foundationYear="1842" size="485,4" comment="" />
+		<city OCATO="79Â 233Â 815 002" type="Ñ…." name="Ð“Ð¾Ñ€Ð¾Ð´ÑÐºÐ¾Ð¹" population="297" foundationYear="1880" size="93,4" comment="" />
+		<city OCATO="79Â 233Â 815 001" type="Ð°." name="Ð”Ð¶Ð¸Ð´Ð¶Ð¸Ñ…Ð°Ð±Ð»ÑŒ" population="751" foundationYear="1840" size="285" comment="" />
+		<city OCATO="79Â 233Â 830 002" type="Ð¿." name="Ð—Ð°Ñ€Ñ" population="-" foundationYear="" size="8,2" comment="" />
+		<city OCATO="79Â 233Â 833 003" type="Ñ…." name="ÐšÐ°Ð·Ð°Ð·Ð¾Ð²" population="283" foundationYear="1901" size="27,9" comment="" />
+		<city OCATO="79Â 233Â 830 003" type="Ñ…." name="ÐšÐ¾Ð»Ð¾Ñ" population="174" foundationYear="" size="44,46" comment="" />
+		<city OCATO="79Â 233Â 833 004" type="Ñ…." name="ÐšÐ¾Ñ‡ÐºÐ¸Ð½" population="7" foundationYear="" size="20,9" comment="ÐŸÑ‡ÐµÐ³Ð°Ñ‚Ð»ÑƒÐºÐ°Ð¹ÑÐºÐ¾Ðµ ÑÐµÐ»ÑŒÑÐºÐ¾Ðµ Ð¿Ð¾ÑÐµÐ»ÐµÐ½Ð¸Ðµ" />
+		<city OCATO="79Â 233Â 830 004" type="Ñ…." name="ÐšÐ¾Ñ‡ÐºÐ¸Ð½" population="-" foundationYear="1911" size="7,79" comment="ÐŸÐ¾Ð½ÐµÐ¶ÑƒÐºÐ°Ð¹ÑÐºÐ¾Ðµ ÑÐµÐ»ÑŒÑÐºÐ¾Ðµ Ð¿Ð¾ÑÐµÐ»ÐµÐ½Ð¸Ðµ" />
+		<city OCATO="79Â 233Â 833 005" type="Ñ…." name="ÐšÑ€Ð°ÑÐ½ÐµÐ½ÑÐºÐ¸Ð¹" population="386" foundationYear="1958*" size="39,4" comment="Ð² ÐžÐšÐÐ¢Ðž Ð·Ð½Ð°Ñ‡Ð¸Ñ‚ÑÑ ÐºÐ°Ðº Ñ…. ÐšÑ€Ð°ÑÐ½Ñ‹Ð¹" />
+		<city OCATO="79Â 233Â 805 002" type="Ñ." name="ÐšÑ€Ð°ÑÐ½Ð¾Ðµ" population="311" foundationYear="1870" size="161" comment="" />
+		<city OCATO="79Â 233Â 815 003" type="Ð°." name="ÐšÑƒÐ½Ñ‡ÑƒÐºÐ¾Ñ…Ð°Ð±Ð»ÑŒ" population="553" foundationYear="1830" size="183" comment="" />
+		<city OCATO="79Â 233Â 830 005" type="Ð°." name="ÐÐ°Ñ‡ÐµÑ€ÐµÐ·Ð¸Ð¹" population="339" foundationYear="1976*" size="95,6" comment="" />
+		<city OCATO="79Â 233Â 830 008" type="Ð°." name="ÐÐµÑˆÑƒÐºÐ°Ð¹" population="945" foundationYear="1845" size="211,38" comment="" />
+		<city OCATO="79Â 233Â 810 002" type="Ñ…." name="ÐÐ¾Ð²Ð¾Ð²Ð¾Ñ‡ÐµÐ¿ÑˆÐ¸Ð¹" population="170" foundationYear="" size="722" comment="" />
+		<city OCATO="79Â 233Â 845 002" type="Ñ…." name="ÐŸÐµÑ‚Ñ€Ð¾Ð²" population="295" foundationYear="1900" size="85,5" comment="" />
+		<city OCATO="79Â 233Â 830 001" type="Ð°." name="ÐŸÐ¾Ð½ÐµÐ¶ÑƒÐºÐ°Ð¹" population="3424" foundationYear="1800" size="647,15" comment="" regionalCenter="true" />
+		<city OCATO="79Â 233Â 833 001" type="Ð°." name="ÐŸÑ‡ÐµÐ³Ð°Ñ‚Ð»ÑƒÐºÐ°Ð¹" population="831" foundationYear="1856" size="250,7" comment="" />
+		<city OCATO="79Â 233Â 830 006" type="Ð°." name="ÐŸÑˆÐ¸ÐºÑƒÐ¹Ñ…Ð°Ð±Ð»ÑŒ" population="280" foundationYear="1850" size="98,77" comment="" />
+		<city OCATO="79Â 233Â 815 005" type="Ð°." name="Ð¢Ð°ÑƒÐ¹Ñ…Ð°Ð±Ð»ÑŒ" population="206" foundationYear="1850" size="74,2" comment="" />
+		<city OCATO="79Â 233 555" type="Ð¿.Ð³.Ñ‚." name="Ð¢Ð»ÑŽÑÑ‚ÐµÐ½Ñ…Ð°Ð±Ð»ÑŒ" population="5555" foundationYear="1840" size="585,87" comment="" />
+		<city OCATO="79Â 233Â 555 001" type="Ð°." name="Ð¢ÑƒÐ³ÑƒÑ€Ð³Ð¾Ð¹" population="353" foundationYear="1883" size="128,44" comment="" />
+		<city OCATO="79Â 233Â 845 003" type="Ñ…." name="Ð§Ð°Ð±Ð°Ð½Ð¾Ð²" population="36" foundationYear="" size="69,9" comment="" />
+		<city OCATO="79Â 233Â 833 007" type="Ð¿." name="Ð§ÐµÑ‚ÑƒÐº" population="261" foundationYear="1958*" size="57,8" comment="" />
+		<city OCATO="79Â 233Â 845 004" type="Ñ…." name="Ð¨ÐµÐ²Ñ‡ÐµÐ½ÐºÐ¾" population="640" foundationYear="1901" size="166,4" comment="" />
+		<city OCATO="79Â 233Â 830 007" type="Ñ…." name="Ð¨ÑƒÐ½Ð´ÑƒÐº" population="17" foundationYear="1907" size="40,84" comment="" />
 	</region>
 
-	<region name="Øîâãåíîâñêèé ðàéîí" OCATO="79 240">
-		<city OCATO="79 240 812 002" type="õ." name="Âåñåëûé" population="281" foundationYear="1936" size="97,5" comment="" />
-		<city OCATO="79 240 805 001" type="à." name="Äæåðîêàé" population="1157" foundationYear="1864" size="215" comment="" />
-		<city OCATO="79 240 812 003" type="õ." name="Äîðîøåíêî" population="149" foundationYear="1888" size="46" comment="" />
-		<city OCATO="79 240 808 001" type="õ." name="Äóêìàñîâ" population="511" foundationYear="1864" size="189,7" comment="" />
-		<city OCATO="79 240 812 004" type="õ." name="Çàäóíàåâñêèé" population="36" foundationYear="1870" size="32,3" comment="" />
-		<city OCATO="79 240 812 001" type="ï." name="Çàðåâî" population="1023" foundationYear="1963" size="163,3" comment="" />
-		<city OCATO="79 240 825 002" type="à." name="Êàáåõàáëü" population="1091" foundationYear="1859" size="184,6" comment="" />
-		<city OCATO="79 240 808 002" type="õ." name="Êàñàòêèí" population="149" foundationYear="1869" size="89,3" comment="" />
-		<city OCATO="79 240 812 005" type="õ." name="Êåëåìåòîâ" population="30" foundationYear="1863" size="56,2" comment="" />
-		<city OCATO="79 240 830 002" type="õ." name="Êèðîâ" population="108" foundationYear="" size="67,2" comment="" />
-		<city OCATO="79 240 812 006" type="õ." name="Ëåéáîàáàçîâ" population="98" foundationYear="1885" size="68,3" comment="" />
-		<city OCATO="79 240 825 003" type="ï." name="Ëåñõîçíûé" population="6" foundationYear="1963" size="1,8" comment="" />
-		<city OCATO="79 240 808 005" type="õ." name="Ìàìàöåâ" population="245" foundationYear="1880" size="59,3" comment="" />
-		<city OCATO="79 240 818 001" type="à." name="Ìàìõåã" population="2008" foundationYear="1864" size="343" comment="" />
-		<city OCATO="79 240 812 007" type="õ." name="Ìèõàéëîâ" population="90" foundationYear="1885" size="37,3" comment="" />
-		<city OCATO="79 240 808 004" type="õ." name="Ìîêðîíàçàðîâ" population="372" foundationYear="1887" size="117,7" comment="" />
-		<city OCATO="79 240 812 008" type="õ." name="Íîâîðóñîâ" population="88" foundationYear="1863" size="35,9" comment="" />
-		<city OCATO="79 240 808 006" type="õ." name="Îðåõîâ" population="151" foundationYear="1863" size="74,9" comment="" />
-		<city OCATO="79 240 808 007" type="õ." name="Ïåíòþõîâ" population="114" foundationYear="1875" size="36,9" comment="" />
-		<city OCATO="79 240 808 008" type="õ." name="Ïèêàëèí" population="60" foundationYear="1875" size="36,9" comment="" />
-		<city OCATO="79 240 825 004" type="à." name="Ïøèçîâ" population="912" foundationYear="1870" size="179" comment="" />
-		<city OCATO="79 240 825 001" type="à." name="Ïøè÷î" population="1083" foundationYear="1864" size="208,8" comment="" />
-		<city OCATO="79 240 805 002" type="õ." name="Ñâîáîäíûé Òðóä" population="349" foundationYear="1920" size="237" comment="" />
-		<city OCATO="79 240 805 003" type="õ." name="Ñåìåíî-Ìàêàðåíñêèé" population="106" foundationYear="1891" size="89" comment="" />
-		<city OCATO="79 240 808 009" type="õ." name="Òèõîíîâ" population="374" foundationYear="1887" size="113,9" comment="" />
-		<city OCATO="79 240 812 009" type="ï." name="Óëüñêèé" population="149" foundationYear="1963*" size="37,1" comment="" />
-		<city OCATO="79 240 830 001" type="à." name="Õàêóðèíîõàáëü" population="4018" foundationYear="1862" size="648" comment="" regionalCenter="true" />
-		<city OCATO="79 240 830 004" type="õ." name="Õàïà÷åâ" population="215" foundationYear="1884" size="84" comment="" />
-		<city OCATO="79 240 825 005" type="à." name="Õàòàæóêàé" population="934" foundationYear="1840" size="238,6" comment="" />
-		<city OCATO="79 240 812 010" type="õ." name="×åðíûøåâ" population="830" foundationYear="1880" size="220,4" comment="" />
-		<city OCATO="79 240 808 010" type="õ." name="×èêàëîâ" population="122" foundationYear="1885" size="36,9" comment="" />
+	<region name="Ð¨Ð¾Ð²Ð³ÐµÐ½Ð¾Ð²ÑÐºÐ¸Ð¹ Ñ€Ð°Ð¹Ð¾Ð½" OCATO="79Â 240">
+		<city OCATO="79Â 240Â 812 002" type="Ñ…." name="Ð’ÐµÑÐµÐ»Ñ‹Ð¹" population="281" foundationYear="1936" size="97,5" comment="" />
+		<city OCATO="79Â 240Â 805 001" type="Ð°." name="Ð”Ð¶ÐµÑ€Ð¾ÐºÐ°Ð¹" population="1157" foundationYear="1864" size="215" comment="" />
+		<city OCATO="79Â 240Â 812 003" type="Ñ…." name="Ð”Ð¾Ñ€Ð¾ÑˆÐµÐ½ÐºÐ¾" population="149" foundationYear="1888" size="46" comment="" />
+		<city OCATO="79Â 240Â 808 001" type="Ñ…." name="Ð”ÑƒÐºÐ¼Ð°ÑÐ¾Ð²" population="511" foundationYear="1864" size="189,7" comment="" />
+		<city OCATO="79Â 240Â 812 004" type="Ñ…." name="Ð—Ð°Ð´ÑƒÐ½Ð°ÐµÐ²ÑÐºÐ¸Ð¹" population="36" foundationYear="1870" size="32,3" comment="" />
+		<city OCATO="79Â 240Â 812 001" type="Ð¿." name="Ð—Ð°Ñ€ÐµÐ²Ð¾" population="1023" foundationYear="1963" size="163,3" comment="" />
+		<city OCATO="79Â 240Â 825 002" type="Ð°." name="ÐšÐ°Ð±ÐµÑ…Ð°Ð±Ð»ÑŒ" population="1091" foundationYear="1859" size="184,6" comment="" />
+		<city OCATO="79Â 240Â 808 002" type="Ñ…." name="ÐšÐ°ÑÐ°Ñ‚ÐºÐ¸Ð½" population="149" foundationYear="1869" size="89,3" comment="" />
+		<city OCATO="79Â 240Â 812 005" type="Ñ…." name="ÐšÐµÐ»ÐµÐ¼ÐµÑ‚Ð¾Ð²" population="30" foundationYear="1863" size="56,2" comment="" />
+		<city OCATO="79Â 240Â 830 002" type="Ñ…." name="ÐšÐ¸Ñ€Ð¾Ð²" population="108" foundationYear="" size="67,2" comment="" />
+		<city OCATO="79Â 240Â 812 006" type="Ñ…." name="Ð›ÐµÐ¹Ð±Ð¾Ð°Ð±Ð°Ð·Ð¾Ð²" population="98" foundationYear="1885" size="68,3" comment="" />
+		<city OCATO="79Â 240Â 825 003" type="Ð¿." name="Ð›ÐµÑÑ…Ð¾Ð·Ð½Ñ‹Ð¹" population="6" foundationYear="1963" size="1,8" comment="" />
+		<city OCATO="79Â 240Â 808 005" type="Ñ…." name="ÐœÐ°Ð¼Ð°Ñ†ÐµÐ²" population="245" foundationYear="1880" size="59,3" comment="" />
+		<city OCATO="79Â 240Â 818 001" type="Ð°." name="ÐœÐ°Ð¼Ñ…ÐµÐ³" population="2008" foundationYear="1864" size="343" comment="" />
+		<city OCATO="79Â 240Â 812 007" type="Ñ…." name="ÐœÐ¸Ñ…Ð°Ð¹Ð»Ð¾Ð²" population="90" foundationYear="1885" size="37,3" comment="" />
+		<city OCATO="79Â 240Â 808 004" type="Ñ…." name="ÐœÐ¾ÐºÑ€Ð¾Ð½Ð°Ð·Ð°Ñ€Ð¾Ð²" population="372" foundationYear="1887" size="117,7" comment="" />
+		<city OCATO="79Â 240Â 812 008" type="Ñ…." name="ÐÐ¾Ð²Ð¾Ñ€ÑƒÑÐ¾Ð²" population="88" foundationYear="1863" size="35,9" comment="" />
+		<city OCATO="79Â 240Â 808 006" type="Ñ…." name="ÐžÑ€ÐµÑ…Ð¾Ð²" population="151" foundationYear="1863" size="74,9" comment="" />
+		<city OCATO="79Â 240Â 808 007" type="Ñ…." name="ÐŸÐµÐ½Ñ‚ÑŽÑ…Ð¾Ð²" population="114" foundationYear="1875" size="36,9" comment="" />
+		<city OCATO="79Â 240Â 808 008" type="Ñ…." name="ÐŸÐ¸ÐºÐ°Ð»Ð¸Ð½" population="60" foundationYear="1875" size="36,9" comment="" />
+		<city OCATO="79Â 240Â 825 004" type="Ð°." name="ÐŸÑˆÐ¸Ð·Ð¾Ð²" population="912" foundationYear="1870" size="179" comment="" />
+		<city OCATO="79Â 240Â 825 001" type="Ð°." name="ÐŸÑˆÐ¸Ñ‡Ð¾" population="1083" foundationYear="1864" size="208,8" comment="" />
+		<city OCATO="79Â 240Â 805 002" type="Ñ…." name="Ð¡Ð²Ð¾Ð±Ð¾Ð´Ð½Ñ‹Ð¹ Ð¢Ñ€ÑƒÐ´" population="349" foundationYear="1920" size="237" comment="" />
+		<city OCATO="79Â 240Â 805 003" type="Ñ…." name="Ð¡ÐµÐ¼ÐµÐ½Ð¾-ÐœÐ°ÐºÐ°Ñ€ÐµÐ½ÑÐºÐ¸Ð¹" population="106" foundationYear="1891" size="89" comment="" />
+		<city OCATO="79Â 240Â 808 009" type="Ñ…." name="Ð¢Ð¸Ñ…Ð¾Ð½Ð¾Ð²" population="374" foundationYear="1887" size="113,9" comment="" />
+		<city OCATO="79Â 240Â 812 009" type="Ð¿." name="Ð£Ð»ÑŒÑÐºÐ¸Ð¹" population="149" foundationYear="1963*" size="37,1" comment="" />
+		<city OCATO="79Â 240Â 830 001" type="Ð°." name="Ð¥Ð°ÐºÑƒÑ€Ð¸Ð½Ð¾Ñ…Ð°Ð±Ð»ÑŒ" population="4018" foundationYear="1862" size="648" comment="" regionalCenter="true" />
+		<city OCATO="79Â 240Â 830 004" type="Ñ…." name="Ð¥Ð°Ð¿Ð°Ñ‡ÐµÐ²" population="215" foundationYear="1884" size="84" comment="" />
+		<city OCATO="79Â 240Â 825 005" type="Ð°." name="Ð¥Ð°Ñ‚Ð°Ð¶ÑƒÐºÐ°Ð¹" population="934" foundationYear="1840" size="238,6" comment="" />
+		<city OCATO="79Â 240Â 812 010" type="Ñ…." name="Ð§ÐµÑ€Ð½Ñ‹ÑˆÐµÐ²" population="830" foundationYear="1880" size="220,4" comment="" />
+		<city OCATO="79Â 240Â 808 010" type="Ñ…." name="Ð§Ð¸ÐºÐ°Ð»Ð¾Ð²" population="122" foundationYear="1885" size="36,9" comment="" />
 	</region>
 
 </republic>
