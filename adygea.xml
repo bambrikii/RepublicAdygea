@@ -1,0 +1,241 @@
+<?xml version="1.0" ?>
+<republic name="Республика Адыгея">
+	<region name="ГИАГИНСКИЙ РАЙОН">
+<city name="Владимировское" type="село" population="25" closestRailwayStationName="Гиагинская" size="14" />
+<city name="Вольно-Веселый" type="хутор" population="26" closestRailwayStationName="Дондуковская" size="14" />
+<city name="Георгиевское" type="село" population="48" closestRailwayStationName="Дондуковская" size="23" />
+<city name="Гиагинская " type="станица" population="-" closestRailwayStationName="Гиагинская" size="5" regionalCenter="true" />
+<city name="Гончарка" type="поселок" population="16" closestRailwayStationName="Гончарка " size="0,9" />
+<city name="Днепровский" type="хутор" population="45,3" closestRailwayStationName="Дондуковская" size="20" />
+<city name="Дондуковская " type="станица" population="27" closestRailwayStationName="Дондуковская" size="2,6" />
+<city name="Екатериновский" type="хутор" population="43" closestRailwayStationName="Дондуковская" size="18" />
+<city name="Карцев" type="хутор" population="47" closestRailwayStationName="Дондуковская" size="22" />
+<city name="Келермесская " type="станица" population="12" closestRailwayStationName="Гиагинская" size="6,6" />
+<city name="Козополянский" type="хутор" population="49" closestRailwayStationName="Дондуковская" size="23" />
+<city name="Колхозный" type="хутор" population="36,5" closestRailwayStationName="Дондуковская" size="20,9" />
+<city name="Красный Пахарь" type="хутор" population="44,2" closestRailwayStationName="Дондуковская" size="20" />
+<city name="Красный Хлебороб" type="хутор" population="16" closestRailwayStationName="Гиагинская" size="16" />
+<city name="Курский" type="хутор" population="42" closestRailwayStationName="Дондуковская" size="16" />
+<city name="Лесной" type="поселок" population="18" closestRailwayStationName="Гиагинская" size="11" />
+<city name="Михельсоновский" type="хутор" population="37" closestRailwayStationName="Дондуковская" size="14,9" />
+<city name="Нечаевский" type="хутор" population="30" closestRailwayStationName="Дондуковская" size="4,9" />
+<city name="Нижний Айрюм" type="село" population="20" closestRailwayStationName="Гиагинская " size="15" />
+<city name="Новый" type="поселок" population="20" closestRailwayStationName="Гиагинская" size="19" />
+<city name="Образцовое" type="село" population="13" closestRailwayStationName="Гиагинская" size="12" />
+<city name="Первомайский" type="хутор" population="12" closestRailwayStationName="Гиагинская" size="16" />
+<city name="Прогресс" type="хутор" population="14" closestRailwayStationName="Гиагинская" size="12" />
+<city name="Садовый" type="хутор" population="22" closestRailwayStationName="Гиагинская" size="21" />
+<city name="Сергиевское " type="село" population="37" closestRailwayStationName="Дондуковская" size="12" />
+<city name="Смольчев-Малиновский" type="хутор" population="37" closestRailwayStationName="Дондуковская" size="8" />
+<city name="Тамбовский" type="хутор" population="48" closestRailwayStationName="Дондуковская" size="16,4" />
+<city name="Фарсовский" type="хутор" population="51" closestRailwayStationName="Дондуковская" size="20,8" />
+<city name="Черемушкин" type="хутор" population="19" closestRailwayStationName="Гиагинская" size="14" />
+<city name="Шишкинский" type="хутор" population="43" closestRailwayStationName="Дондуковская" size="17" />
+	</region>
+	<region name="КОШЕХАБЛЬСКИЙ РАЙОН">
+<city name="Блечепсин " type="аул" population="9" closestRailwayStationName="Кошехабль" size="9" />
+<city name="Вольное " type="село" population="39" closestRailwayStationName="Лабинская" size="5,4" />
+<city name="Дмитриевский" type="хутор" population="11" closestRailwayStationName="Дондуковская" size="7,1" />
+<city name="Дружба" type="поселок" population="9,8" closestRailwayStationName="Дондуковская" size="5,3" />
+<city name="Егерухай " type="аул" population="16" closestRailwayStationName="Кошехабль" size="14" />
+<city name="Игнатьевский " type="хутор" population="8,2" closestRailwayStationName="Кошехабль" size="7,3" />
+<city name="Казенно-Кужорский" type="хутор" population="32" closestRailwayStationName="Лабинская" size="8" />
+<city name="Кармолино-Гидроицкий" type="хутор" population="47" closestRailwayStationName="Лабинская" size="12,8" />
+<city name="Комсомольский" type="поселок" population="6,4" closestRailwayStationName="Кошехабль" size="6,4" />
+<city name="Кошехабль " type="аул" population="-" closestRailwayStationName="Кошехабль" size="-" regionalCenter="true" />
+<city name="Красный" type="хутор" population="18" closestRailwayStationName="Кошехабль" size="18" />
+<city name="Красный Фарс" type="хутор" population="13,6" closestRailwayStationName="Дондуковская" size="5,7" />
+<city name="Майский " type="поселок" population="15" closestRailwayStationName="Кошехабль" size="16" />
+<city name="Натырбово" type="село" population="27" closestRailwayStationName="Кошехабль" size="24" />
+<city name="Новоалексеевский" type="хутор" population="10,9" closestRailwayStationName="Дондуковская" size="5" />
+<city name="Отрадный" type="хутор" population="13,7" closestRailwayStationName="Дондуковская" size="6,8" />
+<city name="Плодопитомник" type="поселок" population="12,5" closestRailwayStationName="Дондуковская" size="5,9" />
+<city name="Политотдел" type="хутор" population="14" closestRailwayStationName="Дондуковская" size="8,2" />
+<city name="Соколов" type="хутор" population="20" closestRailwayStationName="Дондуковская" size="21" />
+<city name="Хачемзий" type="аул" population="17" closestRailwayStationName="Дондуковская" size="9,8" />
+<city name="Ходзь " type="аул" population="53" closestRailwayStationName="Лабинская" size="26" />
+<city name="Чехрак" type="поселок" population="12" closestRailwayStationName="Дондуковская" size="6,5" comment="Дмитриевское сельское поселение" />
+<city name="Чехрак" type="хутор" population="18" closestRailwayStationName="Кошехабль" size="19" comment="Майское сельское поселение" />
+<city name="Шелковников" type="хутор" population="43,8" closestRailwayStationName="Лабинская" size="17" />
+	</region>
+	<region name="КРАСНОГВАРДЕЙСКИЙ РАЙОН">
+<city name="Адамий" type="аул" population="10,3" closestRailwayStationName="Усть-Лабинск" size="26" />
+<city name="Белое " type="село" population="15" closestRailwayStationName="Усть-Лабинск" size="24" />
+<city name="Бжедугхабль" type="аул" population="21" closestRailwayStationName="Белореченская" size="31" />
+<city name="Богурсуков" type="хутор" population="18" closestRailwayStationName="Усть-Лабинск" size="30" />
+<city name="Большесидоровское " type="село" population="26" closestRailwayStationName="Усть-Лабинск" size="35" />
+<city name="Верхненазаровское" type="село" population="32" closestRailwayStationName="Белореченская" size="47" />
+<city name="Водный" type="поселок" population="11" closestRailwayStationName="Усть-Лабинск" size="14" />
+<city name="Джамбечи" type="аул" population="27" closestRailwayStationName="Усть-Лабинск" size="37" />
+<city name="Догужиев" type="хутор" population="18,3" closestRailwayStationName="Усть-Лабинск" size="16" />
+<city name="Еленовское " type="село" population="12" closestRailwayStationName="Усть-Лабинск" size="21" />
+<city name="Красногвардейское " type="село" population="-" closestRailwayStationName="Усть-Лабинск" size="17" regionalCenter="true" />
+<city name="Лесной" type="поселок" population="5,4" closestRailwayStationName="Усть-Лабинск" size="9,7" />
+<city name="Мирный" type="поселок" population="11" closestRailwayStationName="Усть-Лабинск" size="26" />
+<city name="Набережный" type="поселок" population="13,2" closestRailwayStationName="Усть-Лабинск" size="7,5" />
+<city name="Новосевастопольское" type="село" population="16" closestRailwayStationName="Усть-Лабинск" size="27" />
+<city name="Папенков" type="хутор" population="8,6" closestRailwayStationName="Усть-Лабинск" size="24" />
+<city name="Преображенское" type="село" population="9" closestRailwayStationName="Усть-Лабинск" size="20" />
+<city name="Пустоселов" type="хутор" population="16" closestRailwayStationName="Усть-Лабинск" size="14" />
+<city name="Садовое " type="село" population="18,8" closestRailwayStationName="Белореченская" size="33" />
+<city name="Саратовский" type="хутор" population="17" closestRailwayStationName="Усть-Лабинск" size="20" />
+<city name="Свободный" type="поселок" population="8,3" closestRailwayStationName="Усть-Лабинск" size="12" />
+<city name="Уляп " type="аул" population="33" closestRailwayStationName="Гиагинская" size="33" />
+<city name="Хатукай " type="аул" population="9,3" closestRailwayStationName="Усть-Лабинск" size="5,4" />
+<city name="Чумаков" type="хутор" population="13" closestRailwayStationName="Усть-Лабинск" size="28" />
+<city name="Штурбино" type="село" population="29" closestRailwayStationName="Гиагинская" size="36" />
+	</region>
+	<region name="МАЙКОПСКИЙ РАЙОН">
+
+<city name="17 лет Октября" type="хутор" population="17,2" closestRailwayStationName="Майкоп" size="9,9" />
+<city name="Абадзехская " type="станица" population="15" closestRailwayStationName="Хаджох" size="12" />
+<city name="Безводная" type="станица" population="40" closestRailwayStationName="Майкоп" size="44" />
+<city name="Веселый" type="хутор" population="13" closestRailwayStationName="Хаджох" size="17" comment="Абадзехское сельское поселение" />
+<city name="Веселый" type="хутор" population="38" closestRailwayStationName="Хаджох" size="11" comment="Каменномостское сельское поселение" />
+<city name="Вольный" type="хутор" population="30" closestRailwayStationName="Майкоп" size="17,4" />
+<city name="Гражданский" type="хутор" population="30" closestRailwayStationName="Майкоп" size="11" />
+<city name="Грозный" type="хутор" population="28" closestRailwayStationName="Майкоп" size="15" comment="Кировское сельское поселение" />
+<city name="Грозный" type="хутор" population="12" closestRailwayStationName="Майкоп" size="17" comment="Победенское сельское поселение" />
+<city name="Гузерипль" type="поселок" population="70" closestRailwayStationName="Хаджох" size="42" />
+<city name="Дагестанская" type="станица" population="32,7" closestRailwayStationName="Майкоп" size="36,3" />
+<city name="Даховская " type="станица" population="36" closestRailwayStationName="Хаджох" size="8,4" />
+<city name="Дьяков" type="хутор" population="30" closestRailwayStationName="Майкоп" size="12" />
+<city name="Калинин" type="хутор" population="30" closestRailwayStationName="Майкоп" size="11" />
+<city name="Каменномостский " type="поселок" population="27" closestRailwayStationName="Хаджох" size="-" />
+<city name="Кармир-Астх" type="хутор" population="30" closestRailwayStationName="Майкоп" size="16" />
+<city name="Коминтерн" type="хутор" population="34" closestRailwayStationName="Майкоп" size="16" />
+<city name="Красная Улька  " type="хутор" population="32" closestRailwayStationName="Майкоп" size="13" />
+<city name="Краснооктябрьский " type="поселок" population="20" closestRailwayStationName="Майкоп" size="9,6" />
+<city name="Красный Мост" type="хутор" population="18" closestRailwayStationName="Майкоп" size="17,1" />
+<city name="Кужорская " type="станица" population="30" closestRailwayStationName="Майкоп" size="24" />
+<city name="Курджипская" type="станица" population="21" closestRailwayStationName="Майкоп" size="27" />
+<city name="Мафэхабль" type="аул" population="19" closestRailwayStationName="Майкоп" size="13" />
+<city name="Махошеполяна" type="село" population="29" closestRailwayStationName="Тульская" size="34" />
+<city name="Меркулаевка" type="поселок" population="46" closestRailwayStationName="Хаджох" size="8,4" />
+<city name="Мирный" type="поселок" population="31" closestRailwayStationName="Майкоп" size="20,7" />
+<city name="Мичурина" type="поселок" population="8,9" closestRailwayStationName="Тульская" size="8,4" />
+<city name="Никель" type="поселок" population="45" closestRailwayStationName="Хаджох" size="44" />
+<city name="Новопрохладное" type="село" population="54" closestRailwayStationName="Хаджох" size="26" />
+<city name="Новосвободная" type="станица" population="36" closestRailwayStationName="Хаджох" size="32" />
+<city name="Октябрьский" type="хутор" population="25" closestRailwayStationName="Майкоп" size="18" />
+<city name="Первомайский" type="поселок" population="14" closestRailwayStationName="Хаджох" size="18" />
+<city name="Победа" type="поселок" population="5,8" closestRailwayStationName="Майкоп" size="12,2" comment="Победенское сельское поселение" />
+<city name="Победа" type="поселок" population="32" closestRailwayStationName="Хаджох" size="16" comment="Каменномостское сельское поселение" />
+<city name="Подгорный" type="поселок" population="6,3" closestRailwayStationName="Тульская " size="5,7" />
+<city name="Приречный" type="поселок" population="21" closestRailwayStationName="Майкоп" size="10,8" />
+<city name="Причтовский" type="хутор" population="7,6" closestRailwayStationName="Тульская" size="3,6" />
+<city name="Пролетарский" type="хутор" population="19" closestRailwayStationName="Майкоп" size="8,3" />
+<city name="Садовый" type="хутор" population="16" closestRailwayStationName="Майкоп " size="10,4" comment="Красно октябрьское сельское поселение" />
+<city name="Садовый" type="поселок" population="9,5" closestRailwayStationName="Тульская" size="9,1" comment="Тимирязевское сельское поселение" />
+<city name="Севастопольская" type="станица" population="25" closestRailwayStationName="Хаджох" size="21" />
+<city name="Северо-Восточные Сады " type="хутор" population="19" closestRailwayStationName="Майкоп" size="5" />
+<city name="Советский" type="хутор" population="10" closestRailwayStationName="Майкоп" size="7" />
+<city name="Совхозный " type="поселок" population="4,1" closestRailwayStationName="Тульская" size="7" />
+<city name="Спокойный" type="поселок" population="22" closestRailwayStationName="Майкоп" size="9,7" />
+<city name="Табачный" type="поселок" population="22" closestRailwayStationName="Майкоп" size="10" />
+<city name="Тимирязева " type="поселок" population="6" closestRailwayStationName="Тульская" size="5,5" />
+<city name="Ткачев" type="хутор" population="37" closestRailwayStationName="Майкоп" size="18" />
+<city name="Трехречный" type="поселок" population="39" closestRailwayStationName="Майкоп" size="31,8" />
+<city name="Тульский " type="поселок" population="-" closestRailwayStationName="Тульская" size="5,9" regionalCenter="true" />
+<city name="Удобный" type="поселок" population="5,5" closestRailwayStationName="Тульская" size="6,9" />
+<city name="Усть-Сахрай" type="поселок" population="42" closestRailwayStationName="Хаджох" size="15" />
+<city name="Хакодзь" type="поселок" population="39" closestRailwayStationName="Тульская" size="39" />
+<city name="Хамышки" type="село" population="57" closestRailwayStationName="Хаджох" size="29" />
+<city name="Цветочный" type="поселок" population="8,7" closestRailwayStationName="Тульская" size="3,3" />
+<city name="Шаумян" type="хутор" population="7,9" closestRailwayStationName="Тульская" size="4" />
+<city name="Шунтук" type="хутор" population="7,5" closestRailwayStationName="Тульская" size="7" />
+
+	</region>
+	<region name="ТАХТАМУКАЙСКИЙ РАЙОН">
+<city name="Апостолиди" type="хутор" population="7,1" closestRailwayStationName="Энем-1" size="14" />
+<city name="Афипсип " type="аул" population="31" closestRailwayStationName="Кубань" size="20" />
+<city name="Дружный" type="поселок" population="11" closestRailwayStationName="Энем-1" size="3,8" />
+<city name="Козет" type="аул" population="8,6" closestRailwayStationName="Кубань" size="5,8" />
+<city name="Красноармейский" type="хутор" population="16" closestRailwayStationName="Шенджий" size="3,2" />
+<city name="Кубаньстрой" type="поселок" population="26" closestRailwayStationName="Кубань" size="15" />
+<city name="Натухай" type="аул" population="10,2" closestRailwayStationName="Энем-1" size="18" />
+<city name="Новая Адыгея" type="поселок" population="19" closestRailwayStationName="Кубань " size="5,3" />
+<city name="Новобжегокай" type="аул" population="23" closestRailwayStationName="Энем-1" size="6,9" />
+<city name="Новомогилевский" type="хутор" population="17" closestRailwayStationName="Шенджий" size="4,5" />
+<city name="Новый" type="поселок" population="18" closestRailwayStationName="Кубань" size="5,2" />
+<city name="Новый Сад" type="хутор" population="14" closestRailwayStationName="Энем-1" size="6,3" />
+<city name="Отрадный" type="поселок" population="9,5" closestRailwayStationName="Энем-1" size="9,8" />
+<city name="Панахес" type="аул" population="35" closestRailwayStationName="Кубань" size="25" />
+<city name="Перекатный" type="поселок" population="21" closestRailwayStationName="Кубань" size="6,3" />
+<city name="Прикубанский" type="поселок" population="4,25" closestRailwayStationName="Кубань" size="10,9" />
+<city name="Псейтук" type="аул" population="41" closestRailwayStationName="Кубань" size="30" />
+<city name="Старобжегокай" type="аул" population="22" closestRailwayStationName="Кубань" size="7,6" />
+<city name="Старомогилевский" type="хутор" population="21" closestRailwayStationName="Шенджий" size="8,1" />
+<city name="Суповский" type="хутор" population="7,4" closestRailwayStationName="Энем-1" size="5,9" />
+<city name="Супс" type="поселок" population="3,6" closestRailwayStationName="Энем-1" size="3,7" />
+<city name="Тахтамукай " type="аул" population="-" closestRailwayStationName="Энем-1" size="7,6" regionalCenter="true" />
+<city name="Хаштук" type="аул" population="40" closestRailwayStationName="Кубань" size="29,5" />
+<city name="Хомуты" type="хутор" population="19" closestRailwayStationName="Кубань" size="8,6" />
+<city name="Шенджий " type="аул" population="11" closestRailwayStationName="Шенджий" size="2,2" />
+	</region>
+
+	<region name="ТЕУЧЕЖСКИЙ РАЙОН">
+<city name="Ассоколай " type="аул" population="11,6" closestRailwayStationName="Псекупс" size="37" />
+<city name="Вочепший " type="аул" population="17" closestRailwayStationName="Псекупс" size="24" />
+<city name="Габукай " type="аул" population="18" closestRailwayStationName="Белореченская" size="41" />
+<city name="Городской" type="хутор" population="16,5" closestRailwayStationName="Псекупс" size="46" />
+<city name="Джиджихабль" type="аул" population="9,7" closestRailwayStationName="Псекупс" size="39" />
+<city name="Заря" type="поселок" population="5,8" closestRailwayStationName="Псекупс" size="25" />
+<city name="Казазов" type="хутор" population="20" closestRailwayStationName="Псекупс" size="14" />
+<city name="Колос" type="хутор" population="3" closestRailwayStationName="Псекупс" size="34" />
+<city name="Кочкин" type="хутор" population="24" closestRailwayStationName="Псекупс" size="10" comment="Пчегатлукайское сельское поселение" />
+<city name="Кочкин" type="хутор" population="6,4" closestRailwayStationName="Псекупс" size="35" comment="Понежукайское сельское поселение" />
+<city name="Красненский" type="хутор" population="27" closestRailwayStationName="Псекупс" size="14" />
+<city name="Красное" type="село" population="7,6" closestRailwayStationName="Псекупс" size="35" />
+<city name="Кунчукохабль" type="аул" population="19" closestRailwayStationName="Псекупс" size="49" />
+<city name="Начерезий" type="аул" population="4,1" closestRailwayStationName="Псекупс" size="35" />
+<city name="Нешукай" type="аул" population="4,1" closestRailwayStationName="Псекупс" size="34" />
+<city name="Нововочепший" type="хутор" population="12" closestRailwayStationName="Псепус" size="21" />
+<city name="Петров" type="хутор" population="18" closestRailwayStationName="Псекупс" size="45" />
+<city name="Понежукай " type="аул" population="-" closestRailwayStationName="Псекупс" size="29" regionalCenter="true" />
+<city name="Пчегатлукай " type="аул" population="16" closestRailwayStationName="Псекупс" size="15" />
+<city name="Пшикуйхабль" type="аул" population="6,3" closestRailwayStationName="Псекупс" size="35" />
+<city name="Тауйхабль" type="аул" population="14,1" closestRailwayStationName="Псекупс" size="40,9" />
+<city name="Тугургой" type="аул" population="28" closestRailwayStationName="Кубань" size="18" />
+<city name="Чабанов" type="хутор" population="27" closestRailwayStationName="Белореченская" size="41" />
+<city name="Четук" type="поселок" population="25" closestRailwayStationName="Псекупс" size="13" />
+<city name="Шевченко" type="хутор" population="14" closestRailwayStationName="Псекупс" size="41" />
+<city name="Шундук" type="хутор " population="5,1" closestRailwayStationName="Псекупс" size="32" />
+
+	</region>
+
+	<region name="ШОВГЕНОВСКИЙ РАЙОН">
+<city name="Веселый" type="хутор" population="28" closestRailwayStationName="Гиагинская" size="30" />
+<city name="Джерокай " type="аул" population="9,4" closestRailwayStationName="Дондуковская" size="14" />
+<city name="Дорошенко" type="хутор" population="7,6" closestRailwayStationName="Гиагинская" size="24" />
+<city name="Дукмасов " type="хутор" population="40" closestRailwayStationName="Гиагинская" size="25" />
+<city name="Задунаевский" type="хутор" population="14" closestRailwayStationName="Гиагинская" size="27" />
+<city name="Зарево " type="поселок" population="19" closestRailwayStationName="Гиагинская" size="20" />
+<city name="Кабехабль" type="аул" population="6,7" closestRailwayStationName="Дондуковская" size="28" />
+<city name="Касаткин" type="хутор" population="38" closestRailwayStationName="Гиагинская" size="15" />
+<city name="Келеметов" type="хутор" population="21" closestRailwayStationName="Гиагинская" size="16" />
+<city name="Киров" type="хутор" population="12,3" closestRailwayStationName="Дондуковская" size="33" />
+<city name="Лейбоабазов" type="хутор" population="11,7" closestRailwayStationName="Гиагинская" size="25" />
+<city name="Лесхозный" type="поселок" population="12" closestRailwayStationName="Гиагинская" size="40" />
+<city name="Мамацев" type="хутор" population="37,6" closestRailwayStationName="Гиагинская" size="14" />
+<city name="Мамхег" type="аул" population="1,9" closestRailwayStationName="Дондуковская" size="22" />
+<city name="Михайлов" type="хутор" population="13" closestRailwayStationName="Гиагинская" size="26" />
+<city name="Мокроназаров" type="хутор" population="39" closestRailwayStationName="Гиагинская" size="23" />
+<city name="Новорусов" type="хутор" population="11" closestRailwayStationName="Гиагинская" size="23" />
+<city name="Орехов" type="хутор" population="30" closestRailwayStationName="Гиагинская" size="23" />
+<city name="Пентюхов" type="хутор" population="36" closestRailwayStationName="Гиагинская" size="18" />
+<city name="Пикалин" type="хутор" population="39" closestRailwayStationName="Гиагинская" size="16" />
+<city name="Пшизов" type="аул" population="16" closestRailwayStationName="Дондуковская" size="38" />
+<city name="Пшичо " type="аул" population="9,2" closestRailwayStationName="Дондуковская" size="30" />
+<city name="Свободный Труд" type="хутор" population="8,3" closestRailwayStationName="Дондуковская" size="16" />
+<city name="Семено-Макаренский" type="хутор" population="20" closestRailwayStationName="Дондуковская" size="16" />
+<city name="Тихонов" type="хутор" population="37" closestRailwayStationName="Гиагинская" size="19" />
+<city name="Ульский" type="поселок" population="23" closestRailwayStationName="Гиагинская" size="24" />
+<city name="Хакуринохабль " type="аул" population="-" closestRailwayStationName="Дондуковская" size="21" />
+<city name="Хапачев" type="хутор" population="13" closestRailwayStationName="Дондуковская" size="34" />
+<city name="Хатажукай" type="аул" population="8,4" closestRailwayStationName="Дондуковская" size="29" />
+<city name="Чернышев" type="хутор" population="27" closestRailwayStationName="Гиагинская" size="28" />
+<city name="Чикалов" type="хутор" population="37" closestRailwayStationName="Гиагинская" size="18" />
+	</region>
+
+</republic>
