@@ -17,13 +17,13 @@
 		<city OCATO="79 205 815 002" type="с." name="Владимировское" population="76" foundationYear="1924" size="68,5" comment="" />
 		<city OCATO="79 205 810 002" type="х." name="Вольно-Веселый" population="79" foundationYear="" size="79,3" comment="" />
 		<city OCATO="79 205 820 002" type="с." name="Георгиевское" population="215" foundationYear="" size="143,2" comment="" />
-		<city OCATO="79 205 807 001" type="ст." name="Гиагинская " population="13954" foundationYear="1862" size="3263,1" comment="" regionalCenter="true" />
+		<city OCATO="79 205 807 001" type="ст." name="Гиагинская" population="13954" foundationYear="1862" size="3263,1" comment="" regionalCenter="true" />
 		<city OCATO="79 205 807 002" type="п." name="Гончарка" population="1530" foundationYear="1959*" size="225,2" comment="" />
 		<city OCATO="79 205 820 003" type="х." name="Днепровский" population="162" foundationYear="" size="51,5" comment="" />
-		<city OCATO="79 205 810 001" type="ст." name="Дондуковская " population="6538" foundationYear="1889" size="1398" comment="" />
+		<city OCATO="79 205 810 001" type="ст." name="Дондуковская" population="6538" foundationYear="1889" size="1398" comment="" />
 		<city OCATO="79 205 820 009" type="х." name="Екатериновский" population="155" foundationYear="" size="47,5" comment="" />
 		<city OCATO="79 205 820 006" type="х." name="Карцев" population="82" foundationYear="" size="26,7" comment="" />
-		<city OCATO="79 205 815 001" type="ст." name="Келермесская " population="2721" foundationYear="1863" size="9,13" comment="" />
+		<city OCATO="79 205 815 001" type="ст." name="Келермесская" population="2721" foundationYear="1863" size="9,13" comment="" />
 		<city OCATO="79 205 820 005" type="х." name="Козополянский" population="67" foundationYear="" size="23,9" comment="" />
 		<city OCATO="79 205 820 007" type="х." name="Колхозный" population="71" foundationYear="1966*" size="17,3" comment="" />
 		<city OCATO="79 205 820 008" type="х." name="Красный Пахарь" population="29" foundationYear="" size="22,3" comment="" />
@@ -38,7 +38,7 @@
 		<city OCATO="79 205 807 003" type="х." name="Первомайский" population="-" foundationYear="" size="42,9" comment="" />
 		<city OCATO="79 205 802 006" type="х." name="Прогресс" population="956" foundationYear="1951" size="192" comment="" />
 		<city OCATO="79 205 802 007" type="х." name="Садовый" population="197" foundationYear="" size="27,1" comment="" />
-		<city OCATO="79 205 820 001" type="с." name="Сергиевское " population="1364" foundationYear="1883" size="676,8" comment="" />
+		<city OCATO="79 205 820 001" type="с." name="Сергиевское" population="1364" foundationYear="1883" size="676,8" comment="" />
 		<city OCATO="79 205 810 003" type="х." name="Смольчев-Малиновский" population="102" foundationYear="" size="107" comment="" />
 		<city OCATO="79 205 820 010" type="х." name="Тамбовский" population="613" foundationYear="" size="132,3" comment="" />
 		<city OCATO="79 205 820 012" type="х." name="Фарсовский" population="13" foundationYear="1966*" size="10,1" comment="" />
@@ -47,27 +47,27 @@
 	</region>
 
 	<region name="Кошехабльский район" OCATO="79 215">
-		<city OCATO="79 215 804 001" type="а." name="Блечепсин " population="3096" foundationYear="1868" size="433,7" comment="" />
-		<city OCATO="79 215 808 001" type="с." name="Вольное " population="3680" foundationYear="1892" size="389" comment="" />
+		<city OCATO="79 215 804 001" type="а." name="Блечепсин" population="3096" foundationYear="1868" size="433,7" comment="" />
+		<city OCATO="79 215 808 001" type="с." name="Вольное" population="3680" foundationYear="1892" size="389" comment="" />
 		<city OCATO="79 215 812 002" type="х." name="Дмитриевский" population="513" foundationYear="1904" size="79,5" comment="" />
 		<city OCATO="79 215 812 001" type="п." name="Дружба" population="780" foundationYear="1958*" size="96,9" comment="" />
-		<city OCATO="79 215 815 001" type="а." name="Егерухай " population="1614" foundationYear="1864" size="273" comment="" />
-		<city OCATO="79 215 818 001" type="х." name="Игнатьевский " population="983" foundationYear="1889" size="360,6" comment="" />
+		<city OCATO="79 215 815 001" type="а." name="Егерухай" population="1614" foundationYear="1864" size="273" comment="" />
+		<city OCATO="79 215 818 001" type="х." name="Игнатьевский" population="983" foundationYear="1889" size="360,6" comment="" />
 		<city OCATO="79 215 830 005" type="х." name="Казенно-Кужорский" population="803" foundationYear="1892" size="238" comment="" />
 		<city OCATO="79 215 808 002" type="х." name="Кармолино-Гидроицкий" population="212" foundationYear="1880" size="90,7" comment="" />
 		<city OCATO="79 215 812 003" type="п." name="Комсомольский" population="170" foundationYear="1958*" size="17,7" comment="" />
-		<city OCATO="79 215 820 001" type="а." name="Кошехабль " population="7321" foundationYear="1868" size="1342" comment="" regionalCenter="true" />
+		<city OCATO="79 215 820 001" type="а." name="Кошехабль" population="7321" foundationYear="1868" size="1342" comment="" regionalCenter="true" />
 		<city OCATO="79 215 825 002" type="х." name="Красный" population="210" foundationYear="" size="64,7" comment="" />
 		<city OCATO="79 215 812 004" type="х." name="Красный Фарс" population="165" foundationYear="1924" size="48,6" comment="" />
-		<city OCATO="79 215 825 001" type="п." name="Майский " population="2430" foundationYear="1931" size="124" comment="" />
+		<city OCATO="79 215 825 001" type="п." name="Майский" population="2430" foundationYear="1931" size="124" comment="" />
 		<city OCATO="79 215 830 001" type="с." name="Натырбово" population="3098" foundationYear="1895" size="542" comment="" />
 		<city OCATO="79 215 812 005" type="х." name="Новоалексеевский" population="384" foundationYear="1881" size="62,3" comment="" />
-		<city OCATO="79 215 812 006 " type="х." name="Отрадный" population="178" foundationYear="1895" size="200,4" comment="" />
+		<city OCATO="79 215 812 006" type="х." name="Отрадный" population="178" foundationYear="1895" size="200,4" comment="" />
 		<city OCATO="79 215 812 008" type="п." name="Плодопитомник" population="94" foundationYear="1903" size="27,4" comment="" />
 		<city OCATO="79 215 812 007" type="х." name="Политотдел" population="246" foundationYear="" size="33" comment="" />
 		<city OCATO="79 215 815 002" type="х." name="Соколов" population="-" foundationYear="" size="44,9" comment="" />
 		<city OCATO="79 215 812 009" type="а." name="Хачемзий" population="704" foundationYear="1862" size="168" comment="" />
-		<city OCATO="79 215 845 001" type="а." name="Ходзь " population="2853" foundationYear="1861" size="385,6" comment="" />
+		<city OCATO="79 215 845 001" type="а." name="Ходзь" population="2853" foundationYear="1861" size="385,6" comment="" />
 		<city OCATO="79 215 812 010" type="п." name="Чехрак" population="506" foundationYear="1902" size="13,4" comment="Дмитриевское сельское поселение" />
 		<city OCATO="79 215 825 001" type="х." name="Чехрак" population="12" foundationYear="1894" size="48,1" comment="Майское сельское поселение" />
 		<city OCATO="79 215 808 003" type="х." name="Шелковников" population="265" foundationYear="1891" size="98,6" comment="" />
@@ -75,16 +75,16 @@
 
 	<region name="Красногвардейский район" OCATO="79 218">
 		<city OCATO="79 218 820 002" type="а." name="Адамий" population="1322" foundationYear="1868" size="224" comment="" />
-		<city OCATO="79 218 804 001" type="с." name="Белое " population="2956" foundationYear="1894" size="440" comment="" />
+		<city OCATO="79 218 804 001" type="с." name="Белое" population="2956" foundationYear="1894" size="440" comment="" />
 		<city OCATO="79 218 825 002" type="а." name="Бжедугхабль" population="947" foundationYear="1871" size="198" comment="" />
 		<city OCATO="79 218 804 002" type="х." name="Богурсуков" population="163" foundationYear="1905" size="25,5" comment="" />
-		<city OCATO="79 218 808 001" type="с." name="Большесидоровское " population="1501" foundationYear="1881" size="335,1" comment="" />
+		<city OCATO="79 218 808 001" type="с." name="Большесидоровское" population="1501" foundationYear="1881" size="335,1" comment="" />
 		<city OCATO="79 218 825 003" type="с." name="Верхненазаровское" population="561" foundationYear="1884" size="179" comment="" />
 		<city OCATO="79 218 835 002" type="п." name="Водный" population="-" foundationYear="1879" size="-" comment="" />
 		<city OCATO="79 218 808 002" type="а." name="Джамбечи" population="586" foundationYear="1857" size="235,3" comment="в ОКАТО значится как Джамбичи" />
 		<city OCATO="79 218 815 002" type="х." name="Догужиев" population="14" foundationYear="1879" size="56,7" comment="" />
-		<city OCATO="79 218 815 001" type="с." name="Еленовское " population="2640" foundationYear="1888" size="620" comment="" />
-		<city OCATO="79 218 820 001" type="с." name="Красногвардейское " population="9419" foundationYear="1884" size="1210,9" comment="" regionalCenter="true" />
+		<city OCATO="79 218 815 001" type="с." name="Еленовское" population="2640" foundationYear="1888" size="620" comment="" />
+		<city OCATO="79 218 820 001" type="с." name="Красногвардейское" population="9419" foundationYear="1884" size="1210,9" comment="" regionalCenter="true" />
 		<city OCATO="79 218 835 003" type="п." name="Лесной" population="-" foundationYear="1937" size="-" comment="" />
 		<city OCATO="79 218 804 003" type="п." name="Мирный" population="11" foundationYear="1958*" size="32,9" comment="" />
 		<city OCATO="79 218 835 004" type="п." name="Набережный" population="94" foundationYear="1930" size="17" comment="" />
@@ -92,18 +92,18 @@
 		<city OCATO="79 218 804 006" type="х." name="Папенков" population="27" foundationYear="1907" size="22,5" comment="" />
 		<city OCATO="79 218 804 005" type="с." name="Преображенское" population="1426" foundationYear="1911" size="211" comment="" />
 		<city OCATO="79 218 815 004" type="х." name="Пустоселов" population="9" foundationYear="1871" size="127,9" comment="" />
-		<city OCATO="79 218 825 001" type="с." name="Садовое " population="1340" foundationYear="1921" size="238" comment="" />
+		<city OCATO="79 218 825 001" type="с." name="Садовое" population="1340" foundationYear="1921" size="238" comment="" />
 		<city OCATO="79 218 815 003" type="х." name="Саратовский" population="470" foundationYear="1879" size="92,8" comment="" />
 		<city OCATO="79 218 835 005" type="п." name="Свободный" population="6" foundationYear="1902" size="3,1" comment="" />
-		<city OCATO="79 218 830 001" type="а." name="Уляп " population="1259" foundationYear="1867" size="420" comment="" />
-		<city OCATO="79 218 835 001" type="а." name="Хатукай " population="4903" foundationYear="1859" size="424" comment="" />
+		<city OCATO="79 218 830 001" type="а." name="Уляп" population="1259" foundationYear="1867" size="420" comment="" />
+		<city OCATO="79 218 835 001" type="а." name="Хатукай" population="4903" foundationYear="1859" size="424" comment="" />
 		<city OCATO="79 218 820 003" type="х." name="Чумаков" population="73" foundationYear="1896" size="20" comment="" />
 		<city OCATO="79 218 830 002" type="с." name="Штурбино" population="500" foundationYear="1885" size="244" comment="" />
 	</region>
 
 	<region name="Майкопский район" OCATO="79 222">
 		<city OCATO="79 222 820 014" type="х." name="17 лет Октября" population="191" foundationYear="" size="56,62" comment="" />
-		<city OCATO="79 222 802 001" type="ст." name="Абадзехская " population="3676" foundationYear="1862" size="634,7" comment="" />
+		<city OCATO="79 222 802 001" type="ст." name="Абадзехская" population="3676" foundationYear="1862" size="634,7" comment="" />
 		<city OCATO="79 222 000 004" type="ст." name="Безводная" population="54" foundationYear="1863" size="126,3" comment="" />
 		<city OCATO="79 222 802 003" type="х." name="Веселый" population="319" foundationYear="" size="79,3" comment="Абадзехское сельское поселение" />
 		<city OCATO="79 222 555 002" type="х." name="Веселый" population="10" foundationYear="" size="50,7" comment="Каменномостское сельское поселение" />
@@ -113,16 +113,16 @@
 		<city OCATO="79 222 847 001" type="х." name="Грозный" population="665" foundationYear="" size="259" comment="Победенское сельское поселение" />
 		<city OCATO="79 222 000 002" type="п." name="Гузерипль" population="107" foundationYear="" size="610" comment="" />
 		<city OCATO="79 222 825 008" type="ст." name="Дагестанская" population="519" foundationYear="1863" size="272,15" comment="" />
-		<city OCATO="79 222 807 001" type="ст." name="Даховская " population="1399" foundationYear="1862" size="1112" comment="" />
+		<city OCATO="79 222 807 001" type="ст." name="Даховская" population="1399" foundationYear="1862" size="1112" comment="" />
 		<city OCATO="79 222 820 005" type="х." name="Дьяков" population="131" foundationYear="" size="31,49" comment="" />
 		<city OCATO="79 222 828 004" type="х." name="Калинин" population="263" foundationYear="" size="96,9" comment="" />
-		<city OCATO="79 222 555" type="п." name="Каменномостский " population="7178" foundationYear="1864" size="1300" comment="" />
+		<city OCATO="79 222 555" type="п." name="Каменномостский" population="7178" foundationYear="1864" size="1300" comment="" />
 		<city OCATO="79 222 834 002" type="х." name="Кармир-Астх" population="24" foundationYear="" size="18,9" comment="" />
 		<city OCATO="79 222 828 005" type="х." name="Коминтерн" population="276" foundationYear="" size="62,5" comment="" />
-		<city OCATO="79 222 828 001" type="х." name="Красная Улька  " population="388" foundationYear="" size="64,1" comment="" />
-		<city OCATO="79 222 825 001" type="п." name="Краснооктябрьский " population="6060" foundationYear="" size="472" comment="" />
+		<city OCATO="79 222 828 001" type="х." name="Красная Улька" population="388" foundationYear="" size="64,1" comment="" />
+		<city OCATO="79 222 825 001" type="п." name="Краснооктябрьский" population="6060" foundationYear="" size="472" comment="" />
 		<city OCATO="79 222 825 002" type="х." name="Красный Мост" population="41" foundationYear="" size="32,22" comment="" />
-		<city OCATO="79 222 834 001" type="ст." name="Кужорская " population="3549" foundationYear="1861" size="908,1" comment="" />
+		<city OCATO="79 222 834 001" type="ст." name="Кужорская" population="3549" foundationYear="1861" size="908,1" comment="" />
 		<city OCATO="79 222 825 009" type="ст." name="Курджипская" population="1574" foundationYear="1863" size="636,3" comment="" />
 		<city OCATO="" type="а." name="Мафэхабль" population="117" foundationYear="2006" size="98,45" comment="" />
 		<city OCATO="79 222 551 001" type="с." name="Махошеполяна" population="13" foundationYear="" size="0,3" comment="" />
@@ -143,15 +143,15 @@
 		<city OCATO="79 222 825 005" type="х." name="Садовый" population="418" foundationYear="1958*" size="82,75" comment="Краснооктябрьское сельское поселение" />
 		<city OCATO="79 222 852 004" type="п." name="Садовый" population="157" foundationYear="" size="17,3" comment="Тимирязевское сельское поселение" />
 		<city OCATO="79 222 802 006" type="ст." name="Севастопольская" population="644" foundationYear="1862" size="323" comment="" />
-		<city OCATO="79 222 820 001" type="х." name="Северо-Восточные Сады " population="3547" foundationYear="1933" size="451,3" comment="" />
+		<city OCATO="79 222 820 001" type="х." name="Северо-Восточные Сады" population="3547" foundationYear="1933" size="451,3" comment="" />
 		<city OCATO="79 222 820 018" type="х." name="Советский" population="486" foundationYear="" size="58" comment="" />
-		<city OCATO="79 222 847 005" type="п." name="Совхозный " population="1378" foundationYear="1958*" size="141,8" comment="" />
+		<city OCATO="79 222 847 005" type="п." name="Совхозный" population="1378" foundationYear="1958*" size="141,8" comment="" />
 		<city OCATO="79 222 825 006" type="п." name="Спокойный" population="37" foundationYear="1958*" size="7,63" comment="" />
 		<city OCATO="79 222 825 007" type="п." name="Табачный" population="1823" foundationYear="" size="448,6" comment="" />
-		<city OCATO="79 222 852 001" type="п." name="Тимирязева " population="1145" foundationYear="" size="130,9" comment="" />
+		<city OCATO="79 222 852 001" type="п." name="Тимирязева" population="1145" foundationYear="" size="130,9" comment="" />
 		<city OCATO="79 222 828 006" type="х." name="Ткачев" population="218" foundationYear="" size="52,1" comment="" />
 		<city OCATO="79 222 834 003" type="п." name="Трехречный" population="569" foundationYear="" size="208,6" comment="" />
-		<city OCATO="79 222 551" type="п." name="Тульский " population="10825" foundationYear="1862" size="1918,2" comment="" regionalCenter="true" />
+		<city OCATO="79 222 551" type="п." name="Тульский" population="10825" foundationYear="1862" size="1918,2" comment="" regionalCenter="true" />
 		<city OCATO="79 222 847 003" type="п." name="Удобный" population="1355" foundationYear="1958*" size="213,9" comment="" />
 		<city OCATO="79 222 807 005" type="п." name="Усть-Сахрай" population="304" foundationYear="1959*" size="43" comment="" />
 		<city OCATO="79 222 000 003" type="п." name="Хакодзь" population="-" foundationYear="" size="25" comment="" />
@@ -163,7 +163,7 @@
 
 	<region name="Тахтамукайский район" OCATO="79 230">
 		<city OCATO="79 230 820 003" type="х." name="Апостолиди" population="75" foundationYear="1917" size="30,7" comment="" />
-		<city OCATO="79 230 805 001" type="а." name="Афипсип " population="2147" foundationYear="1863" size="743" comment="" />
+		<city OCATO="79 230 805 001" type="а." name="Афипсип" population="2147" foundationYear="1863" size="743" comment="" />
 		<city OCATO="79 230 557 004" type="п." name="Дружный" population="433" foundationYear="1958*" size="26,1" comment="" />
 		<city OCATO="79 230 809 001" type="а." name="Козет" population="1818" foundationYear="1789" size="190" comment="" />
 		<city OCATO="79 230 826 004" type="х." name="Красноармейский" population="52" foundationYear="1923" size="41,6" comment="" />
@@ -183,18 +183,18 @@
 		<city OCATO="79 230 826 003" type="х." name="Старомогилевский" population="36" foundationYear="1860" size="87,3" comment="" />
 		<city OCATO="79 230 557 006" type="х." name="Суповский" population="554" foundationYear="1899" size="335,6" comment="" />
 		<city OCATO="79 230 820 006" type="п." name="Супс" population="71" foundationYear="1963" size="141,6" comment="" />
-		<city OCATO="79 230 820 001" type="а." name="Тахтамукай " population="5413" foundationYear="1860" size="2684,4" comment="" regionalCenter="true" />
+		<city OCATO="79 230 820 001" type="а." name="Тахтамукай" population="5413" foundationYear="1860" size="2684,4" comment="" regionalCenter="true" />
 		<city OCATO="79 203 805 005" type="а." name="Хаштук" population="277" foundationYear="1864" size="85,6" comment="" />
 		<city OCATO="79 230 815 003" type="х." name="Хомуты" population="580" foundationYear="1930" size="365" comment="" />
-		<city OCATO="79 230 826 001" type="а." name="Шенджий " population="1979" foundationYear="1860" size="489" comment="" />
+		<city OCATO="79 230 826 001" type="а." name="Шенджий" population="1979" foundationYear="1860" size="489" comment="" />
 		<city OCATO="79 230 557" type="п.г.т." name="Энем" population="18251" foundationYear="1906" size="2631,9" comment="" />
-		<city OCATO="79 230 559" type="п.г.т." name="Яблоновский " population="27792" foundationYear="1908" size="979,6" comment="" />
+		<city OCATO="79 230 559" type="п.г.т." name="Яблоновский" population="27792" foundationYear="1908" size="979,6" comment="" />
 	</region>
 
 	<region name="Теучежский район" OCATO="79 233">
-		<city OCATO="79 233 805 001" type="а." name="Ассоколай " population="1556" foundationYear="1850" size="521" comment="" />
-		<city OCATO="79 233 810 001" type="а." name="Вочепший " population="1362" foundationYear="1860" size="454" comment="" />
-		<city OCATO="79 233 845 001" type="а." name="Габукай " population="1855" foundationYear="1842" size="485,4" comment="" />
+		<city OCATO="79 233 805 001" type="а." name="Ассоколай" population="1556" foundationYear="1850" size="521" comment="" />
+		<city OCATO="79 233 810 001" type="а." name="Вочепший" population="1362" foundationYear="1860" size="454" comment="" />
+		<city OCATO="79 233 845 001" type="а." name="Габукай" population="1855" foundationYear="1842" size="485,4" comment="" />
 		<city OCATO="79 233 815 002" type="х." name="Городской" population="297" foundationYear="1880" size="93,4" comment="" />
 		<city OCATO="79 233 815 001" type="а." name="Джиджихабль" population="751" foundationYear="1840" size="285" comment="" />
 		<city OCATO="79 233 830 002" type="п." name="Заря" population="-" foundationYear="" size="8,2" comment="" />
@@ -209,8 +209,8 @@
 		<city OCATO="79 233 830 008" type="а." name="Нешукай" population="945" foundationYear="1845" size="211,38" comment="" />
 		<city OCATO="79 233 810 002" type="х." name="Нововочепший" population="170" foundationYear="" size="722" comment="" />
 		<city OCATO="79 233 845 002" type="х." name="Петров" population="295" foundationYear="1900" size="85,5" comment="" />
-		<city OCATO="79 233 830 001" type="а." name="Понежукай " population="3424" foundationYear="1800" size="647,15" comment="" regionalCenter="true" />
-		<city OCATO="79 233 833 001" type="а." name="Пчегатлукай " population="831" foundationYear="1856" size="250,7" comment="" />
+		<city OCATO="79 233 830 001" type="а." name="Понежукай" population="3424" foundationYear="1800" size="647,15" comment="" regionalCenter="true" />
+		<city OCATO="79 233 833 001" type="а." name="Пчегатлукай" population="831" foundationYear="1856" size="250,7" comment="" />
 		<city OCATO="79 233 830 006" type="а." name="Пшикуйхабль" population="280" foundationYear="1850" size="98,77" comment="" />
 		<city OCATO="79 233 815 005" type="а." name="Тауйхабль" population="206" foundationYear="1850" size="74,2" comment="" />
 		<city OCATO="79 233 555" type="п.г.т." name="Тлюстенхабль" population="5555" foundationYear="1840" size="585,87" comment="" />
@@ -223,11 +223,11 @@
 
 	<region name="Шовгеновский район" OCATO="79 240">
 		<city OCATO="79 240 812 002" type="х." name="Веселый" population="281" foundationYear="1936" size="97,5" comment="" />
-		<city OCATO="79 240 805 001" type="а." name="Джерокай " population="1157" foundationYear="1864" size="215" comment="" />
+		<city OCATO="79 240 805 001" type="а." name="Джерокай" population="1157" foundationYear="1864" size="215" comment="" />
 		<city OCATO="79 240 812 003" type="х." name="Дорошенко" population="149" foundationYear="1888" size="46" comment="" />
-		<city OCATO="79 240 808 001" type="х." name="Дукмасов " population="511" foundationYear="1864" size="189,7" comment="" />
+		<city OCATO="79 240 808 001" type="х." name="Дукмасов" population="511" foundationYear="1864" size="189,7" comment="" />
 		<city OCATO="79 240 812 004" type="х." name="Задунаевский" population="36" foundationYear="1870" size="32,3" comment="" />
-		<city OCATO="79 240 812 001" type="п." name="Зарево " population="1023" foundationYear="1963" size="163,3" comment="" />
+		<city OCATO="79 240 812 001" type="п." name="Зарево" population="1023" foundationYear="1963" size="163,3" comment="" />
 		<city OCATO="79 240 825 002" type="а." name="Кабехабль" population="1091" foundationYear="1859" size="184,6" comment="" />
 		<city OCATO="79 240 808 002" type="х." name="Касаткин" population="149" foundationYear="1869" size="89,3" comment="" />
 		<city OCATO="79 240 812 005" type="х." name="Келеметов" population="30" foundationYear="1863" size="56,2" comment="" />
@@ -243,12 +243,12 @@
 		<city OCATO="79 240 808 007" type="х." name="Пентюхов" population="114" foundationYear="1875" size="36,9" comment="" />
 		<city OCATO="79 240 808 008" type="х." name="Пикалин" population="60" foundationYear="1875" size="36,9" comment="" />
 		<city OCATO="79 240 825 004" type="а." name="Пшизов" population="912" foundationYear="1870" size="179" comment="" />
-		<city OCATO="79 240 825 001" type="а." name="Пшичо " population="1083" foundationYear="1864" size="208,8" comment="" />
+		<city OCATO="79 240 825 001" type="а." name="Пшичо" population="1083" foundationYear="1864" size="208,8" comment="" />
 		<city OCATO="79 240 805 002" type="х." name="Свободный Труд" population="349" foundationYear="1920" size="237" comment="" />
 		<city OCATO="79 240 805 003" type="х." name="Семено-Макаренский" population="106" foundationYear="1891" size="89" comment="" />
 		<city OCATO="79 240 808 009" type="х." name="Тихонов" population="374" foundationYear="1887" size="113,9" comment="" />
 		<city OCATO="79 240 812 009" type="п." name="Ульский" population="149" foundationYear="1963*" size="37,1" comment="" />
-		<city OCATO="79 240 830 001" type="а." name="Хакуринохабль " population="4018" foundationYear="1862" size="648" comment="" regionalCenter="true" />
+		<city OCATO="79 240 830 001" type="а." name="Хакуринохабль" population="4018" foundationYear="1862" size="648" comment="" regionalCenter="true" />
 		<city OCATO="79 240 830 004" type="х." name="Хапачев" population="215" foundationYear="1884" size="84" comment="" />
 		<city OCATO="79 240 825 005" type="а." name="Хатажукай" population="934" foundationYear="1840" size="238,6" comment="" />
 		<city OCATO="79 240 812 010" type="х." name="Чернышев" population="830" foundationYear="1880" size="220,4" comment="" />
