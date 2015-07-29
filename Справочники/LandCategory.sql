@@ -1,4 +1,5 @@
-﻿INSERT INTO nc_land_category (id, code, name) VALUES (nextval('nc_land_category_seq'),'3001000000','ЗЕМЛИ СЕЛЬСКОХОЗЯЙСТВЕННОГО НАЗНАЧЕНИЯ');
+﻿TRUNCATE TABLE nc_land_category;
+INSERT INTO nc_land_category (id, code, name) VALUES (nextval('nc_land_category_seq'),'3001000000','ЗЕМЛИ СЕЛЬСКОХОЗЯЙСТВЕННОГО НАЗНАЧЕНИЯ');
 INSERT INTO nc_land_category (id, code, name) VALUES (nextval('nc_land_category_seq'),'3001000010','Сельскохозяйственные угодья');
 INSERT INTO nc_land_category (id, code, name) VALUES (nextval('nc_land_category_seq'),'3001000020','Земли, занятые внутрихозяйственными дорогами, коммуникациями, лесными насаждениями, предназначенными для обеспечения защиты земель от воздействия негативных (вредных) природных, антропогенных и техногенных явлений, водными объектами, а также занятые зданиями, строениями, сооружениями, используемыми для производства, хранения и переработки сельскохозяйственной продукции');
 INSERT INTO nc_land_category (id, code, name) VALUES (nextval('nc_land_category_seq'),'3001000030','Прочие земли сельскохозяйственного назначения');
