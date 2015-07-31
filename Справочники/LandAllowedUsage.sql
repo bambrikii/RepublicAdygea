@@ -1,4 +1,5 @@
-﻿INSERT INTO nc_land_allowed_usage (id,number,classification_code,name) VALUES (nextval('nc_land_allowed_usage_seq'),'141','141000000000','Земли сельскохозяйственного назначения');
+TRUNCATE TABLE nc_land_allowed_usage;
+INSERT INTO nc_land_allowed_usage (id,number,classification_code,name) VALUES (nextval('nc_land_allowed_usage_seq'),'141','141000000000','Земли сельскохозяйственного назначения');
 INSERT INTO nc_land_allowed_usage (id,number,classification_code,name) VALUES (nextval('nc_land_allowed_usage_seq'),'141.1','141001000000','Для сельскохозяйственного производства');
 INSERT INTO nc_land_allowed_usage (id,number,classification_code,name) VALUES (nextval('nc_land_allowed_usage_seq'),'141.1.1','141001001000','Для использования в качестве сельскохо-зяйственных угодий');
 INSERT INTO nc_land_allowed_usage (id,number,classification_code,name) VALUES (nextval('nc_land_allowed_usage_seq'),'141.1.2','141001002000','Для размещения зданий, строений, соору-жений, используемых для производства, хранения и первичной переработки сельскохозяйственной продукции');
