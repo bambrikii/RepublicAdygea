@@ -34,4 +34,39 @@ INSERT INTO nc_land_ownership_form (id, code, name, gathering_algo) VALUES (next
 INSERT INTO nc_land_ownership_form (id, code, name, gathering_algo) VALUES (nextval('nc_land_ownership_form_seq'), '61', 'Собственность государственных корпораций', '');
 
 
+UPDATE nc_land_ownership_form SET gathering_parent_id = null;
 
+UPDATE nc_land_ownership_form
+SET gathering_parent_id = f2.id
+FROM (SELECT id FROM nc_land_ownership_form WHERE code = '10') f2
+WHERE code in ('11', '14', '15', '16', '17', '18', '19', '61');
+
+UPDATE nc_land_ownership_form
+SET gathering_parent_id = f2.id
+FROM (SELECT id FROM nc_land_ownership_form WHERE code = '11') f2
+WHERE code in ('12', '13');
+
+UPDATE nc_land_ownership_form
+SET gathering_parent_id = f2.id
+FROM (SELECT id FROM nc_land_ownership_form WHERE code = '15') f2
+WHERE code in ('50', '51', '52', '53', '54');
+
+UPDATE nc_land_ownership_form
+SET gathering_parent_id = f2.id
+FROM (SELECT id FROM nc_land_ownership_form WHERE code = '17') f2
+WHERE code in ('40', '49');
+
+UPDATE nc_land_ownership_form
+SET gathering_parent_id = f2.id
+FROM (SELECT id FROM nc_land_ownership_form WHERE code = '20') f2
+WHERE code in ('21', '22', '23', '24', '27');
+
+UPDATE nc_land_ownership_form
+SET gathering_parent_id = f2.id
+FROM (SELECT id FROM nc_land_ownership_form WHERE code = '30') f2
+WHERE code in ('31', '32', '33', '34', '35');
+
+UPDATE nc_land_ownership_form
+SET gathering_parent_id = f2.id
+FROM (SELECT id FROM nc_land_ownership_form WHERE code = '40') f2
+WHERE code in ('41', '42', '43');
