@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<entry
+	xml:base="http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/"
+	xmlns="http://www.w3.org/2005/Atom" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+	<id>http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/KTDs(23366M)
+	</id>
+	<category term="Strategis.Server.FGIS.KTD"
+		scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+	<link rel="edit" title="KTD" href="KTDs(23366M)" />
+	<link
+		rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/DOCUMENTS"
+		type="application/atom+xml;type=feed" title="DOCUMENTS" href="KTDs(23366M)/DOCUMENTS" />
+	<link
+		rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/USERS"
+		type="application/atom+xml;type=feed" title="USERS" href="KTDs(23366M)/USERS" />
+	<link
+		rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Children"
+		type="application/atom+xml;type=feed" title="Children" href="KTDs(23366M)/Children" />
+	<link
+		rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Parent"
+		type="application/atom+xml;type=entry" title="Parent" href="KTDs(23366M)/Parent" />
+	<link
+		rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Type"
+		type="application/atom+xml;type=entry" title="Type" href="KTDs(23366M)/Type" />
+	<title />
+	<updated>2015-08-04T14:08:10Z</updated>
+	<author>
+		<name />
+	</author>
+	<content type="application/xml">
+		<m:properties>
+			<d:ID m:type="Edm.Decimal">23366</d:ID>
+			<d:NAME>Республика Адыгея</d:NAME>
+			<d:ParentId m:type="Edm.Decimal">29543</d:ParentId>
+			<d:IMAGE m:type="Edm.Binary" m:null="true" />
+			<d:OKATO m:null="true" />
+			<d:ROSREESTR m:null="true" />
+			<d:FULL_INFO m:null="true" />
+			<d:BRIEF_INFO m:null="true" />
+			<d:OKTMO>79000000</d:OKTMO>
+			<d:HAS_GEOMETRY m:type="Edm.Decimal">1</d:HAS_GEOMETRY>
+			<d:Level m:type="Edm.Decimal">2</d:Level>
+			<d:CHILDRENCOUNT m:type="Edm.Decimal">62</d:CHILDRENCOUNT>
+			<d:TypeID m:type="Edm.Decimal">2</d:TypeID>
+		</m:properties>
+	</content>
+</entry>
