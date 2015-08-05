@@ -41,6 +41,10 @@ public class DownloadApp {
 		}
 		persistHandler.createDirs(parents2);
 
+		Entry children = downloadHandler.downloadChildren(id);
+		entry.getChildren().addAll(children.getEntries());
+		persistHandler.saveDocumentFilesInfo(parents2, entry, "entry");
+
 		// Download documents
 		for (Entry document : downloadHandler.downloadDocuments(id).getEntries()) {
 			Entry files = downloadHandler.downloadDocumentFiles(document);
@@ -50,9 +54,6 @@ public class DownloadApp {
 		}
 
 		// Download children
-		Entry children = downloadHandler.downloadChildren(id);
-		entry.getChildren().addAll(children.getEntries());
-		persistHandler.saveDocumentFilesInfo(parents2, entry, "entry");
 		for (Entry child : children.getEntries()) {
 			downloadRecursively(parents2, child.getId());
 		}
