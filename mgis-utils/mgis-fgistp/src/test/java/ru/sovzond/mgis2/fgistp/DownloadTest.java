@@ -18,7 +18,7 @@ import java.util.Map;
  * Unit test for simple App.
  */
 public class DownloadTest {
-	private static final String DOWNLOAD_DIR = "/home/asd/fgistp/";
+	private static final String DOWNLOAD_DIR = "/home/asd/fgistp2/";
 
 	@Test
 	public void testDownload() throws IOException, ParserConfigurationException, SAXException {

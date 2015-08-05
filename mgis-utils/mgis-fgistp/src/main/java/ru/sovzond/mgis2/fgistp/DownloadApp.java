@@ -1,8 +1,10 @@
 package ru.sovzond.mgis2.fgistp;
 
 import org.xml.sax.SAXException;
+import ru.sovzond.mgis2.fgistp.fs_handlers.EntityPersistHandler;
 import ru.sovzond.mgis2.fgistp.fs_handlers.Persistable;
 import ru.sovzond.mgis2.fgistp.http_handlers.Downloadable;
+import ru.sovzond.mgis2.fgistp.http_handlers.EntityDownloadHandler;
 import ru.sovzond.mgis2.fgistp.model.Entry;
 
 import javax.xml.bind.JAXBException;
@@ -11,6 +13,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ForkJoinPool;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Hello world!
@@ -19,6 +23,7 @@ public class DownloadApp {
 
 	private Downloadable downloadHandler;
 	private Persistable persistHandler;
+	private ForkJoinPool executor = new ForkJoinPool(8);
 
 	public DownloadApp(Downloadable downloadHandler, Persistable persistHandler) {
 		this.downloadHandler = downloadHandler;
@@ -35,7 +40,7 @@ public class DownloadApp {
 
 		// Download current item
 		Entry entry = downloadEntry(id);
-		List<Entry> parents2 = new ArrayList<>(parents);
+		final List<Entry> parents2 = new ArrayList<>(parents);
 		if (entry != null) {
 			parents2.add(entry);
 		}
@@ -46,17 +51,38 @@ public class DownloadApp {
 		persistHandler.saveDocumentFilesInfo(parents2, entry, "entry");
 
 		// Download documents
-		for (Entry document : downloadHandler.downloadDocuments(id).getEntries()) {
+		for (final Entry document : downloadHandler.downloadDocuments(id).getEntries()) {
 			Entry files = downloadHandler.downloadDocumentFiles(document);
 			document.getFiles().addAll(files.getEntries());
 			persistHandler.saveDocumentFilesInfo(parents2, document, "files");
-			downloadHandler.downloadDocumentArchive(parents2, document, persistHandler);
+			executor.execute(() -> {
+				try {
+					System.out.println("downloadDocumentArchive: " + document.getProperties().get("d:ID"));
+					downloadHandler.downloadDocumentArchive(parents2, document, persistHandler);
+				} catch (Exception ex) {
+					ex.printStackTrace();
+				}
+			});
 		}
 
 		// Download children
-		for (Entry child : children.getEntries()) {
-			downloadRecursively(parents2, child.getId());
+		for (final Entry child : children.getEntries()) {
+			executor.execute(() -> {
+				try {
+					System.out.println("downloadRecursively: " + child.getProperties().get("d:ID"));
+					downloadRecursively(parents2, child.getId());
+				} catch (Exception ex) {
+					ex.printStackTrace();
+				}
+			});
 		}
 	}
 
+	public static void main(String[] args) throws ParserConfigurationException, JAXBException, SAXException, IOException, InterruptedException {
+		Persistable persistHandler = new EntityPersistHandler("/home/asd/fgistp2/");
+		Downloadable downloadHandler = new EntityDownloadHandler();
+		DownloadApp app = new DownloadApp(downloadHandler, persistHandler);
+		app.downloadRecursively(new ArrayList<>(), "http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/KTDs(23366M)");
+		app.executor.awaitQuiescence(1, TimeUnit.SECONDS);
+	}
 }
