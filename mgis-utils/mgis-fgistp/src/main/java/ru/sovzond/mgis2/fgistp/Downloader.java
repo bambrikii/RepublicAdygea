@@ -15,4 +15,19 @@ public class Downloader {
 		cn.setUseCaches(false);
 		return cn.getInputStream();
 	}
+
+	public InputStream download(String urlString) throws IOException {
+		URL url = new URL(urlString);
+		HttpURLConnection cn = (HttpURLConnection) url.openConnection();
+		cn.setRequestMethod("GET");
+		cn.addRequestProperty("Accept", "*/*");
+		cn.addRequestProperty("Accept-Language", "ru");
+		cn.addRequestProperty("Referer", "http://fgis.economy.gov.ru/fgis/ClientBin/Strategis.FGIS.xap");
+		cn.addRequestProperty("Accept-Encoding", "gzip, deflate");
+		cn.addRequestProperty("Host", "fgis.economy.gov.ru");
+
+		cn.setDoOutput(true);
+		cn.setUseCaches(false);
+		return cn.getInputStream();
+	}
 }

@@ -2,10 +2,13 @@ package ru.sovzond.mgis2.fgistp;
 
 import org.junit.Test;
 import org.xml.sax.SAXException;
-import ru.sovzond.mgis2.fgistp.fs_handlers.Downloadable;
-import ru.sovzond.mgis2.fgistp.fs_handlers.EntityDownloadHandler;
+import ru.sovzond.mgis2.fgistp.fs_handlers.EntityPersistHandler;
+import ru.sovzond.mgis2.fgistp.fs_handlers.Persistable;
+import ru.sovzond.mgis2.fgistp.http_handlers.Downloadable;
+import ru.sovzond.mgis2.fgistp.http_handlers.EntityDownloadHandler;
 import ru.sovzond.mgis2.fgistp.model.Entry;
 
+import javax.xml.bind.JAXBException;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -15,20 +18,22 @@ import java.util.Map;
  * Unit test for simple App.
  */
 public class DownloadTest {
-	private static final String DOWNLOAD_DIR = "./downloads/";
+	private static final String DOWNLOAD_DIR = "/home/asd/fgistp/";
 
 	@Test
 	public void testDownload() throws IOException, ParserConfigurationException, SAXException {
-		Downloadable downloadHandler = new EntityDownloadHandler(DOWNLOAD_DIR);
-		DownloadApp app = new DownloadApp(downloadHandler);
-		app.download("(23366M)");
+		Persistable persistHandler = new EntityPersistHandler(DOWNLOAD_DIR);
+		Downloadable downloadHandler = new EntityDownloadHandler();
+		DownloadApp app = new DownloadApp(downloadHandler, persistHandler);
+		app.downloadEntry("(23366M)");
 	}
 
 	@Test
-	public void testDownloadRecursive() throws IOException, ParserConfigurationException, SAXException {
-		Downloadable downloadHandler = new EntityDownloadHandler(DOWNLOAD_DIR);
-		DownloadApp app = new DownloadApp(downloadHandler);
-		app.downloadRecursively(new ArrayList<>(), "(23366M)");
+	public void testDownloadRecursive() throws IOException, ParserConfigurationException, SAXException, JAXBException {
+		Persistable persistHandler = new EntityPersistHandler(DOWNLOAD_DIR);
+		Downloadable downloadHandler = new EntityDownloadHandler();
+		DownloadApp app = new DownloadApp(downloadHandler, persistHandler);
+		app.downloadRecursively(new ArrayList<>(), "http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/KTDs(23366M)");
 	}
 
 

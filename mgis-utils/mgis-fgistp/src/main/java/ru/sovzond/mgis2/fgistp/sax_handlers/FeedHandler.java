@@ -47,13 +47,10 @@ public class FeedHandler extends DefaultHandler {
 						break;
 				}
 				break;
-			case "d:NAME":
-				break;
 			default:
 				if (qName.startsWith("d:")) {
 					inProperty = qName;
 					inPropertyBuilder = new StringBuilder();
-//					entry.getProperties().put(qName.substring(2, qName.length()), attributes.getValue(""));
 				}
 				break;
 		}
