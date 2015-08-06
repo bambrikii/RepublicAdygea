@@ -2,7 +2,6 @@ package ru.sovzond.mgis2.fgistp.http_handlers;
 
 import org.xml.sax.SAXException;
 import ru.sovzond.mgis2.fgistp.ContentParser;
-import ru.sovzond.mgis2.fgistp.Downloader;
 import ru.sovzond.mgis2.fgistp.fs_handlers.Persistable;
 import ru.sovzond.mgis2.fgistp.model.Entry;
 import ru.sovzond.mgis2.fgistp.model.ExceptionEntry;

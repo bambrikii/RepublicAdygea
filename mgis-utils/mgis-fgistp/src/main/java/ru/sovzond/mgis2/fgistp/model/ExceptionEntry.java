@@ -1,5 +1,6 @@
 package ru.sovzond.mgis2.fgistp.model;
 
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
@@ -17,7 +18,12 @@ public class ExceptionEntry {
 		this.message = message;
 	}
 
+	@XmlElement(name = "message")
 	public String getMessage() {
 		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
 	}
 }

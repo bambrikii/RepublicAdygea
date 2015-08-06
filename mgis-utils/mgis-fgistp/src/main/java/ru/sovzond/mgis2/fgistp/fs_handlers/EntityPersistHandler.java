@@ -9,7 +9,10 @@ import javax.xml.bind.Marshaller;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
 import java.nio.channels.Channels;
+import java.nio.channels.FileChannel;
 import java.nio.channels.ReadableByteChannel;
 import java.util.List;
 
@@ -57,12 +60,24 @@ public class EntityPersistHandler implements Persistable {
 	@Override
 	public void saveDocumentArchive(List<Entry> entries, Entry file, InputStream inputStream) throws JAXBException {
 		String fileName0 = buildDirName(entries) + /*file.getProperties().get("d:FULL_DOC_NAME") + "." + */file.getProperties().get("d:ID");
-		String fileName = fileName0 + ".zip";
+		String targetFileName = fileName0 + ".zip";
 		try (ReadableByteChannel rbc = Channels.newChannel(inputStream);
-			 FileOutputStream fos = new FileOutputStream(fileName);
+			 FileOutputStream fos = new FileOutputStream(targetFileName);
 		) {
-			fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
+			ByteBuffer sizeBuff = ByteBuffer.allocate(8).order(ByteOrder.LITTLE_ENDIAN);
+			rbc.read(sizeBuff);
+			sizeBuff.rewind();
+			int totalSize = sizeBuff.getInt();
+			int nameSize = sizeBuff.getShort();
+			ByteBuffer nameBuffer = ByteBuffer.allocate(nameSize);
+			rbc.read(nameBuffer);
+			String name = new String(nameBuffer.array());
+			FileChannel channel = fos.getChannel();
+			int position = 8 + nameSize + 1;
+			channel.transferFrom(rbc, 0, Long.MAX_VALUE);
+			System.out.println(String.format("File complete: %d, %d, %s, %s", totalSize, nameSize, name, targetFileName));
 		} catch (Exception ex) {
+			ex.printStackTrace();
 			ExceptionEntry exceptionEntry = new ExceptionEntry(ex.getMessage());
 			createErrorFile(fileName0 + ".error.xml", exceptionEntry);
 		}

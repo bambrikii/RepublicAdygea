@@ -1,4 +1,4 @@
-package ru.sovzond.mgis2.fgistp;
+package ru.sovzond.mgis2.fgistp.http_handlers;
 
 import java.io.IOException;
 import java.io.InputStream;

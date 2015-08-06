@@ -4,6 +4,7 @@ import org.xml.sax.SAXException;
 import ru.sovzond.mgis2.fgistp.fs_handlers.EntityPersistHandler;
 import ru.sovzond.mgis2.fgistp.fs_handlers.Persistable;
 import ru.sovzond.mgis2.fgistp.http_handlers.Downloadable;
+import ru.sovzond.mgis2.fgistp.http_handlers.Downloader;
 import ru.sovzond.mgis2.fgistp.http_handlers.EntityDownloadHandler;
 import ru.sovzond.mgis2.fgistp.model.Entry;
 
@@ -79,10 +80,14 @@ public class DownloadApp {
 	}
 
 	public static void main(String[] args) throws ParserConfigurationException, JAXBException, SAXException, IOException, InterruptedException {
-		Persistable persistHandler = new EntityPersistHandler("/home/asd/fgistp2/");
+		Persistable persistHandler = new EntityPersistHandler("/home/asd/fgistp3/");
 		Downloadable downloadHandler = new EntityDownloadHandler();
 		DownloadApp app = new DownloadApp(downloadHandler, persistHandler);
 		app.downloadRecursively(new ArrayList<>(), "http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/KTDs(23366M)");
-		app.executor.awaitQuiescence(1, TimeUnit.SECONDS);
+		app.await();
+	}
+
+	public void await() {
+		executor.awaitQuiescence(1, TimeUnit.SECONDS);
 	}
 }
