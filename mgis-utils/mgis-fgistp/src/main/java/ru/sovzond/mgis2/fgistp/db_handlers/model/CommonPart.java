@@ -13,5 +13,5 @@ public class CommonPart {
 	public String REG_NUM;
 	public String PROST_IND;
 	public String COMP_DOC;
-	public String OSN_SV;
+	public MainInfo OSN_SV;
 }

@@ -6,7 +6,7 @@ package ru.sovzond.mgis2.fgistp.db_handlers.model;
 public class MainInfo {
 	public String CADASTR;
 	public String OKTMO_CODE;
-	public CommonPart commonPart;
+	public CommonPart GEN_P1_ID;
 	public SpecialPart SP_P1_ID;
-	DocumentUpdatesInfo documentUpdateInfo;
+	public DocumentUpdatesInfo UPDATE1_ID;
 }
