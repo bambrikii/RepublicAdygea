@@ -9,6 +9,7 @@ import javax.xml.bind.JAXBException;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +30,7 @@ public class DirectoryTraverser {
 		this.persister = persister;
 	}
 
-	public void go(String directoryName) throws IOException, JAXBException, ParseException {
+	public void go(String directoryName) throws IOException, JAXBException, ParseException, SQLException {
 		System.out.println("Directory: " + directoryName);
 		File file = new File(directoryName);
 		File[] entriesFiles = file.listFiles(pathname -> pathname.getName().endsWith(ENTRY_XML));

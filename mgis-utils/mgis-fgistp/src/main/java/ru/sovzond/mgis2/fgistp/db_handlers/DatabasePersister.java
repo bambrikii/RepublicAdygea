@@ -1,8 +1,11 @@
 package ru.sovzond.mgis2.fgistp.db_handlers;
 
+import ru.sovzond.mgis2.fgistp.db_handlers.dao.DataSourceContainer;
+import ru.sovzond.mgis2.fgistp.db_handlers.dao.impl.*;
 import ru.sovzond.mgis2.fgistp.db_handlers.model.*;
 import ru.sovzond.mgis2.fgistp.model.Entry;
 
+import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -13,6 +16,23 @@ import java.util.Map;
  * Created by Alexander Arakelyan on 06.08.15.
  */
 public class DatabasePersister {
+
+	public static final String DATE_TIME_FORMAT = "y-M-d'T'H:m:s";
+	private DataSourceContainer dataSourceContainer;
+	private MainInfoDao mainInfoDao;
+	private CommonPartDao commonPartDao;
+	private SpecialPartDao specialPartDao;
+	private DocumentUpdatesInfoDao documentUpdatesInfoDao;
+	private DictionaryDao dictionaryDao;
+
+	public DatabasePersister(DataSourceContainer dataSourceContainer) {
+		this.dataSourceContainer = dataSourceContainer;
+		mainInfoDao = new MainInfoDao(dataSourceContainer);
+		commonPartDao = new CommonPartDao(dataSourceContainer);
+		specialPartDao = new SpecialPartDao(dataSourceContainer);
+		documentUpdatesInfoDao = new DocumentUpdatesInfoDao(dataSourceContainer);
+		dictionaryDao = new DictionaryDao(dataSourceContainer);
+	}
 
 	private MainInfo buildMainInfo(String cadastr, String oktmo_code) {
 		// MAIN_INFO
@@ -89,13 +109,14 @@ public class DatabasePersister {
 		return commonPart;
 	}
 
-	public void acquire(List<Entry> entries, List<DocumentArchive> documents) throws ParseException {
-
+	public void acquire(List<Entry> entries, List<DocumentArchive> documents) throws ParseException, SQLException {
 
 		for (Entry entry : entries) {
 			String cadastralNumber = entry.getProperties().get("d:ID"); // TODO: CadastralNumber ???
 			String oktmo = entry.getProperties().get("d:OKTMO");
 			MainInfo mainInfo = buildMainInfo(cadastralNumber, oktmo);
+
+
 			for (DocumentArchive documentArchive : documents) {
 				Entry document = documentArchive.getDocument();
 				Map<String, String> docProps = document.getProperties();
@@ -105,7 +126,7 @@ public class DatabasePersister {
 				String docName = docProps.get("d:FULL_DOC_NAME");
 				String docNumber = docProps.get("d:APPROVAL_DOC_NUM");
 				String docRegNum = docProps.get("d:ORDER_NUMBER");
-				Date docRegDate = SimpleDateFormat.getDateTimeInstance().parse(docProps.get("d:DOCUMENT_DATE"));
+				Date docRegDate = new SimpleDateFormat(DATE_TIME_FORMAT).parse(docProps.get("d:DOCUMENT_DATE"));
 				String docExecutorOrganization = docProps.get("d:DOC_DEVELOPER");
 				String docExecutorPerson = docProps.get("d:EXECUTOR_FIO");
 				//+ ", " + docProps.get("d:EXECUTOR_POST") + ", " + docExecutorPerson + ", " + docProps.get("d:EXECUTOR_PHONE")
@@ -122,7 +143,7 @@ public class DatabasePersister {
 					Map<String, String> fileProps = file.getProperties();
 
 					String fileName = fileProps.get("d:NAME");
-					String fileExtension = fileName.substring(fileName.lastIndexOf("."), fileName.length());
+					String fileExtension = fileName.substring(fileName.lastIndexOf(".") + 1, fileName.length());
 					String fileTypeName = fileProps.get("d:TYPE_NAME");
 
 					if (fileExtension.toLowerCase().contains("doc") || fileExtension.toLowerCase().contains("pdf")) {
@@ -137,7 +158,7 @@ public class DatabasePersister {
 							mainInfo,
 							docNumber, // Код документа (Классификатор документов, размещаемых в ИС ОГД)
 							docName, // Дополнительное наименование
-							SimpleDateFormat.getDateTimeInstance().parse(docProps.get("d:APPROVAL_DOC_DATE")), // Дата утверждения документа
+							new SimpleDateFormat(DATE_TIME_FORMAT).parse(docProps.get("d:APPROVAL_DOC_DATE")), // Дата утверждения документа
 							docExecutorOrganization, // Организация, утвердившая документ (Юридические лица, обособленные подразделения и иные неюридические лица, Физические лица и предприниматели без образования юридического лица)
 							docRegNum, // Регистрационный номер
 							null, // Пространственный индекс
@@ -167,8 +188,35 @@ public class DatabasePersister {
 							mainInfo // Основные сведения
 					);
 					mainInfo.UPDATE1_ID = updatesInfo;
+
+					//
+					saveMainInfo(mainInfo);
+					saveCommonPart(commonPart);
+					saveSpecialPart(specialPart);
+					saveUpdatesInfo(updatesInfo);
+					saveMainInfo(mainInfo);
 				}
 			}
 		}
+	}
+
+	public void saveMainInfo(MainInfo mainInfo) throws SQLException {
+		//mainInfoDao.create(mainInfo);
+		System.out.println(mainInfo);
+	}
+
+	public void saveCommonPart(CommonPart commonPart) throws SQLException {
+		//commonPartDao.create(commonPart);
+		System.out.println(commonPart);
+	}
+
+	public void saveSpecialPart(SpecialPart specialPart) throws SQLException {
+		//specialPartDao.create(specialPart);
+		System.out.println(specialPart);
+	}
+
+	public void saveUpdatesInfo(DocumentUpdatesInfo updatesInfo) throws SQLException {
+		//documentUpdatesInfoDao.create(updatesInfo);
+		System.out.println(updatesInfo);
 	}
 }
