@@ -1,6 +1,8 @@
 package ru.sovzond.mgis2.fgistp.db_handlers.model.dictionaries;
 
 /**
+ * Классификатор документов, размещаемых в ИС ОГД ENT_DOC_ISOGD
+ *
  * Created by Alexander Arakelyan on 07.08.15.
  */
 public class ISOGDDocumentType {
