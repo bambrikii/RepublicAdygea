@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xml:base="http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/"
+	  xmlns="http://www.w3.org/2005/Atom" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+	  xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+	<id>http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/KTDs(23366M)/Children</id>
+	<title type="text">Children</title>
+	<updated>2015-08-05T06:16:55Z</updated>
+	<link rel="self" title="Children" href="Children"/>
+	<entry>
+		<id>http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/KTDs(492M)</id>
+		<category term="Strategis.Server.FGIS.KTD" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+		<link rel="edit" title="KTD" href="KTDs(492M)"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/DOCUMENTS" type="application/atom+xml;type=feed" title="DOCUMENTS"
+			  href="KTDs(492M)/DOCUMENTS"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/USERS" type="application/atom+xml;type=feed" title="USERS"
+			  href="KTDs(492M)/USERS"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Children" type="application/atom+xml;type=feed" title="Children"
+			  href="KTDs(492M)/Children"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Parent" type="application/atom+xml;type=entry" title="Parent"
+			  href="KTDs(492M)/Parent"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Type" type="application/atom+xml;type=entry" title="Type"
+			  href="KTDs(492M)/Type"/>
+		<title/>
+		<updated>2015-08-05T06:16:55Z</updated>
+		<author>
+			<name/>
+		</author>
+		<content type="application/xml">
+			<m:properties>
+				<d:ID m:type="Edm.Decimal">492</d:ID>
+				<d:NAME>Гиагинский муниципальный район</d:NAME>
+				<d:ParentId m:type="Edm.Decimal">23366</d:ParentId>
+				<d:IMAGE m:type="Edm.Binary" m:null="true"/>
+				<d:OKATO>79205</d:OKATO>
+				<d:ROSREESTR m:null="true"/>
+				<d:FULL_INFO m:null="true"/>
+				<d:BRIEF_INFO m:null="true"/>
+				<d:OKTMO>79605000</d:OKTMO>
+				<d:HAS_GEOMETRY m:type="Edm.Decimal">1</d:HAS_GEOMETRY>
+				<d:Level m:type="Edm.Decimal">3</d:Level>
+				<d:CHILDRENCOUNT m:type="Edm.Decimal">5</d:CHILDRENCOUNT>
+				<d:TypeID m:type="Edm.Decimal">3</d:TypeID>
+			</m:properties>
+		</content>
+	</entry>
+	<entry>
+		<id>http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/KTDs(493M)</id>
+		<category term="Strategis.Server.FGIS.KTD" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+		<link rel="edit" title="KTD" href="KTDs(493M)"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/DOCUMENTS" type="application/atom+xml;type=feed" title="DOCUMENTS"
+			  href="KTDs(493M)/DOCUMENTS"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/USERS" type="application/atom+xml;type=feed" title="USERS"
+			  href="KTDs(493M)/USERS"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Children" type="application/atom+xml;type=feed" title="Children"
+			  href="KTDs(493M)/Children"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Parent" type="application/atom+xml;type=entry" title="Parent"
+			  href="KTDs(493M)/Parent"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Type" type="application/atom+xml;type=entry" title="Type"
+			  href="KTDs(493M)/Type"/>
+		<title/>
+		<updated>2015-08-05T06:16:55Z</updated>
+		<author>
+			<name/>
+		</author>
+		<content type="application/xml">
+			<m:properties>
+				<d:ID m:type="Edm.Decimal">493</d:ID>
+				<d:NAME>Кошехабльский муниципальный район</d:NAME>
+				<d:ParentId m:type="Edm.Decimal">23366</d:ParentId>
+				<d:IMAGE m:type="Edm.Binary" m:null="true"/>
+				<d:OKATO>79215</d:OKATO>
+				<d:ROSREESTR m:null="true"/>
+				<d:FULL_INFO m:null="true"/>
+				<d:BRIEF_INFO m:null="true"/>
+				<d:OKTMO>79615000</d:OKTMO>
+				<d:HAS_GEOMETRY m:type="Edm.Decimal">1</d:HAS_GEOMETRY>
+				<d:Level m:type="Edm.Decimal">3</d:Level>
+				<d:CHILDRENCOUNT m:type="Edm.Decimal">9</d:CHILDRENCOUNT>
+				<d:TypeID m:type="Edm.Decimal">3</d:TypeID>
+			</m:properties>
+		</content>
+	</entry>
+	<entry>
+		<id>http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/KTDs(494M)</id>
+		<category term="Strategis.Server.FGIS.KTD" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+		<link rel="edit" title="KTD" href="KTDs(494M)"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/DOCUMENTS" type="application/atom+xml;type=feed" title="DOCUMENTS"
+			  href="KTDs(494M)/DOCUMENTS"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/USERS" type="application/atom+xml;type=feed" title="USERS"
+			  href="KTDs(494M)/USERS"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Children" type="application/atom+xml;type=feed" title="Children"
+			  href="KTDs(494M)/Children"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Parent" type="application/atom+xml;type=entry" title="Parent"
+			  href="KTDs(494M)/Parent"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Type" type="application/atom+xml;type=entry" title="Type"
+			  href="KTDs(494M)/Type"/>
+		<title/>
+		<updated>2015-08-05T06:16:55Z</updated>
+		<author>
+			<name/>
+		</author>
+		<content type="application/xml">
+			<m:properties>
+				<d:ID m:type="Edm.Decimal">494</d:ID>
+				<d:NAME>Красногвардейский муниципальный район</d:NAME>
+				<d:ParentId m:type="Edm.Decimal">23366</d:ParentId>
+				<d:IMAGE m:type="Edm.Binary" m:null="true"/>
+				<d:OKATO>79218</d:OKATO>
+				<d:ROSREESTR m:null="true"/>
+				<d:FULL_INFO m:null="true"/>
+				<d:BRIEF_INFO m:null="true"/>
+				<d:OKTMO>79618000</d:OKTMO>
+				<d:HAS_GEOMETRY m:type="Edm.Decimal">1</d:HAS_GEOMETRY>
+				<d:Level m:type="Edm.Decimal">3</d:Level>
+				<d:CHILDRENCOUNT m:type="Edm.Decimal">7</d:CHILDRENCOUNT>
+				<d:TypeID m:type="Edm.Decimal">3</d:TypeID>
+			</m:properties>
+		</content>
+	</entry>
+	<entry>
+		<id>http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/KTDs(495M)</id>
+		<category term="Strategis.Server.FGIS.KTD" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+		<link rel="edit" title="KTD" href="KTDs(495M)"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/DOCUMENTS" type="application/atom+xml;type=feed" title="DOCUMENTS"
+			  href="KTDs(495M)/DOCUMENTS"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/USERS" type="application/atom+xml;type=feed" title="USERS"
+			  href="KTDs(495M)/USERS"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Children" type="application/atom+xml;type=feed" title="Children"
+			  href="KTDs(495M)/Children"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Parent" type="application/atom+xml;type=entry" title="Parent"
+			  href="KTDs(495M)/Parent"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Type" type="application/atom+xml;type=entry" title="Type"
+			  href="KTDs(495M)/Type"/>
+		<title/>
+		<updated>2015-08-05T06:16:55Z</updated>
+		<author>
+			<name/>
+		</author>
+		<content type="application/xml">
+			<m:properties>
+				<d:ID m:type="Edm.Decimal">495</d:ID>
+				<d:NAME>Майкопский муниципальный район</d:NAME>
+				<d:ParentId m:type="Edm.Decimal">23366</d:ParentId>
+				<d:IMAGE m:type="Edm.Binary" m:null="true"/>
+				<d:OKATO m:null="true"/>
+				<d:ROSREESTR m:null="true"/>
+				<d:FULL_INFO m:null="true"/>
+				<d:BRIEF_INFO m:null="true"/>
+				<d:OKTMO>79622000</d:OKTMO>
+				<d:HAS_GEOMETRY m:type="Edm.Decimal">1</d:HAS_GEOMETRY>
+				<d:Level m:type="Edm.Decimal">3</d:Level>
+				<d:CHILDRENCOUNT m:type="Edm.Decimal">13</d:CHILDRENCOUNT>
+				<d:TypeID m:type="Edm.Decimal">3</d:TypeID>
+			</m:properties>
+		</content>
+	</entry>
+	<entry>
+		<id>http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/KTDs(496M)</id>
+		<category term="Strategis.Server.FGIS.KTD" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+		<link rel="edit" title="KTD" href="KTDs(496M)"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/DOCUMENTS" type="application/atom+xml;type=feed" title="DOCUMENTS"
+			  href="KTDs(496M)/DOCUMENTS"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/USERS" type="application/atom+xml;type=feed" title="USERS"
+			  href="KTDs(496M)/USERS"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Children" type="application/atom+xml;type=feed" title="Children"
+			  href="KTDs(496M)/Children"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Parent" type="application/atom+xml;type=entry" title="Parent"
+			  href="KTDs(496M)/Parent"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Type" type="application/atom+xml;type=entry" title="Type"
+			  href="KTDs(496M)/Type"/>
+		<title/>
+		<updated>2015-08-05T06:16:55Z</updated>
+		<author>
+			<name/>
+		</author>
+		<content type="application/xml">
+			<m:properties>
+				<d:ID m:type="Edm.Decimal">496</d:ID>
+				<d:NAME>Тахтамукайский муниципальный район</d:NAME>
+				<d:ParentId m:type="Edm.Decimal">23366</d:ParentId>
+				<d:IMAGE m:type="Edm.Binary" m:null="true"/>
+				<d:OKATO>79230</d:OKATO>
+				<d:ROSREESTR m:null="true"/>
+				<d:FULL_INFO m:null="true"/>
+				<d:BRIEF_INFO m:null="true"/>
+				<d:OKTMO>79630000</d:OKTMO>
+				<d:HAS_GEOMETRY m:type="Edm.Decimal">1</d:HAS_GEOMETRY>
+				<d:Level m:type="Edm.Decimal">3</d:Level>
+				<d:CHILDRENCOUNT m:type="Edm.Decimal">7</d:CHILDRENCOUNT>
+				<d:TypeID m:type="Edm.Decimal">3</d:TypeID>
+			</m:properties>
+		</content>
+	</entry>
+	<entry>
+		<id>http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/KTDs(497M)</id>
+		<category term="Strategis.Server.FGIS.KTD" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+		<link rel="edit" title="KTD" href="KTDs(497M)"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/DOCUMENTS" type="application/atom+xml;type=feed" title="DOCUMENTS"
+			  href="KTDs(497M)/DOCUMENTS"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/USERS" type="application/atom+xml;type=feed" title="USERS"
+			  href="KTDs(497M)/USERS"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Children" type="application/atom+xml;type=feed" title="Children"
+			  href="KTDs(497M)/Children"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Parent" type="application/atom+xml;type=entry" title="Parent"
+			  href="KTDs(497M)/Parent"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Type" type="application/atom+xml;type=entry" title="Type"
+			  href="KTDs(497M)/Type"/>
+		<title/>
+		<updated>2015-08-05T06:16:55Z</updated>
+		<author>
+			<name/>
+		</author>
+		<content type="application/xml">
+			<m:properties>
+				<d:ID m:type="Edm.Decimal">497</d:ID>
+				<d:NAME>Теучежский муниципальный район</d:NAME>
+				<d:ParentId m:type="Edm.Decimal">23366</d:ParentId>
+				<d:IMAGE m:type="Edm.Binary" m:null="true"/>
+				<d:OKATO>79233</d:OKATO>
+				<d:ROSREESTR m:null="true"/>
+				<d:FULL_INFO m:null="true"/>
+				<d:BRIEF_INFO m:null="true"/>
+				<d:OKTMO>79633000</d:OKTMO>
+				<d:HAS_GEOMETRY m:type="Edm.Decimal">1</d:HAS_GEOMETRY>
+				<d:Level m:type="Edm.Decimal">3</d:Level>
+				<d:CHILDRENCOUNT m:type="Edm.Decimal">7</d:CHILDRENCOUNT>
+				<d:TypeID m:type="Edm.Decimal">3</d:TypeID>
+			</m:properties>
+		</content>
+	</entry>
+	<entry>
+		<id>http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/KTDs(498M)</id>
+		<category term="Strategis.Server.FGIS.KTD" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+		<link rel="edit" title="KTD" href="KTDs(498M)"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/DOCUMENTS" type="application/atom+xml;type=feed" title="DOCUMENTS"
+			  href="KTDs(498M)/DOCUMENTS"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/USERS" type="application/atom+xml;type=feed" title="USERS"
+			  href="KTDs(498M)/USERS"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Children" type="application/atom+xml;type=feed" title="Children"
+			  href="KTDs(498M)/Children"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Parent" type="application/atom+xml;type=entry" title="Parent"
+			  href="KTDs(498M)/Parent"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Type" type="application/atom+xml;type=entry" title="Type"
+			  href="KTDs(498M)/Type"/>
+		<title/>
+		<updated>2015-08-05T06:16:55Z</updated>
+		<author>
+			<name/>
+		</author>
+		<content type="application/xml">
+			<m:properties>
+				<d:ID m:type="Edm.Decimal">498</d:ID>
+				<d:NAME>Шовгеновский муниципальный район</d:NAME>
+				<d:ParentId m:type="Edm.Decimal">23366</d:ParentId>
+				<d:IMAGE m:type="Edm.Binary" m:null="true"/>
+				<d:OKATO>79240</d:OKATO>
+				<d:ROSREESTR m:null="true"/>
+				<d:FULL_INFO m:null="true"/>
+				<d:BRIEF_INFO m:null="true"/>
+				<d:OKTMO>79640000</d:OKTMO>
+				<d:HAS_GEOMETRY m:type="Edm.Decimal">1</d:HAS_GEOMETRY>
+				<d:Level m:type="Edm.Decimal">3</d:Level>
+				<d:CHILDRENCOUNT m:type="Edm.Decimal">5</d:CHILDRENCOUNT>
+				<d:TypeID m:type="Edm.Decimal">3</d:TypeID>
+			</m:properties>
+		</content>
+	</entry>
+	<entry>
+		<id>http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/KTDs(499M)</id>
+		<category term="Strategis.Server.FGIS.KTD" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+		<link rel="edit" title="KTD" href="KTDs(499M)"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/DOCUMENTS" type="application/atom+xml;type=feed" title="DOCUMENTS"
+			  href="KTDs(499M)/DOCUMENTS"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/USERS" type="application/atom+xml;type=feed" title="USERS"
+			  href="KTDs(499M)/USERS"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Children" type="application/atom+xml;type=feed" title="Children"
+			  href="KTDs(499M)/Children"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Parent" type="application/atom+xml;type=entry" title="Parent"
+			  href="KTDs(499M)/Parent"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Type" type="application/atom+xml;type=entry" title="Type"
+			  href="KTDs(499M)/Type"/>
+		<title/>
+		<updated>2015-08-05T06:16:55Z</updated>
+		<author>
+			<name/>
+		</author>
+		<content type="application/xml">
+			<m:properties>
+				<d:ID m:type="Edm.Decimal">499</d:ID>
+				<d:NAME>- Город Майкоп</d:NAME>
+				<d:ParentId m:type="Edm.Decimal">23366</d:ParentId>
+				<d:IMAGE m:type="Edm.Binary" m:null="true"/>
+				<d:OKATO>79401</d:OKATO>
+				<d:ROSREESTR m:null="true"/>
+				<d:FULL_INFO m:null="true"/>
+				<d:BRIEF_INFO m:null="true"/>
+				<d:OKTMO>79701000</d:OKTMO>
+				<d:HAS_GEOMETRY m:type="Edm.Decimal">1</d:HAS_GEOMETRY>
+				<d:Level m:type="Edm.Decimal">3</d:Level>
+				<d:CHILDRENCOUNT m:type="Edm.Decimal">0</d:CHILDRENCOUNT>
+				<d:TypeID m:type="Edm.Decimal">4</d:TypeID>
+			</m:properties>
+		</content>
+	</entry>
+	<entry>
+		<id>http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/KTDs(500M)</id>
+		<category term="Strategis.Server.FGIS.KTD" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+		<link rel="edit" title="KTD" href="KTDs(500M)"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/DOCUMENTS" type="application/atom+xml;type=feed" title="DOCUMENTS"
+			  href="KTDs(500M)/DOCUMENTS"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/USERS" type="application/atom+xml;type=feed" title="USERS"
+			  href="KTDs(500M)/USERS"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Children" type="application/atom+xml;type=feed" title="Children"
+			  href="KTDs(500M)/Children"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Parent" type="application/atom+xml;type=entry" title="Parent"
+			  href="KTDs(500M)/Parent"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Type" type="application/atom+xml;type=entry" title="Type"
+			  href="KTDs(500M)/Type"/>
+		<title/>
+		<updated>2015-08-05T06:16:55Z</updated>
+		<author>
+			<name/>
+		</author>
+		<content type="application/xml">
+			<m:properties>
+				<d:ID m:type="Edm.Decimal">500</d:ID>
+				<d:NAME>- Город Адыгейск</d:NAME>
+				<d:ParentId m:type="Edm.Decimal">23366</d:ParentId>
+				<d:IMAGE m:type="Edm.Binary" m:null="true"/>
+				<d:OKATO>79403</d:OKATO>
+				<d:ROSREESTR m:null="true"/>
+				<d:FULL_INFO m:null="true"/>
+				<d:BRIEF_INFO m:null="true"/>
+				<d:OKTMO>79703000</d:OKTMO>
+				<d:HAS_GEOMETRY m:type="Edm.Decimal">1</d:HAS_GEOMETRY>
+				<d:Level m:type="Edm.Decimal">3</d:Level>
+				<d:CHILDRENCOUNT m:type="Edm.Decimal">0</d:CHILDRENCOUNT>
+				<d:TypeID m:type="Edm.Decimal">4</d:TypeID>
+			</m:properties>
+		</content>
+	</entry>
+</feed>

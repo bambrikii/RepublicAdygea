@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xml:base="http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/"
+	  xmlns="http://www.w3.org/2005/Atom" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+	  xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+	<m:count>1</m:count>
+	<id>http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/GetDocumentFiles</id>
+	<title type="text">GetDocumentFiles</title>
+	<updated>2015-08-05T08:20:16Z</updated>
+	<link rel="self" title="GetDocumentFiles" href="GetDocumentFiles"/>
+	<entry>
+		<id>
+			http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/DOCUMENT_FILES_PREVIEW(guid'a5c61f76-1ee2-492a-ac33-193a942bb7b6')
+		</id>
+		<category term="Strategis.Server.FGIS.DOCUMENT_FILES_PREVIEW" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+		<link rel="edit" title="DOCUMENT_FILES_PREVIEW" href="DOCUMENT_FILES_PREVIEW(guid'a5c61f76-1ee2-492a-ac33-193a942bb7b6')"/>
+		<title/>
+		<updated>2015-08-05T08:20:16Z</updated>
+		<author>
+			<name/>
+		</author>
+		<content type="application/xml">
+			<m:properties>
+				<d:ID m:type="Edm.Guid">a5c61f76-1ee2-492a-ac33-193a942bb7b6</d:ID>
+				<d:DOCUMENT_ID m:type="Edm.Guid">2d9c1fdf-4198-4b0f-a44c-2a6b3cba41ec</d:DOCUMENT_ID>
+				<d:NAME>Векторный вид ГП г. Адыгейска.rar</d:NAME>
+				<d:TYPE_NAME>Материалы по обоснованию генерального плана в виде карт</d:TYPE_NAME>
+				<d:CREATION_DATE m:type="Edm.DateTime">2013-07-01T18:12:01</d:CREATION_DATE>
+				<d:FILE_SIZE m:type="Edm.Decimal">183698725</d:FILE_SIZE>
+				<d:IS_SIGNED m:type="Edm.Decimal">0</d:IS_SIGNED>
+				<d:SIGNATURE_CONTENT m:type="Edm.Binary" m:null="true"/>
+			</m:properties>
+		</content>
+	</entry>
+</feed>

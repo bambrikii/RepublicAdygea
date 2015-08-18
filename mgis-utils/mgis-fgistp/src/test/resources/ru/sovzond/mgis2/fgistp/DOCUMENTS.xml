@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xml:base="http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/"
+	  xmlns="http://www.w3.org/2005/Atom" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+	  xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+	<id>http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/KTDs(23366M)/DOCUMENTS</id>
+	<title type="text">DOCUMENTS</title>
+	<updated>2015-08-05T07:02:34Z</updated>
+	<link rel="self" title="DOCUMENTS" href="DOCUMENTS"/>
+	<entry>
+		<id>
+			http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/Documents(guid'8522c03d-eb6b-4616-85f7-84c3cfb15173')
+		</id>
+		<category term="Strategis.Server.FGIS.Document" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+		<link rel="edit" title="Document" href="Documents(guid'8522c03d-eb6b-4616-85f7-84c3cfb15173')"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/APPROVE_STATUSES" type="application/atom+xml;type=entry"
+			  title="APPROVE_STATUSES" href="Documents(guid'8522c03d-eb6b-4616-85f7-84c3cfb15173')/APPROVE_STATUSES"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Territory" type="application/atom+xml;type=entry" title="Territory"
+			  href="Documents(guid'8522c03d-eb6b-4616-85f7-84c3cfb15173')/Territory"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/User" type="application/atom+xml;type=entry" title="User"
+			  href="Documents(guid'8522c03d-eb6b-4616-85f7-84c3cfb15173')/User"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Confirmation" type="application/atom+xml;type=entry"
+			  title="Confirmation" href="Documents(guid'8522c03d-eb6b-4616-85f7-84c3cfb15173')/Confirmation"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/State" type="application/atom+xml;type=entry" title="State"
+			  href="Documents(guid'8522c03d-eb6b-4616-85f7-84c3cfb15173')/State"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/PrivateFiles" type="application/atom+xml;type=feed"
+			  title="PrivateFiles" href="Documents(guid'8522c03d-eb6b-4616-85f7-84c3cfb15173')/PrivateFiles"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Developer" type="application/atom+xml;type=entry" title="Developer"
+			  href="Documents(guid'8522c03d-eb6b-4616-85f7-84c3cfb15173')/Developer"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Type" type="application/atom+xml;type=entry" title="Type"
+			  href="Documents(guid'8522c03d-eb6b-4616-85f7-84c3cfb15173')/Type"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Files" type="application/atom+xml;type=feed" title="Files"
+			  href="Documents(guid'8522c03d-eb6b-4616-85f7-84c3cfb15173')/Files"/>
+		<title/>
+		<updated>2015-08-05T07:02:34Z</updated>
+		<author>
+			<name/>
+		</author>
+		<content type="application/xml">
+			<m:properties>
+				<d:ID m:type="Edm.Guid">8522c03d-eb6b-4616-85f7-84c3cfb15173</d:ID>
+				<d:METADATA_TYPE_ID m:type="Edm.Decimal">25</d:METADATA_TYPE_ID>
+				<d:DOCUMENT_DATE m:type="Edm.DateTime">2015-02-03T10:17:45.239928</d:DOCUMENT_DATE>
+				<d:ACTUAL_DATE m:type="Edm.DateTime">2015-02-03T10:17:45.239928</d:ACTUAL_DATE>
+				<d:KEYWORDS m:null="true"/>
+				<d:USER_ID m:type="Edm.Decimal">96917</d:USER_ID>
+				<d:TerritoryId m:type="Edm.Decimal">23366</d:TerritoryId>
+				<d:IS_PROJECTIVE>N</d:IS_PROJECTIVE>
+				<d:IS_APPROVED>N</d:IS_APPROVED>
+				<d:APPROVE_STATUS_ID m:type="Edm.Decimal" m:null="true"/>
+				<d:FULL_DOC_NAME>Корректировка Схемы территориального планирования Республики Адыгея</d:FULL_DOC_NAME>
+				<d:BRIEF_DOC_NAME>Корректировка Схемы территориального планирования Республики Адыгея</d:BRIEF_DOC_NAME>
+				<d:DOC_DEVELOPER m:null="true"/>
+				<d:APPROVAL_DOC_NAME>Постановление Кабинета Министров Республики Адыгея</d:APPROVAL_DOC_NAME>
+				<d:APPROVAL_DOC_DATE m:type="Edm.DateTime">2013-12-23T00:00:00</d:APPROVAL_DOC_DATE>
+				<d:APPROVAL_DOC_NUM>Постановление Кабинета Министров Республики Адыгея</d:APPROVAL_DOC_NUM>
+				<d:EXECUTOR_FIO m:null="true"/>
+				<d:EXECUTOR_PHONE>8772524712</d:EXECUTOR_PHONE>
+				<d:EXECUTOR_POST>Консультант</d:EXECUTOR_POST>
+				<d:EXECUTOR_EMAIL>comraarch@mail.ru</d:EXECUTOR_EMAIL>
+				<d:NOTE m:null="true"/>
+				<d:DELETION_DATE m:type="Edm.DateTime" m:null="true"/>
+				<d:IS_PUBLISHED>N</d:IS_PUBLISHED>
+				<d:STATUS_ID m:type="Edm.Decimal">0</d:STATUS_ID>
+				<d:StateId m:type="Edm.Decimal">1</d:StateId>
+				<d:DeveloperId m:type="Edm.Decimal">1</d:DeveloperId>
+				<d:ORDER_NUMBER m:type="Edm.Decimal">75099</d:ORDER_NUMBER>
+				<d:UNIQUE_NUMBER>157975099</d:UNIQUE_NUMBER>
+				<d:COMMENTS_COUNT m:type="Edm.Decimal">0</d:COMMENTS_COUNT>
+				<d:IS_PROJECT>N</d:IS_PROJECT>
+			</m:properties>
+		</content>
+	</entry>
+	<entry>
+		<id>
+			http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/Documents(guid'9ba0d77c-4a7c-408c-ace7-33dbe2699a6f')
+		</id>
+		<category term="Strategis.Server.FGIS.Document" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+		<link rel="edit" title="Document" href="Documents(guid'9ba0d77c-4a7c-408c-ace7-33dbe2699a6f')"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/APPROVE_STATUSES" type="application/atom+xml;type=entry"
+			  title="APPROVE_STATUSES" href="Documents(guid'9ba0d77c-4a7c-408c-ace7-33dbe2699a6f')/APPROVE_STATUSES"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Territory" type="application/atom+xml;type=entry" title="Territory"
+			  href="Documents(guid'9ba0d77c-4a7c-408c-ace7-33dbe2699a6f')/Territory"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/User" type="application/atom+xml;type=entry" title="User"
+			  href="Documents(guid'9ba0d77c-4a7c-408c-ace7-33dbe2699a6f')/User"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Confirmation" type="application/atom+xml;type=entry"
+			  title="Confirmation" href="Documents(guid'9ba0d77c-4a7c-408c-ace7-33dbe2699a6f')/Confirmation"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/State" type="application/atom+xml;type=entry" title="State"
+			  href="Documents(guid'9ba0d77c-4a7c-408c-ace7-33dbe2699a6f')/State"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/PrivateFiles" type="application/atom+xml;type=feed"
+			  title="PrivateFiles" href="Documents(guid'9ba0d77c-4a7c-408c-ace7-33dbe2699a6f')/PrivateFiles"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Developer" type="application/atom+xml;type=entry" title="Developer"
+			  href="Documents(guid'9ba0d77c-4a7c-408c-ace7-33dbe2699a6f')/Developer"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Type" type="application/atom+xml;type=entry" title="Type"
+			  href="Documents(guid'9ba0d77c-4a7c-408c-ace7-33dbe2699a6f')/Type"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Files" type="application/atom+xml;type=feed" title="Files"
+			  href="Documents(guid'9ba0d77c-4a7c-408c-ace7-33dbe2699a6f')/Files"/>
+		<title/>
+		<updated>2015-08-05T07:02:34Z</updated>
+		<author>
+			<name/>
+		</author>
+		<content type="application/xml">
+			<m:properties>
+				<d:ID m:type="Edm.Guid">9ba0d77c-4a7c-408c-ace7-33dbe2699a6f</d:ID>
+				<d:METADATA_TYPE_ID m:type="Edm.Decimal">817</d:METADATA_TYPE_ID>
+				<d:DOCUMENT_DATE m:type="Edm.DateTime">2015-01-16T16:08:18.725105</d:DOCUMENT_DATE>
+				<d:ACTUAL_DATE m:type="Edm.DateTime">2015-01-16T16:08:18.725105</d:ACTUAL_DATE>
+				<d:KEYWORDS m:null="true"/>
+				<d:USER_ID m:type="Edm.Decimal">96917</d:USER_ID>
+				<d:TerritoryId m:type="Edm.Decimal">23366</d:TerritoryId>
+				<d:IS_PROJECTIVE>N</d:IS_PROJECTIVE>
+				<d:IS_APPROVED>N</d:IS_APPROVED>
+				<d:APPROVE_STATUS_ID m:type="Edm.Decimal" m:null="true"/>
+				<d:FULL_DOC_NAME>Региональные нормативы градостроительного проектирования Республики Адыгея</d:FULL_DOC_NAME>
+				<d:BRIEF_DOC_NAME>Региональные нормативы градпроектирования РА</d:BRIEF_DOC_NAME>
+				<d:DOC_DEVELOPER m:null="true"/>
+				<d:APPROVAL_DOC_NAME xml:space="preserve">Приказ Комитета Республики Адыгея по архитектуре и градостроительству </d:APPROVAL_DOC_NAME>
+				<d:APPROVAL_DOC_DATE m:type="Edm.DateTime">2014-12-31T00:00:00</d:APPROVAL_DOC_DATE>
+				<d:APPROVAL_DOC_NUM>70-д</d:APPROVAL_DOC_NUM>
+				<d:EXECUTOR_FIO m:null="true"/>
+				<d:EXECUTOR_PHONE>8772524712</d:EXECUTOR_PHONE>
+				<d:EXECUTOR_POST>консультант</d:EXECUTOR_POST>
+				<d:EXECUTOR_EMAIL>comraarch@mail.ru</d:EXECUTOR_EMAIL>
+				<d:NOTE m:null="true"/>
+				<d:DELETION_DATE m:type="Edm.DateTime" m:null="true"/>
+				<d:IS_PUBLISHED>N</d:IS_PUBLISHED>
+				<d:STATUS_ID m:type="Edm.Decimal">0</d:STATUS_ID>
+				<d:StateId m:type="Edm.Decimal">1</d:StateId>
+				<d:DeveloperId m:type="Edm.Decimal">283</d:DeveloperId>
+				<d:ORDER_NUMBER m:type="Edm.Decimal">74392</d:ORDER_NUMBER>
+				<d:UNIQUE_NUMBER>157974392</d:UNIQUE_NUMBER>
+				<d:COMMENTS_COUNT m:type="Edm.Decimal">0</d:COMMENTS_COUNT>
+				<d:IS_PROJECT>N</d:IS_PROJECT>
+			</m:properties>
+		</content>
+	</entry>
+	<entry>
+		<id>
+			http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/Documents(guid'c4810f8e-9288-4196-84d7-c42d4f0c20a3')
+		</id>
+		<category term="Strategis.Server.FGIS.Document" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+		<link rel="edit" title="Document" href="Documents(guid'c4810f8e-9288-4196-84d7-c42d4f0c20a3')"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/APPROVE_STATUSES" type="application/atom+xml;type=entry"
+			  title="APPROVE_STATUSES" href="Documents(guid'c4810f8e-9288-4196-84d7-c42d4f0c20a3')/APPROVE_STATUSES"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Territory" type="application/atom+xml;type=entry" title="Territory"
+			  href="Documents(guid'c4810f8e-9288-4196-84d7-c42d4f0c20a3')/Territory"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/User" type="application/atom+xml;type=entry" title="User"
+			  href="Documents(guid'c4810f8e-9288-4196-84d7-c42d4f0c20a3')/User"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Confirmation" type="application/atom+xml;type=entry"
+			  title="Confirmation" href="Documents(guid'c4810f8e-9288-4196-84d7-c42d4f0c20a3')/Confirmation"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/State" type="application/atom+xml;type=entry" title="State"
+			  href="Documents(guid'c4810f8e-9288-4196-84d7-c42d4f0c20a3')/State"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/PrivateFiles" type="application/atom+xml;type=feed"
+			  title="PrivateFiles" href="Documents(guid'c4810f8e-9288-4196-84d7-c42d4f0c20a3')/PrivateFiles"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Developer" type="application/atom+xml;type=entry" title="Developer"
+			  href="Documents(guid'c4810f8e-9288-4196-84d7-c42d4f0c20a3')/Developer"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Type" type="application/atom+xml;type=entry" title="Type"
+			  href="Documents(guid'c4810f8e-9288-4196-84d7-c42d4f0c20a3')/Type"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Files" type="application/atom+xml;type=feed" title="Files"
+			  href="Documents(guid'c4810f8e-9288-4196-84d7-c42d4f0c20a3')/Files"/>
+		<title/>
+		<updated>2015-08-05T07:02:34Z</updated>
+		<author>
+			<name/>
+		</author>
+		<content type="application/xml">
+			<m:properties>
+				<d:ID m:type="Edm.Guid">c4810f8e-9288-4196-84d7-c42d4f0c20a3</d:ID>
+				<d:METADATA_TYPE_ID m:type="Edm.Decimal">817</d:METADATA_TYPE_ID>
+				<d:DOCUMENT_DATE m:type="Edm.DateTime">2015-07-06T09:03:56.957371</d:DOCUMENT_DATE>
+				<d:ACTUAL_DATE m:type="Edm.DateTime">2015-07-06T09:03:56.957371</d:ACTUAL_DATE>
+				<d:KEYWORDS m:null="true"/>
+				<d:USER_ID m:type="Edm.Decimal">96917</d:USER_ID>
+				<d:TerritoryId m:type="Edm.Decimal">23366</d:TerritoryId>
+				<d:IS_PROJECTIVE>N</d:IS_PROJECTIVE>
+				<d:IS_APPROVED>N</d:IS_APPROVED>
+				<d:APPROVE_STATUS_ID m:type="Edm.Decimal" m:null="true"/>
+				<d:FULL_DOC_NAME>Внесение изменений в региональные нормативы градостроительного проектирования Республики Адыгея</d:FULL_DOC_NAME>
+				<d:BRIEF_DOC_NAME>Внесение изменений в региональные нормативы градостроительного проектирования РА</d:BRIEF_DOC_NAME>
+				<d:DOC_DEVELOPER m:null="true"/>
+				<d:APPROVAL_DOC_NAME>Приказ</d:APPROVAL_DOC_NAME>
+				<d:APPROVAL_DOC_DATE m:type="Edm.DateTime">2015-07-02T00:00:00</d:APPROVAL_DOC_DATE>
+				<d:APPROVAL_DOC_NUM>18-од</d:APPROVAL_DOC_NUM>
+				<d:EXECUTOR_FIO m:null="true"/>
+				<d:EXECUTOR_PHONE>8772524712</d:EXECUTOR_PHONE>
+				<d:EXECUTOR_POST>Консультант</d:EXECUTOR_POST>
+				<d:EXECUTOR_EMAIL>comraarch@mail.ru</d:EXECUTOR_EMAIL>
+				<d:NOTE m:null="true"/>
+				<d:DELETION_DATE m:type="Edm.DateTime" m:null="true"/>
+				<d:IS_PUBLISHED>N</d:IS_PUBLISHED>
+				<d:STATUS_ID m:type="Edm.Decimal">0</d:STATUS_ID>
+				<d:StateId m:type="Edm.Decimal">1</d:StateId>
+				<d:DeveloperId m:type="Edm.Decimal">283</d:DeveloperId>
+				<d:ORDER_NUMBER m:type="Edm.Decimal">80542</d:ORDER_NUMBER>
+				<d:UNIQUE_NUMBER>157980542</d:UNIQUE_NUMBER>
+				<d:COMMENTS_COUNT m:type="Edm.Decimal">0</d:COMMENTS_COUNT>
+				<d:IS_PROJECT>N</d:IS_PROJECT>
+			</m:properties>
+		</content>
+	</entry>
+	<entry>
+		<id>
+			http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/Documents(guid'50b259cb-2bce-42db-afb2-47842bb926a1')
+		</id>
+		<category term="Strategis.Server.FGIS.Document" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+		<link rel="edit" title="Document" href="Documents(guid'50b259cb-2bce-42db-afb2-47842bb926a1')"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/APPROVE_STATUSES" type="application/atom+xml;type=entry"
+			  title="APPROVE_STATUSES" href="Documents(guid'50b259cb-2bce-42db-afb2-47842bb926a1')/APPROVE_STATUSES"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Territory" type="application/atom+xml;type=entry" title="Territory"
+			  href="Documents(guid'50b259cb-2bce-42db-afb2-47842bb926a1')/Territory"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/User" type="application/atom+xml;type=entry" title="User"
+			  href="Documents(guid'50b259cb-2bce-42db-afb2-47842bb926a1')/User"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Confirmation" type="application/atom+xml;type=entry"
+			  title="Confirmation" href="Documents(guid'50b259cb-2bce-42db-afb2-47842bb926a1')/Confirmation"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/State" type="application/atom+xml;type=entry" title="State"
+			  href="Documents(guid'50b259cb-2bce-42db-afb2-47842bb926a1')/State"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/PrivateFiles" type="application/atom+xml;type=feed"
+			  title="PrivateFiles" href="Documents(guid'50b259cb-2bce-42db-afb2-47842bb926a1')/PrivateFiles"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Developer" type="application/atom+xml;type=entry" title="Developer"
+			  href="Documents(guid'50b259cb-2bce-42db-afb2-47842bb926a1')/Developer"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Type" type="application/atom+xml;type=entry" title="Type"
+			  href="Documents(guid'50b259cb-2bce-42db-afb2-47842bb926a1')/Type"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Files" type="application/atom+xml;type=feed" title="Files"
+			  href="Documents(guid'50b259cb-2bce-42db-afb2-47842bb926a1')/Files"/>
+		<title/>
+		<updated>2015-08-05T07:02:34Z</updated>
+		<author>
+			<name/>
+		</author>
+		<content type="application/xml">
+			<m:properties>
+				<d:ID m:type="Edm.Guid">50b259cb-2bce-42db-afb2-47842bb926a1</d:ID>
+				<d:METADATA_TYPE_ID m:type="Edm.Decimal">817</d:METADATA_TYPE_ID>
+				<d:DOCUMENT_DATE m:type="Edm.DateTime">2014-05-23T17:21:36.466867</d:DOCUMENT_DATE>
+				<d:ACTUAL_DATE m:type="Edm.DateTime">2014-05-23T17:21:36.466867</d:ACTUAL_DATE>
+				<d:KEYWORDS m:null="true"/>
+				<d:USER_ID m:type="Edm.Decimal">96917</d:USER_ID>
+				<d:TerritoryId m:type="Edm.Decimal">23366</d:TerritoryId>
+				<d:IS_PROJECTIVE>N</d:IS_PROJECTIVE>
+				<d:IS_APPROVED>N</d:IS_APPROVED>
+				<d:APPROVE_STATUS_ID m:type="Edm.Decimal" m:null="true"/>
+				<d:FULL_DOC_NAME>Об утверждении нормативов градостроительного проектирования Республики Адыгея</d:FULL_DOC_NAME>
+				<d:BRIEF_DOC_NAME>Об утверждении нормативов градостроительного проектирования Республики Адыгея</d:BRIEF_DOC_NAME>
+				<d:DOC_DEVELOPER m:null="true"/>
+				<d:APPROVAL_DOC_NAME>Постановление Кабинета Министров Республики Адыгея</d:APPROVAL_DOC_NAME>
+				<d:APPROVAL_DOC_DATE m:type="Edm.DateTime">2010-12-31T00:00:00</d:APPROVAL_DOC_DATE>
+				<d:APPROVAL_DOC_NUM>N 270</d:APPROVAL_DOC_NUM>
+				<d:EXECUTOR_FIO m:null="true"/>
+				<d:EXECUTOR_PHONE>8772524712</d:EXECUTOR_PHONE>
+				<d:EXECUTOR_POST>Консультант</d:EXECUTOR_POST>
+				<d:EXECUTOR_EMAIL>comraarch@mail.ru</d:EXECUTOR_EMAIL>
+				<d:NOTE m:null="true"/>
+				<d:DELETION_DATE m:type="Edm.DateTime" m:null="true"/>
+				<d:IS_PUBLISHED>N</d:IS_PUBLISHED>
+				<d:STATUS_ID m:type="Edm.Decimal">0</d:STATUS_ID>
+				<d:StateId m:type="Edm.Decimal">1</d:StateId>
+				<d:DeveloperId m:type="Edm.Decimal">1</d:DeveloperId>
+				<d:ORDER_NUMBER m:type="Edm.Decimal">60874</d:ORDER_NUMBER>
+				<d:UNIQUE_NUMBER>147960874</d:UNIQUE_NUMBER>
+				<d:COMMENTS_COUNT m:type="Edm.Decimal">0</d:COMMENTS_COUNT>
+				<d:IS_PROJECT>N</d:IS_PROJECT>
+			</m:properties>
+		</content>
+	</entry>
+	<entry>
+		<id>
+			http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/Documents(guid'3538b3d2-e716-1709-e043-230019acb57c')
+		</id>
+		<category term="Strategis.Server.FGIS.Document" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+		<link rel="edit" title="Document" href="Documents(guid'3538b3d2-e716-1709-e043-230019acb57c')"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/APPROVE_STATUSES" type="application/atom+xml;type=entry"
+			  title="APPROVE_STATUSES" href="Documents(guid'3538b3d2-e716-1709-e043-230019acb57c')/APPROVE_STATUSES"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Territory" type="application/atom+xml;type=entry" title="Territory"
+			  href="Documents(guid'3538b3d2-e716-1709-e043-230019acb57c')/Territory"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/User" type="application/atom+xml;type=entry" title="User"
+			  href="Documents(guid'3538b3d2-e716-1709-e043-230019acb57c')/User"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Confirmation" type="application/atom+xml;type=entry"
+			  title="Confirmation" href="Documents(guid'3538b3d2-e716-1709-e043-230019acb57c')/Confirmation"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/State" type="application/atom+xml;type=entry" title="State"
+			  href="Documents(guid'3538b3d2-e716-1709-e043-230019acb57c')/State"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/PrivateFiles" type="application/atom+xml;type=feed"
+			  title="PrivateFiles" href="Documents(guid'3538b3d2-e716-1709-e043-230019acb57c')/PrivateFiles"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Developer" type="application/atom+xml;type=entry" title="Developer"
+			  href="Documents(guid'3538b3d2-e716-1709-e043-230019acb57c')/Developer"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Type" type="application/atom+xml;type=entry" title="Type"
+			  href="Documents(guid'3538b3d2-e716-1709-e043-230019acb57c')/Type"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Files" type="application/atom+xml;type=feed" title="Files"
+			  href="Documents(guid'3538b3d2-e716-1709-e043-230019acb57c')/Files"/>
+		<title/>
+		<updated>2015-08-05T07:02:34Z</updated>
+		<author>
+			<name/>
+		</author>
+		<content type="application/xml">
+			<m:properties>
+				<d:ID m:type="Edm.Guid">3538b3d2-e716-1709-e043-230019acb57c</d:ID>
+				<d:METADATA_TYPE_ID m:type="Edm.Decimal">25</d:METADATA_TYPE_ID>
+				<d:DOCUMENT_DATE m:type="Edm.DateTime">2012-10-16T13:00:00</d:DOCUMENT_DATE>
+				<d:ACTUAL_DATE m:type="Edm.DateTime">2012-10-16T13:00:00</d:ACTUAL_DATE>
+				<d:KEYWORDS m:null="true"/>
+				<d:USER_ID m:type="Edm.Decimal">96917</d:USER_ID>
+				<d:TerritoryId m:type="Edm.Decimal">23366</d:TerritoryId>
+				<d:IS_PROJECTIVE m:null="true"/>
+				<d:IS_APPROVED m:null="true"/>
+				<d:APPROVE_STATUS_ID m:type="Edm.Decimal" m:null="true"/>
+				<d:FULL_DOC_NAME>Внасение изменений в Схему территориального планимрования Республики Адыгея</d:FULL_DOC_NAME>
+				<d:BRIEF_DOC_NAME>Внесение изменений в СТП РА</d:BRIEF_DOC_NAME>
+				<d:DOC_DEVELOPER>АУ РА "Институт территориального планирования"</d:DOC_DEVELOPER>
+				<d:APPROVAL_DOC_NAME>Постановление Кабинета Министров Республики Адыгея</d:APPROVAL_DOC_NAME>
+				<d:APPROVAL_DOC_DATE m:type="Edm.DateTime">2012-07-06T00:00:00</d:APPROVAL_DOC_DATE>
+				<d:APPROVAL_DOC_NUM>154</d:APPROVAL_DOC_NUM>
+				<d:EXECUTOR_FIO>Янченко Н.Н.</d:EXECUTOR_FIO>
+				<d:EXECUTOR_PHONE>(8772)524712</d:EXECUTOR_PHONE>
+				<d:EXECUTOR_POST>Консультант информационно-аналитического отдела</d:EXECUTOR_POST>
+				<d:EXECUTOR_EMAIL>comraarch@mail.ru</d:EXECUTOR_EMAIL>
+				<d:NOTE m:null="true"/>
+				<d:DELETION_DATE m:type="Edm.DateTime" m:null="true"/>
+				<d:IS_PUBLISHED m:null="true"/>
+				<d:STATUS_ID m:type="Edm.Decimal">2</d:STATUS_ID>
+				<d:StateId m:type="Edm.Decimal">1</d:StateId>
+				<d:DeveloperId m:type="Edm.Decimal" m:null="true"/>
+				<d:ORDER_NUMBER m:type="Edm.Decimal">17129</d:ORDER_NUMBER>
+				<d:UNIQUE_NUMBER m:null="true"/>
+				<d:COMMENTS_COUNT m:type="Edm.Decimal">0</d:COMMENTS_COUNT>
+				<d:IS_PROJECT>N</d:IS_PROJECT>
+			</m:properties>
+		</content>
+	</entry>
+	<entry>
+		<id>
+			http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/Documents(guid'3538b3d2-f218-1709-e043-230019acb57c')
+		</id>
+		<category term="Strategis.Server.FGIS.Document" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+		<link rel="edit" title="Document" href="Documents(guid'3538b3d2-f218-1709-e043-230019acb57c')"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/APPROVE_STATUSES" type="application/atom+xml;type=entry"
+			  title="APPROVE_STATUSES" href="Documents(guid'3538b3d2-f218-1709-e043-230019acb57c')/APPROVE_STATUSES"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Territory" type="application/atom+xml;type=entry" title="Territory"
+			  href="Documents(guid'3538b3d2-f218-1709-e043-230019acb57c')/Territory"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/User" type="application/atom+xml;type=entry" title="User"
+			  href="Documents(guid'3538b3d2-f218-1709-e043-230019acb57c')/User"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Confirmation" type="application/atom+xml;type=entry"
+			  title="Confirmation" href="Documents(guid'3538b3d2-f218-1709-e043-230019acb57c')/Confirmation"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/State" type="application/atom+xml;type=entry" title="State"
+			  href="Documents(guid'3538b3d2-f218-1709-e043-230019acb57c')/State"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/PrivateFiles" type="application/atom+xml;type=feed"
+			  title="PrivateFiles" href="Documents(guid'3538b3d2-f218-1709-e043-230019acb57c')/PrivateFiles"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Developer" type="application/atom+xml;type=entry" title="Developer"
+			  href="Documents(guid'3538b3d2-f218-1709-e043-230019acb57c')/Developer"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Type" type="application/atom+xml;type=entry" title="Type"
+			  href="Documents(guid'3538b3d2-f218-1709-e043-230019acb57c')/Type"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Files" type="application/atom+xml;type=feed" title="Files"
+			  href="Documents(guid'3538b3d2-f218-1709-e043-230019acb57c')/Files"/>
+		<title/>
+		<updated>2015-08-05T07:02:34Z</updated>
+		<author>
+			<name/>
+		</author>
+		<content type="application/xml">
+			<m:properties>
+				<d:ID m:type="Edm.Guid">3538b3d2-f218-1709-e043-230019acb57c</d:ID>
+				<d:METADATA_TYPE_ID m:type="Edm.Decimal">25</d:METADATA_TYPE_ID>
+				<d:DOCUMENT_DATE m:type="Edm.DateTime">2012-10-17T13:00:00</d:DOCUMENT_DATE>
+				<d:ACTUAL_DATE m:type="Edm.DateTime">2012-10-17T13:00:00</d:ACTUAL_DATE>
+				<d:KEYWORDS m:null="true"/>
+				<d:USER_ID m:type="Edm.Decimal">96917</d:USER_ID>
+				<d:TerritoryId m:type="Edm.Decimal">23366</d:TerritoryId>
+				<d:IS_PROJECTIVE m:null="true"/>
+				<d:IS_APPROVED m:null="true"/>
+				<d:APPROVE_STATUS_ID m:type="Edm.Decimal" m:null="true"/>
+				<d:FULL_DOC_NAME>Внасение изменений в Схему территориального планимрования Республики Адыгея</d:FULL_DOC_NAME>
+				<d:BRIEF_DOC_NAME>Внесение изменений в СТП РА</d:BRIEF_DOC_NAME>
+				<d:DOC_DEVELOPER>АУ РА "Институт территориального планирования"</d:DOC_DEVELOPER>
+				<d:APPROVAL_DOC_NAME>Постановление Кабинета Министров Республики Адыгея</d:APPROVAL_DOC_NAME>
+				<d:APPROVAL_DOC_DATE m:type="Edm.DateTime">2012-07-06T00:00:00</d:APPROVAL_DOC_DATE>
+				<d:APPROVAL_DOC_NUM>154</d:APPROVAL_DOC_NUM>
+				<d:EXECUTOR_FIO>Янченко Н.Н.</d:EXECUTOR_FIO>
+				<d:EXECUTOR_PHONE>(8772)524712</d:EXECUTOR_PHONE>
+				<d:EXECUTOR_POST>Консультант информационно-аналитического отдела</d:EXECUTOR_POST>
+				<d:EXECUTOR_EMAIL>comraarch@mail.ru</d:EXECUTOR_EMAIL>
+				<d:NOTE m:null="true"/>
+				<d:DELETION_DATE m:type="Edm.DateTime" m:null="true"/>
+				<d:IS_PUBLISHED m:null="true"/>
+				<d:STATUS_ID m:type="Edm.Decimal">2</d:STATUS_ID>
+				<d:StateId m:type="Edm.Decimal">1</d:StateId>
+				<d:DeveloperId m:type="Edm.Decimal" m:null="true"/>
+				<d:ORDER_NUMBER m:type="Edm.Decimal">17558</d:ORDER_NUMBER>
+				<d:UNIQUE_NUMBER m:null="true"/>
+				<d:COMMENTS_COUNT m:type="Edm.Decimal">0</d:COMMENTS_COUNT>
+				<d:IS_PROJECT>N</d:IS_PROJECT>
+			</m:properties>
+		</content>
+	</entry>
+	<entry>
+		<id>
+			http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/Documents(guid'3538b3d2-1b35-1709-e043-230019acb57c')
+		</id>
+		<category term="Strategis.Server.FGIS.Document" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+		<link rel="edit" title="Document" href="Documents(guid'3538b3d2-1b35-1709-e043-230019acb57c')"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/APPROVE_STATUSES" type="application/atom+xml;type=entry"
+			  title="APPROVE_STATUSES" href="Documents(guid'3538b3d2-1b35-1709-e043-230019acb57c')/APPROVE_STATUSES"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Territory" type="application/atom+xml;type=entry" title="Territory"
+			  href="Documents(guid'3538b3d2-1b35-1709-e043-230019acb57c')/Territory"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/User" type="application/atom+xml;type=entry" title="User"
+			  href="Documents(guid'3538b3d2-1b35-1709-e043-230019acb57c')/User"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Confirmation" type="application/atom+xml;type=entry"
+			  title="Confirmation" href="Documents(guid'3538b3d2-1b35-1709-e043-230019acb57c')/Confirmation"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/State" type="application/atom+xml;type=entry" title="State"
+			  href="Documents(guid'3538b3d2-1b35-1709-e043-230019acb57c')/State"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/PrivateFiles" type="application/atom+xml;type=feed"
+			  title="PrivateFiles" href="Documents(guid'3538b3d2-1b35-1709-e043-230019acb57c')/PrivateFiles"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Developer" type="application/atom+xml;type=entry" title="Developer"
+			  href="Documents(guid'3538b3d2-1b35-1709-e043-230019acb57c')/Developer"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Type" type="application/atom+xml;type=entry" title="Type"
+			  href="Documents(guid'3538b3d2-1b35-1709-e043-230019acb57c')/Type"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Files" type="application/atom+xml;type=feed" title="Files"
+			  href="Documents(guid'3538b3d2-1b35-1709-e043-230019acb57c')/Files"/>
+		<title/>
+		<updated>2015-08-05T07:02:34Z</updated>
+		<author>
+			<name/>
+		</author>
+		<content type="application/xml">
+			<m:properties>
+				<d:ID m:type="Edm.Guid">3538b3d2-1b35-1709-e043-230019acb57c</d:ID>
+				<d:METADATA_TYPE_ID m:type="Edm.Decimal">25</d:METADATA_TYPE_ID>
+				<d:DOCUMENT_DATE m:type="Edm.DateTime">2011-10-07T00:00:00</d:DOCUMENT_DATE>
+				<d:ACTUAL_DATE m:type="Edm.DateTime">2011-10-07T00:00:00</d:ACTUAL_DATE>
+				<d:KEYWORDS m:null="true"/>
+				<d:USER_ID m:type="Edm.Decimal">96917</d:USER_ID>
+				<d:TerritoryId m:type="Edm.Decimal">23366</d:TerritoryId>
+				<d:IS_PROJECTIVE m:null="true"/>
+				<d:IS_APPROVED m:null="true"/>
+				<d:APPROVE_STATUS_ID m:type="Edm.Decimal" m:null="true"/>
+				<d:FULL_DOC_NAME>Схема территориального планирования Республики Адыгея</d:FULL_DOC_NAME>
+				<d:BRIEF_DOC_NAME>СТП Республики Адыгея</d:BRIEF_DOC_NAME>
+				<d:DOC_DEVELOPER>ООО "НПО "ЮРГЦ"</d:DOC_DEVELOPER>
+				<d:APPROVAL_DOC_NAME>Постановление Кабинета Министров Республики Адыгея</d:APPROVAL_DOC_NAME>
+				<d:APPROVAL_DOC_DATE m:type="Edm.DateTime">2008-11-10T00:00:00</d:APPROVAL_DOC_DATE>
+				<d:APPROVAL_DOC_NUM>183</d:APPROVAL_DOC_NUM>
+				<d:EXECUTOR_FIO>Суббота В.Ю.</d:EXECUTOR_FIO>
+				<d:EXECUTOR_PHONE>+7(8772)524712</d:EXECUTOR_PHONE>
+				<d:EXECUTOR_POST>Начальник отдела</d:EXECUTOR_POST>
+				<d:EXECUTOR_EMAIL>comraarch@mail.ru</d:EXECUTOR_EMAIL>
+				<d:NOTE m:null="true"/>
+				<d:DELETION_DATE m:type="Edm.DateTime" m:null="true"/>
+				<d:IS_PUBLISHED m:null="true"/>
+				<d:STATUS_ID m:type="Edm.Decimal">2</d:STATUS_ID>
+				<d:StateId m:type="Edm.Decimal">1</d:StateId>
+				<d:DeveloperId m:type="Edm.Decimal" m:null="true"/>
+				<d:ORDER_NUMBER m:type="Edm.Decimal">25473</d:ORDER_NUMBER>
+				<d:UNIQUE_NUMBER m:null="true"/>
+				<d:COMMENTS_COUNT m:type="Edm.Decimal">0</d:COMMENTS_COUNT>
+				<d:IS_PROJECT>N</d:IS_PROJECT>
+			</m:properties>
+		</content>
+	</entry>
+	<entry>
+		<id>
+			http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/Documents(guid'3538b3d2-ef35-1709-e043-230019acb57c')
+		</id>
+		<category term="Strategis.Server.FGIS.Document" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+		<link rel="edit" title="Document" href="Documents(guid'3538b3d2-ef35-1709-e043-230019acb57c')"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/APPROVE_STATUSES" type="application/atom+xml;type=entry"
+			  title="APPROVE_STATUSES" href="Documents(guid'3538b3d2-ef35-1709-e043-230019acb57c')/APPROVE_STATUSES"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Territory" type="application/atom+xml;type=entry" title="Territory"
+			  href="Documents(guid'3538b3d2-ef35-1709-e043-230019acb57c')/Territory"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/User" type="application/atom+xml;type=entry" title="User"
+			  href="Documents(guid'3538b3d2-ef35-1709-e043-230019acb57c')/User"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Confirmation" type="application/atom+xml;type=entry"
+			  title="Confirmation" href="Documents(guid'3538b3d2-ef35-1709-e043-230019acb57c')/Confirmation"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/State" type="application/atom+xml;type=entry" title="State"
+			  href="Documents(guid'3538b3d2-ef35-1709-e043-230019acb57c')/State"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/PrivateFiles" type="application/atom+xml;type=feed"
+			  title="PrivateFiles" href="Documents(guid'3538b3d2-ef35-1709-e043-230019acb57c')/PrivateFiles"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Developer" type="application/atom+xml;type=entry" title="Developer"
+			  href="Documents(guid'3538b3d2-ef35-1709-e043-230019acb57c')/Developer"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Type" type="application/atom+xml;type=entry" title="Type"
+			  href="Documents(guid'3538b3d2-ef35-1709-e043-230019acb57c')/Type"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Files" type="application/atom+xml;type=feed" title="Files"
+			  href="Documents(guid'3538b3d2-ef35-1709-e043-230019acb57c')/Files"/>
+		<title/>
+		<updated>2015-08-05T07:02:34Z</updated>
+		<author>
+			<name/>
+		</author>
+		<content type="application/xml">
+			<m:properties>
+				<d:ID m:type="Edm.Guid">3538b3d2-ef35-1709-e043-230019acb57c</d:ID>
+				<d:METADATA_TYPE_ID m:type="Edm.Decimal">799</d:METADATA_TYPE_ID>
+				<d:DOCUMENT_DATE m:type="Edm.DateTime">2012-07-03T00:00:00</d:DOCUMENT_DATE>
+				<d:ACTUAL_DATE m:type="Edm.DateTime">2012-07-03T00:00:00</d:ACTUAL_DATE>
+				<d:KEYWORDS m:null="true"/>
+				<d:USER_ID m:type="Edm.Decimal">96917</d:USER_ID>
+				<d:TerritoryId m:type="Edm.Decimal">23366</d:TerritoryId>
+				<d:IS_PROJECTIVE m:null="true"/>
+				<d:IS_APPROVED m:null="true"/>
+				<d:APPROVE_STATUS_ID m:type="Edm.Decimal" m:null="true"/>
+				<d:FULL_DOC_NAME>Реестр результатов инженерных изысканий на территорию Республики Адыгея</d:FULL_DOC_NAME>
+				<d:BRIEF_DOC_NAME>Реестр результатов инженерных изысканий на территорию Республики Адыгея</d:BRIEF_DOC_NAME>
+				<d:DOC_DEVELOPER>Комитет Республики Адыгея по архитектуре и градостроительству</d:DOC_DEVELOPER>
+				<d:APPROVAL_DOC_NAME>Не заполнено</d:APPROVAL_DOC_NAME>
+				<d:APPROVAL_DOC_DATE m:type="Edm.DateTime">2012-07-03T00:00:00</d:APPROVAL_DOC_DATE>
+				<d:APPROVAL_DOC_NUM>Б/н</d:APPROVAL_DOC_NUM>
+				<d:EXECUTOR_FIO>Суббота В.Ю.</d:EXECUTOR_FIO>
+				<d:EXECUTOR_PHONE>+7(8772)524712</d:EXECUTOR_PHONE>
+				<d:EXECUTOR_POST>Начальник информационно-аналитического отдела</d:EXECUTOR_POST>
+				<d:EXECUTOR_EMAIL>comraarch@mail.ru</d:EXECUTOR_EMAIL>
+				<d:NOTE m:null="true"/>
+				<d:DELETION_DATE m:type="Edm.DateTime" m:null="true"/>
+				<d:IS_PUBLISHED m:null="true"/>
+				<d:STATUS_ID m:type="Edm.Decimal">2</d:STATUS_ID>
+				<d:StateId m:type="Edm.Decimal">1</d:StateId>
+				<d:DeveloperId m:type="Edm.Decimal" m:null="true"/>
+				<d:ORDER_NUMBER m:type="Edm.Decimal">24852</d:ORDER_NUMBER>
+				<d:UNIQUE_NUMBER m:null="true"/>
+				<d:COMMENTS_COUNT m:type="Edm.Decimal">0</d:COMMENTS_COUNT>
+				<d:IS_PROJECT>N</d:IS_PROJECT>
+			</m:properties>
+		</content>
+	</entry>
+	<entry>
+		<id>
+			http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/Documents(guid'3538b3d2-dd3a-1709-e043-230019acb57c')
+		</id>
+		<category term="Strategis.Server.FGIS.Document" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+		<link rel="edit" title="Document" href="Documents(guid'3538b3d2-dd3a-1709-e043-230019acb57c')"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/APPROVE_STATUSES" type="application/atom+xml;type=entry"
+			  title="APPROVE_STATUSES" href="Documents(guid'3538b3d2-dd3a-1709-e043-230019acb57c')/APPROVE_STATUSES"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Territory" type="application/atom+xml;type=entry" title="Territory"
+			  href="Documents(guid'3538b3d2-dd3a-1709-e043-230019acb57c')/Territory"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/User" type="application/atom+xml;type=entry" title="User"
+			  href="Documents(guid'3538b3d2-dd3a-1709-e043-230019acb57c')/User"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Confirmation" type="application/atom+xml;type=entry"
+			  title="Confirmation" href="Documents(guid'3538b3d2-dd3a-1709-e043-230019acb57c')/Confirmation"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/State" type="application/atom+xml;type=entry" title="State"
+			  href="Documents(guid'3538b3d2-dd3a-1709-e043-230019acb57c')/State"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/PrivateFiles" type="application/atom+xml;type=feed"
+			  title="PrivateFiles" href="Documents(guid'3538b3d2-dd3a-1709-e043-230019acb57c')/PrivateFiles"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Developer" type="application/atom+xml;type=entry" title="Developer"
+			  href="Documents(guid'3538b3d2-dd3a-1709-e043-230019acb57c')/Developer"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Type" type="application/atom+xml;type=entry" title="Type"
+			  href="Documents(guid'3538b3d2-dd3a-1709-e043-230019acb57c')/Type"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Files" type="application/atom+xml;type=feed" title="Files"
+			  href="Documents(guid'3538b3d2-dd3a-1709-e043-230019acb57c')/Files"/>
+		<title/>
+		<updated>2015-08-05T07:02:34Z</updated>
+		<author>
+			<name/>
+		</author>
+		<content type="application/xml">
+			<m:properties>
+				<d:ID m:type="Edm.Guid">3538b3d2-dd3a-1709-e043-230019acb57c</d:ID>
+				<d:METADATA_TYPE_ID m:type="Edm.Decimal">25</d:METADATA_TYPE_ID>
+				<d:DOCUMENT_DATE m:type="Edm.DateTime">2011-10-08T00:00:00</d:DOCUMENT_DATE>
+				<d:ACTUAL_DATE m:type="Edm.DateTime">2011-10-08T00:00:00</d:ACTUAL_DATE>
+				<d:KEYWORDS m:null="true"/>
+				<d:USER_ID m:type="Edm.Decimal">96917</d:USER_ID>
+				<d:TerritoryId m:type="Edm.Decimal">23366</d:TerritoryId>
+				<d:IS_PROJECTIVE m:null="true"/>
+				<d:IS_APPROVED m:null="true"/>
+				<d:APPROVE_STATUS_ID m:type="Edm.Decimal" m:null="true"/>
+				<d:FULL_DOC_NAME>Схема территориального планирования Республики Адыгея</d:FULL_DOC_NAME>
+				<d:BRIEF_DOC_NAME>СТП Республики Адыгея</d:BRIEF_DOC_NAME>
+				<d:DOC_DEVELOPER>ООО "НПО "ЮРГЦ"</d:DOC_DEVELOPER>
+				<d:APPROVAL_DOC_NAME>Постановление Кабинета Министров Республики Адыгея</d:APPROVAL_DOC_NAME>
+				<d:APPROVAL_DOC_DATE m:type="Edm.DateTime">2008-11-10T00:00:00</d:APPROVAL_DOC_DATE>
+				<d:APPROVAL_DOC_NUM>183</d:APPROVAL_DOC_NUM>
+				<d:EXECUTOR_FIO>Суббота В.Ю.</d:EXECUTOR_FIO>
+				<d:EXECUTOR_PHONE>+7(8772)524712</d:EXECUTOR_PHONE>
+				<d:EXECUTOR_POST>Начальник отдела</d:EXECUTOR_POST>
+				<d:EXECUTOR_EMAIL>comraarch@mail.ru</d:EXECUTOR_EMAIL>
+				<d:NOTE m:null="true"/>
+				<d:DELETION_DATE m:type="Edm.DateTime" m:null="true"/>
+				<d:IS_PUBLISHED m:null="true"/>
+				<d:STATUS_ID m:type="Edm.Decimal">2</d:STATUS_ID>
+				<d:StateId m:type="Edm.Decimal">1</d:StateId>
+				<d:DeveloperId m:type="Edm.Decimal" m:null="true"/>
+				<d:ORDER_NUMBER m:type="Edm.Decimal">26854</d:ORDER_NUMBER>
+				<d:UNIQUE_NUMBER m:null="true"/>
+				<d:COMMENTS_COUNT m:type="Edm.Decimal">0</d:COMMENTS_COUNT>
+				<d:IS_PROJECT>N</d:IS_PROJECT>
+			</m:properties>
+		</content>
+	</entry>
+	<entry>
+		<id>
+			http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/Documents(guid'3538b3d2-5a46-1709-e043-230019acb57c')
+		</id>
+		<category term="Strategis.Server.FGIS.Document" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+		<link rel="edit" title="Document" href="Documents(guid'3538b3d2-5a46-1709-e043-230019acb57c')"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/APPROVE_STATUSES" type="application/atom+xml;type=entry"
+			  title="APPROVE_STATUSES" href="Documents(guid'3538b3d2-5a46-1709-e043-230019acb57c')/APPROVE_STATUSES"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Territory" type="application/atom+xml;type=entry" title="Territory"
+			  href="Documents(guid'3538b3d2-5a46-1709-e043-230019acb57c')/Territory"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/User" type="application/atom+xml;type=entry" title="User"
+			  href="Documents(guid'3538b3d2-5a46-1709-e043-230019acb57c')/User"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Confirmation" type="application/atom+xml;type=entry"
+			  title="Confirmation" href="Documents(guid'3538b3d2-5a46-1709-e043-230019acb57c')/Confirmation"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/State" type="application/atom+xml;type=entry" title="State"
+			  href="Documents(guid'3538b3d2-5a46-1709-e043-230019acb57c')/State"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/PrivateFiles" type="application/atom+xml;type=feed"
+			  title="PrivateFiles" href="Documents(guid'3538b3d2-5a46-1709-e043-230019acb57c')/PrivateFiles"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Developer" type="application/atom+xml;type=entry" title="Developer"
+			  href="Documents(guid'3538b3d2-5a46-1709-e043-230019acb57c')/Developer"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Type" type="application/atom+xml;type=entry" title="Type"
+			  href="Documents(guid'3538b3d2-5a46-1709-e043-230019acb57c')/Type"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Files" type="application/atom+xml;type=feed" title="Files"
+			  href="Documents(guid'3538b3d2-5a46-1709-e043-230019acb57c')/Files"/>
+		<title/>
+		<updated>2015-08-05T07:02:34Z</updated>
+		<author>
+			<name/>
+		</author>
+		<content type="application/xml">
+			<m:properties>
+				<d:ID m:type="Edm.Guid">3538b3d2-5a46-1709-e043-230019acb57c</d:ID>
+				<d:METADATA_TYPE_ID m:type="Edm.Decimal">48</d:METADATA_TYPE_ID>
+				<d:DOCUMENT_DATE m:type="Edm.DateTime">2012-06-29T00:00:00</d:DOCUMENT_DATE>
+				<d:ACTUAL_DATE m:type="Edm.DateTime">2012-06-29T00:00:00</d:ACTUAL_DATE>
+				<d:KEYWORDS m:null="true"/>
+				<d:USER_ID m:type="Edm.Decimal">96917</d:USER_ID>
+				<d:TerritoryId m:type="Edm.Decimal">23366</d:TerritoryId>
+				<d:IS_PROJECTIVE m:null="true"/>
+				<d:IS_APPROVED m:null="true"/>
+				<d:APPROVE_STATUS_ID m:type="Edm.Decimal" m:null="true"/>
+				<d:FULL_DOC_NAME>Корректировка схемы территориального планирования Республики Адыгея</d:FULL_DOC_NAME>
+				<d:BRIEF_DOC_NAME>Корректировка схемы территориального планирования РА</d:BRIEF_DOC_NAME>
+				<d:DOC_DEVELOPER>Автономное учреждение РА "Институт территорипального планирования"</d:DOC_DEVELOPER>
+				<d:APPROVAL_DOC_NAME m:null="true"/>
+				<d:APPROVAL_DOC_DATE m:type="Edm.DateTime">0001-01-01T00:00:00</d:APPROVAL_DOC_DATE>
+				<d:APPROVAL_DOC_NUM m:null="true"/>
+				<d:EXECUTOR_FIO>Суббота В.Ю.</d:EXECUTOR_FIO>
+				<d:EXECUTOR_PHONE>8-8772-524712</d:EXECUTOR_PHONE>
+				<d:EXECUTOR_POST>Нач. отдела</d:EXECUTOR_POST>
+				<d:EXECUTOR_EMAIL>comraarch@mail.ru</d:EXECUTOR_EMAIL>
+				<d:NOTE m:null="true"/>
+				<d:DELETION_DATE m:type="Edm.DateTime" m:null="true"/>
+				<d:IS_PUBLISHED m:null="true"/>
+				<d:STATUS_ID m:type="Edm.Decimal">2</d:STATUS_ID>
+				<d:StateId m:type="Edm.Decimal">2</d:StateId>
+				<d:DeveloperId m:type="Edm.Decimal" m:null="true"/>
+				<d:ORDER_NUMBER m:type="Edm.Decimal">29493</d:ORDER_NUMBER>
+				<d:UNIQUE_NUMBER>137937228</d:UNIQUE_NUMBER>
+				<d:COMMENTS_COUNT m:type="Edm.Decimal">0</d:COMMENTS_COUNT>
+				<d:IS_PROJECT>Y</d:IS_PROJECT>
+			</m:properties>
+		</content>
+	</entry>
+	<entry>
+		<id>
+			http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/Documents(guid'3538b3d2-e54c-1709-e043-230019acb57c')
+		</id>
+		<category term="Strategis.Server.FGIS.Document" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+		<link rel="edit" title="Document" href="Documents(guid'3538b3d2-e54c-1709-e043-230019acb57c')"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/APPROVE_STATUSES" type="application/atom+xml;type=entry"
+			  title="APPROVE_STATUSES" href="Documents(guid'3538b3d2-e54c-1709-e043-230019acb57c')/APPROVE_STATUSES"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Territory" type="application/atom+xml;type=entry" title="Territory"
+			  href="Documents(guid'3538b3d2-e54c-1709-e043-230019acb57c')/Territory"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/User" type="application/atom+xml;type=entry" title="User"
+			  href="Documents(guid'3538b3d2-e54c-1709-e043-230019acb57c')/User"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Confirmation" type="application/atom+xml;type=entry"
+			  title="Confirmation" href="Documents(guid'3538b3d2-e54c-1709-e043-230019acb57c')/Confirmation"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/State" type="application/atom+xml;type=entry" title="State"
+			  href="Documents(guid'3538b3d2-e54c-1709-e043-230019acb57c')/State"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/PrivateFiles" type="application/atom+xml;type=feed"
+			  title="PrivateFiles" href="Documents(guid'3538b3d2-e54c-1709-e043-230019acb57c')/PrivateFiles"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Developer" type="application/atom+xml;type=entry" title="Developer"
+			  href="Documents(guid'3538b3d2-e54c-1709-e043-230019acb57c')/Developer"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Type" type="application/atom+xml;type=entry" title="Type"
+			  href="Documents(guid'3538b3d2-e54c-1709-e043-230019acb57c')/Type"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Files" type="application/atom+xml;type=feed" title="Files"
+			  href="Documents(guid'3538b3d2-e54c-1709-e043-230019acb57c')/Files"/>
+		<title/>
+		<updated>2015-08-05T07:02:34Z</updated>
+		<author>
+			<name/>
+		</author>
+		<content type="application/xml">
+			<m:properties>
+				<d:ID m:type="Edm.Guid">3538b3d2-e54c-1709-e043-230019acb57c</d:ID>
+				<d:METADATA_TYPE_ID m:type="Edm.Decimal">48</d:METADATA_TYPE_ID>
+				<d:DOCUMENT_DATE m:type="Edm.DateTime">2012-02-27T00:00:00</d:DOCUMENT_DATE>
+				<d:ACTUAL_DATE m:type="Edm.DateTime">2012-02-27T00:00:00</d:ACTUAL_DATE>
+				<d:KEYWORDS m:null="true"/>
+				<d:USER_ID m:type="Edm.Decimal">96917</d:USER_ID>
+				<d:TerritoryId m:type="Edm.Decimal">23366</d:TerritoryId>
+				<d:IS_PROJECTIVE m:null="true"/>
+				<d:IS_APPROVED m:null="true"/>
+				<d:APPROVE_STATUS_ID m:type="Edm.Decimal" m:null="true"/>
+				<d:FULL_DOC_NAME>Корректировка Схемы территориального планирования Республики Адыгея</d:FULL_DOC_NAME>
+				<d:BRIEF_DOC_NAME>Корректировка Схемы территориального планирования Республики Адыгея</d:BRIEF_DOC_NAME>
+				<d:DOC_DEVELOPER>Автономное учреждение Республики Адыгея "Институт территориального планирования"</d:DOC_DEVELOPER>
+				<d:APPROVAL_DOC_NAME m:null="true"/>
+				<d:APPROVAL_DOC_DATE m:type="Edm.DateTime">0001-01-01T00:00:00</d:APPROVAL_DOC_DATE>
+				<d:APPROVAL_DOC_NUM m:null="true"/>
+				<d:EXECUTOR_FIO>Суббота Валерий Юрьевич</d:EXECUTOR_FIO>
+				<d:EXECUTOR_PHONE>8-8772-524712</d:EXECUTOR_PHONE>
+				<d:EXECUTOR_POST>Нач.отдела</d:EXECUTOR_POST>
+				<d:EXECUTOR_EMAIL>comraarch@mail.ru</d:EXECUTOR_EMAIL>
+				<d:NOTE m:null="true"/>
+				<d:DELETION_DATE m:type="Edm.DateTime" m:null="true"/>
+				<d:IS_PUBLISHED m:null="true"/>
+				<d:STATUS_ID m:type="Edm.Decimal">2</d:STATUS_ID>
+				<d:StateId m:type="Edm.Decimal">12</d:StateId>
+				<d:DeveloperId m:type="Edm.Decimal" m:null="true"/>
+				<d:ORDER_NUMBER m:type="Edm.Decimal">30935</d:ORDER_NUMBER>
+				<d:UNIQUE_NUMBER m:null="true"/>
+				<d:COMMENTS_COUNT m:type="Edm.Decimal">0</d:COMMENTS_COUNT>
+				<d:IS_PROJECT>Y</d:IS_PROJECT>
+			</m:properties>
+		</content>
+	</entry>
+	<entry>
+		<id>
+			http://fgis.economy.gov.ru/Applications/FGIS_PROM/Strategis.Server.FGIS.DataService/FGISDataService.svc/Documents(guid'5497e1f5-c5b6-4f79-ae6a-2b4c699f4e51')
+		</id>
+		<category term="Strategis.Server.FGIS.Document" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme"/>
+		<link rel="edit" title="Document" href="Documents(guid'5497e1f5-c5b6-4f79-ae6a-2b4c699f4e51')"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/APPROVE_STATUSES" type="application/atom+xml;type=entry"
+			  title="APPROVE_STATUSES" href="Documents(guid'5497e1f5-c5b6-4f79-ae6a-2b4c699f4e51')/APPROVE_STATUSES"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Territory" type="application/atom+xml;type=entry" title="Territory"
+			  href="Documents(guid'5497e1f5-c5b6-4f79-ae6a-2b4c699f4e51')/Territory"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/User" type="application/atom+xml;type=entry" title="User"
+			  href="Documents(guid'5497e1f5-c5b6-4f79-ae6a-2b4c699f4e51')/User"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Confirmation" type="application/atom+xml;type=entry"
+			  title="Confirmation" href="Documents(guid'5497e1f5-c5b6-4f79-ae6a-2b4c699f4e51')/Confirmation"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/State" type="application/atom+xml;type=entry" title="State"
+			  href="Documents(guid'5497e1f5-c5b6-4f79-ae6a-2b4c699f4e51')/State"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/PrivateFiles" type="application/atom+xml;type=feed"
+			  title="PrivateFiles" href="Documents(guid'5497e1f5-c5b6-4f79-ae6a-2b4c699f4e51')/PrivateFiles"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Developer" type="application/atom+xml;type=entry" title="Developer"
+			  href="Documents(guid'5497e1f5-c5b6-4f79-ae6a-2b4c699f4e51')/Developer"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Type" type="application/atom+xml;type=entry" title="Type"
+			  href="Documents(guid'5497e1f5-c5b6-4f79-ae6a-2b4c699f4e51')/Type"/>
+		<link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Files" type="application/atom+xml;type=feed" title="Files"
+			  href="Documents(guid'5497e1f5-c5b6-4f79-ae6a-2b4c699f4e51')/Files"/>
+		<title/>
+		<updated>2015-08-05T07:02:34Z</updated>
+		<author>
+			<name/>
+		</author>
+		<content type="application/xml">
+			<m:properties>
+				<d:ID m:type="Edm.Guid">5497e1f5-c5b6-4f79-ae6a-2b4c699f4e51</d:ID>
+				<d:METADATA_TYPE_ID m:type="Edm.Decimal">48</d:METADATA_TYPE_ID>
+				<d:DOCUMENT_DATE m:type="Edm.DateTime">2013-09-09T11:34:06.576647</d:DOCUMENT_DATE>
+				<d:ACTUAL_DATE m:type="Edm.DateTime">2013-09-09T11:34:06.576647</d:ACTUAL_DATE>
+				<d:KEYWORDS m:null="true"/>
+				<d:USER_ID m:type="Edm.Decimal">96917</d:USER_ID>
+				<d:TerritoryId m:type="Edm.Decimal">23366</d:TerritoryId>
+				<d:IS_PROJECTIVE>N</d:IS_PROJECTIVE>
+				<d:IS_APPROVED>N</d:IS_APPROVED>
+				<d:APPROVE_STATUS_ID m:type="Edm.Decimal" m:null="true"/>
+				<d:FULL_DOC_NAME>Корректировка схемы территориального планирования Республики Адыгея</d:FULL_DOC_NAME>
+				<d:BRIEF_DOC_NAME>Корректировка схемы территориального планирования Республики Адыгея</d:BRIEF_DOC_NAME>
+				<d:DOC_DEVELOPER m:null="true"/>
+				<d:APPROVAL_DOC_NAME m:null="true"/>
+				<d:APPROVAL_DOC_DATE m:type="Edm.DateTime">2013-12-08T11:34:06</d:APPROVAL_DOC_DATE>
+				<d:APPROVAL_DOC_NUM m:null="true"/>
+				<d:EXECUTOR_FIO m:null="true"/>
+				<d:EXECUTOR_PHONE>8772524712</d:EXECUTOR_PHONE>
+				<d:EXECUTOR_POST>нач.отдела</d:EXECUTOR_POST>
+				<d:EXECUTOR_EMAIL>comraarch@mail.ru</d:EXECUTOR_EMAIL>
+				<d:NOTE m:null="true"/>
+				<d:DELETION_DATE m:type="Edm.DateTime" m:null="true"/>
+				<d:IS_PUBLISHED>N</d:IS_PUBLISHED>
+				<d:STATUS_ID m:type="Edm.Decimal">0</d:STATUS_ID>
+				<d:StateId m:type="Edm.Decimal">2</d:StateId>
+				<d:DeveloperId m:type="Edm.Decimal">283</d:DeveloperId>
+				<d:ORDER_NUMBER m:type="Edm.Decimal">45239</d:ORDER_NUMBER>
+				<d:UNIQUE_NUMBER>137945239</d:UNIQUE_NUMBER>
+				<d:COMMENTS_COUNT m:type="Edm.Decimal">0</d:COMMENTS_COUNT>
+				<d:IS_PROJECT>Y</d:IS_PROJECT>
+			</m:properties>
+		</content>
+	</entry>
+</feed>
