@@ -16,6 +16,6 @@ while true; do
     FILE_NAME_IS_VALID=`echo $FILE_NAME | grep -Ei '.zip|.xml'`
     echo $F1
     if [ $FILE_NAME_IS_VALID ]; then
-	python ./kptxml2shp.py $DIR $change
+	python ./kptxml2shp.py $DIR $FILE_NAME
     fi
 done
