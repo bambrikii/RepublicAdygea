@@ -38,73 +38,123 @@ w.field("CadastralCostUnit")
 
 tree = ET.parse(xml_file)
 root = tree.getroot()
+shapes = root.getchildren()
 
-for kpt in root.iter('KPT'):
-    print(kpt)
-    break
+for blocks in root.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}CadastralBlocks"):
+    for block in blocks.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}CadastralBlock"):
+        for parcels in block.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Parcels"):
+            for parcel in parcels.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Parcel"):
+                print(parcel.tag, parcel.attrib)
+                for location in parcel.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Location"):
+                    for address in location.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Address"):
+                        for child2 in address:
+                            print("- address child ", child2.tag, child2.attrib)
+                for utilization in parcel.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Utilization"):
+                    print("- utilization ", utilization.tag, utilization.attrib)
+                for entitySpatial in parcel.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}EntitySpatial"):
+                    print("- utilization ", entitySpatial.tag, entitySpatial.attrib)
 
-for kpt in root.iter('kpt'):
-    print("asd")
-    for blocks in kpt.iter("CadastralBlocks"):
-        for block in blocks.iter("CadastralBlock"):
-            for parcels in block.iter("Parcels"):
-                for parcel in parcels.iter("Parcel"):
-                    cadastralNumber = parcel.attributes["CadastralNumber"]
-                    state = parcel.attributes["State"]
-                    dateCreated = parcel.attributes["DateCreated"]
-                    areaArea = ""
-                    areaUnit = ""
-                    okato = ""
-                    kladr = ""
-                    region = ""
-                    districtName = ""
-                    districtType = ""
-                    cityName = ""
-                    cityType = ""
-                    localityName = ""
-                    localityType = ""
-                    streetName = ""
-                    streetType = ""
-                    level1Type = ""
-                    level1Value = ""
-                    for area in parcel.iter("Area"):
-                        areaArea = area.get("Area")
-                        areaUnit = area.get("Unit")
-                    for location in parcel.iter("Location"):
-                        for address in location.iter("Address"):
-                            okato = address.get("ns2:OKATO")
-                            kladr = address.get("ns2:KLADR")
-                            region = address.get("ns2:Region")
-                            districtName = address.get("ns2:Region").attributes["Name"]
-                            districtType = address.get("ns2:Region").attributes["Type"]
-                            cityName = address.get("ns2:Region").attributes["Name"]
-                            cityType = address.get("ns2:Region").attributes["Type"]
-                            localityName = address.get("ns2:Region").attributes["Name"]
-                            localityType = address.get("ns2:Region").attributes["Type"]
-                            streetName = address.get("ns2:Region").attributes["Name"]
-                            streetType = address.get("ns2:Region").attributes["Type"]
-                            level1Type = address.get("ns2:Region").attributes["Type"]
-                            level1Value = address.get("ns2:Level1").attributes["Value"]
-                    category = parcel.get("Category")
-                    utilizationUtilization = parcel.get("Utilization").attributes["Utilization"]
-                    utilizationByDoc = parcel.get("Utilization").attributes["ByDoc"]
-                    cadastralCostValue = parcel.get("CadastralCost").attributes["Value"]
-                    cadastralCostUnit = parcel.get("CadastralCost").attributes["Unit"]
-                    entSys = parcel.get("EntitySpatial").attributes["EntSys"]
-                    for entitySpatial in parcel.iter("EntitySpatial"):
+for kpt in root.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}CadastralBlocks"):
+    for block in blocks.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}CadastralBlock"):
+        for parcels in block.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Parcels"):
+            for parcel in parcels.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Parcel"):
+                coordinatesFound = False
+                cadastralNumber = parcel.attrib["CadastralNumber"]
+                print ("CadastralNumber:", cadastralNumber);
+                state = parcel.attrib["State"]
+                dateCreated = parcel.attrib["DateCreated"]
+                areaArea = ""
+                areaUnit = ""
+                name = ""
+                locationInBounds = ""
+                okato = ""
+                kladr = ""
+                region = ""
+                districtName = ""
+                districtType = ""
+                cityName = ""
+                cityType = ""
+                localityName = ""
+                localityType = ""
+                streetName = ""
+                streetType = ""
+                level1Type = ""
+                level1Value = ""
+                note = ""
+                category = ""
+                utilizationUtilization = ""
+                utilizationByDoc = ""
+                cadastralCostValue = ""
+                cadastralCostUnit = ""
+                for area in parcel.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Area"):
+                    areaArea = area.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Area")
+                    areaUnit = area.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Unit")
+                for location in parcel.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Location"):
+                    for address in location.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Address"):
+                        okato = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}OKATO").text
+                        kladr = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}KLADR").text
+                        region = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}Region").text
+
+                        district = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}District")
+                        districtName = district.attrib["Name"]
+                        districtType = district.attrib["Type"]
+
+                        city = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}City")
+                        if city is not None:
+                            cityName = city.attrib["Name"]
+                            cityType = city.attrib["Type"]
+
+                        locality = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}Locality")
+                        if locality is not None:
+                            localityName = locality.attrib["Name"]
+                            localityType = locality.attrib["Type"]
+
+                        street = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}Street")
+                        if street is not None:
+                            streetName = street.attrib["Name"]
+                            streetType = street.attrib["Type"]
+
+                        level1 = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}Level1")
+                        if level1 is not None:
+                            level1Type = level1.attrib["Type"]
+                            level1Value = level1.attrib["Value"]
+
+                category = parcel.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Category")
+
+                utilization = parcel.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Utilization")
+                if utilization is not None:
+                    if hasattr(utilization, "Utilization"):
+                        utilizationUtilization = utilization.attrib["Utilization"]
+                    if hasattr(utilization, "ByDoc"):
+                        utilizationByDoc = utilization.attrib["ByDoc"]
+
+                cadastralCost = parcel.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}CadastralCost")
+                if cadastralCost is not None:
+                    cadastralCostValue = cadastralCost.attrib["Value"]
+                    cadastralCostUnit = cadastralCost.attrib["Unit"]
+
+                entitySpatial = parcel.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}EntitySpatial")
+                if entitySpatial is not None:
+                    entSys = entitySpatial.attrib["EntSys"]
+                    for spatialElement in entitySpatial.iter(
+                            "{urn://x-artefacts-rosreestr-ru/commons/complex-types/entity-spatial/2.0.1}SpatialElement"):
                         part = []
-                        for spatialElement in parcel.iter("ns3:SpelementUnit"):
-                            for spelementUnit in parcel.iter("ns3:SpatialElement"):
-                                for ordinate in parcel.iter("ns3:Ordinate"):
-                                    # specify coordinates in X,Y order (longitude, latitude)
-                                    ordNmb = location.attributes['OrdNmb']
-                                    deltaGeopoint = location.attributes["DeltaGeopoint"]
-                                    part.append([float(location.attributes['X']), float(location.attributes['Y'])])
+                        for spelementUnit in spatialElement.iter(
+                                "{urn://x-artefacts-rosreestr-ru/commons/complex-types/entity-spatial/2.0.1}SpelementUnit"):
+                            for ordinate in spelementUnit.iter("{urn://x-artefacts-rosreestr-ru/commons/complex-types/entity-spatial/2.0.1}Ordinate"):
+                                # specify coordinates in X,Y order (longitude, latitude)
+                                ordNmb = ordinate.attrib["OrdNmb"]
+                                part.append([float(ordinate.attrib['X']), float(ordinate.attrib['Y'])])
+                                if hasattr(ordinate, "DeltaGeopoint"):
+                                    deltaGeopoint = ordinate.attrib["DeltaGeopoint"]
                         w.poly(parts=[part])
+                        coordinatesFound = True
                         # copy attributes
 
-                    w.record(cadastralNumber, state, dateCreated, areaArea, areaUnit, okato, kladr, region, districtName, districtType, cityName,
-                             cityType, localityName, localityType, streetName, streetType, level1Type, level1Value)
+                if coordinatesFound:
+                    w.record(cadastralNumber, state, dateCreated, areaArea, areaUnit, name, locationInBounds, okato, kladr, region,
+                             districtName, districtType, cityName, cityType, localityName, localityType, streetName, streetType, level1Type,
+                             level1Value, note, category, utilizationUtilization, utilizationByDoc, cadastralCostValue, cadastralCostUnit)
                     w.save(shape_file)  # create the PRJ file
 
 with open(os.path.splitext(shape_file)[0] + os.extsep + 'prj', 'w') as prj:
