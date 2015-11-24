@@ -77,6 +77,11 @@
 		</dependency>
 
 		<!-- geotools -->
+		<!--<dependency>-->
+		<!--<groupId>org.opengis</groupId>-->
+		<!--<artifactId>geoapi</artifactId>-->
+		<!--<version>3.0.0</version>-->
+		<!--</dependency>-->
 		<dependency>
 			<groupId>org.geotools</groupId>
 			<artifactId>gt-shapefile</artifactId>
@@ -85,6 +90,11 @@
 		<dependency>
 			<groupId>org.geotools</groupId>
 			<artifactId>gt-epsg-hsql</artifactId>
+			<version>${geotools.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.geotools</groupId>
+			<artifactId>gt-jts-wrapper</artifactId>
 			<version>${geotools.version}</version>
 		</dependency>
 

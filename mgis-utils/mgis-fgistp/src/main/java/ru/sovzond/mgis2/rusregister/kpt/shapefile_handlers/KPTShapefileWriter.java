@@ -11,7 +11,6 @@ import org.geotools.feature.DefaultFeatureCollection;
 import org.geotools.feature.SchemaException;
 import org.geotools.feature.simple.SimpleFeatureBuilder;
 import org.geotools.geometry.GeometryBuilder;
-import org.geotools.geometry.jts.LiteCoordinateSequenceFactory;
 import org.geotools.referencing.crs.DefaultGeographicCRS;
 import org.opengis.feature.simple.SimpleFeature;
 import org.opengis.feature.simple.SimpleFeatureType;
@@ -35,12 +34,12 @@ public class KPTShapefileWriter {
 
 	private SimpleFeatureType TYPE = null;
 	private ShapefileDataStore newDataStore = null;
-	private LiteCoordinateSequenceFactory coordinateSequenceFactory;
+	private DefaultGeographicCRS crs;
 
 	public KPTShapefileWriter(String directory, String fileName) {
 		this.directory = directory;
 		this.fileName = fileName;
-		coordinateSequenceFactory = new LiteCoordinateSequenceFactory();
+		crs = DefaultGeographicCRS.WGS84;
 
 		try {
 			TYPE = DataUtilities.createType("Location",
@@ -146,7 +145,11 @@ public class KPTShapefileWriter {
 
 
 		if (parcel.getEntitySpatial() != null && parcel.getEntitySpatial().getSpatialElements() != null && parcel.getEntitySpatial().getSpatialElements().size() > 0) {
-			GeometryBuilder geometryBuilder = new GeometryBuilder(DefaultGeographicCRS.WGS84);
+//			GeometryFactory geometryFactory = new GeometryFactory();
+//			Hints hints = new Hints(Hints.CRS, DefaultGeographicCRS.WGS84);
+//			PrimitiveFactory primitiveFactory = GeometryFactoryFinder.getPrimitiveFactory(hints);
+
+			GeometryBuilder geometryBuilder = new GeometryBuilder(crs);
 			PointArray points = null;
 //			List<Point> points = new ArrayList<>();
 			for (SpatialElement spatialElement : parcel.getEntitySpatial().getSpatialElements()) {
@@ -155,10 +158,9 @@ public class KPTShapefileWriter {
 						double longitude = ordinate.getX();
 						double latitude = ordinate.getY();
 						int number = ordinate.getOrdNmb();
-						String name = String.valueOf(number) + String.valueOf(ordinate.getDeltaGeopoint());
-
 						/* Longitude (= x coord) first ! */
 						Point point = geometryBuilder.createPoint(new double[]{longitude, latitude});
+//						Point point = primitiveFactory.createPoint(new double[]{longitude, latitude});
 						points.add(number, point);
 					}
 					SimpleFeature feature = builder.buildFeature(null);
@@ -166,6 +168,7 @@ public class KPTShapefileWriter {
 				}
 			}
 			builder.add(geometryBuilder.createPolygon(geometryBuilder.createSurfaceBoundary(points)));
+//			geometryFactory.createMultiPolygon(new Polygon[]{});
 		}
 
 
@@ -218,4 +221,5 @@ public class KPTShapefileWriter {
 	public void m1() {
 
 	}
+
 }
