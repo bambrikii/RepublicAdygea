@@ -4,13 +4,19 @@ import sys;
 import re;
 import zipfile;
 import datetime;
+import shutil;
 
 import shapefile;
 
 
-def convert_kpt_xml_to_shape(dirName, sourceFileName):
-    xml_file = dirName + sourceFileName
-    shape_file = dirName + "shp/" + re.sub(".xml$", "", sourceFileName) + '.shp'
+def cvt(param):
+    return param.encode("cp1251").strip()
+
+
+def convert_kpt_xml_to_shape(source_dir_name, source_file_name, target_dir_name):
+    print("convert:", source_dir_name, source_file_name, target_dir_name)
+    xml_file = source_dir_name + "/" + source_file_name
+    shape_file = target_dir_name + "/" + re.sub(".xml$", "", source_file_name) + '.shp'
     projection = 'GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]'
 
     w = shapefile.Writer(shapefile.POLYGON)
@@ -53,10 +59,9 @@ def convert_kpt_xml_to_shape(dirName, sourceFileName):
             for parcels in block.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Parcels"):
                 for parcel in parcels.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Parcel"):
                     coordinates_found = False
-                    cadastral_number = parcel.attrib["CadastralNumber"].strip();
-                    # print("cadnum:*", cadastral_number);
-                    state = parcel.attrib["State"].strip();
-                    date_created = "" + datetime.datetime.strptime(parcel.attrib["DateCreated"].strip(), "%Y-%m-%d").date().strftime("%Y-%m-%d");
+                    cadastral_number = cvt(parcel.attrib["CadastralNumber"]);
+                    state = cvt(parcel.attrib["State"]);
+                    date_created = "" + datetime.datetime.strptime(cvt(parcel.attrib["DateCreated"]), "%Y-%m-%d").date().strftime("%Y-%m-%d");
                     area_area = None
                     area_unit = None
                     name = None
@@ -83,73 +88,73 @@ def convert_kpt_xml_to_shape(dirName, sourceFileName):
                     for area in parcel.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Area"):
                         area_area1 = area.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Area")
                         if area_area1 is not None:
-                            area_area = area_area1.text.strip()
+                            area_area = cvt(area_area1.text)
                         area_unit1 = area.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Unit")
                         if area_unit1 is not None:
-                            area_unit = area_unit1.text.strip();
+                            area_unit = cvt(area_unit1.text);
                     for location in parcel.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Location"):
                         for address in location.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Address"):
                             okato1 = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}OKATO")
                             if okato1 is not None:
-                                okato = okato1.text.strip();
+                                okato = cvt(okato1.text);
 
                             kladr1 = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}KLADR")
                             if kladr1 is not None:
-                                kladr = kladr1.text.strip();
+                                kladr = cvt(kladr1.text);
 
                             region1 = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}Region")
                             if region1 is not None:
-                                region = region1.text.strip();
+                                region = cvt(region1.text);
 
                             district = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}District")
                             if district is not None:
-                                district_name = district.attrib["Name"].strip();
-                                district_type = district.attrib["Type"].strip();
+                                district_name = cvt(district.attrib["Name"]);
+                                district_type = cvt(district.attrib["Type"]);
 
                             city = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}City")
                             if city is not None:
-                                city_name = city.attrib["Name"].strip();
-                                city_type = city.attrib["Type"].strip();
+                                city_name = cvt(city.attrib["Name"]);
+                                city_type = cvt(city.attrib["Type"]);
 
                             locality = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}Locality")
                             if locality is not None:
-                                locality_name = locality.attrib["Name"].strip();
-                                locality_type = locality.attrib["Type"].strip();
+                                locality_name = cvt(locality.attrib["Name"]);
+                                locality_type = cvt(locality.attrib["Type"]);
 
                             street = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}Street")
                             if street is not None:
-                                street_name = street.attrib["Name"].strip();
-                                street_type = street.attrib["Type"].strip();
+                                street_name = cvt(street.attrib["Name"]);
+                                street_type = cvt(street.attrib["Type"]);
 
                             level1 = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}Level1")
                             if level1 is not None:
-                                level1_type = level1.attrib["Type"].strip();
-                                level1_value = level1.attrib["Value"].strip();
+                                level1_type = cvt(level1.attrib["Type"]);
+                                level1_value = cvt(level1.attrib["Value"]);
 
                             note1 = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}Note")
                             if note1 is not None:
-                                note = note1.text.strip();
+                                note = cvt(note1.text);
 
                     category1 = parcel.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Category")
                     if category1 is not None:
-                        category = category1.text.strip();
+                        category = cvt(category1.text);
 
                     utilization1 = parcel.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Utilization")
                     if utilization1 is not None:
                         if hasattr(utilization1, "Utilization"):
-                            utilization_utilization = utilization1.attrib["Utilization"].strip();
+                            utilization_utilization = cvt(utilization1.attrib["Utilization"]);
                         if hasattr(utilization1, "ByDoc"):
-                            utilization_by_doc = utilization1.attrib["ByDoc"].strip();
+                            utilization_by_doc = cvt(utilization1.attrib["ByDoc"]);
 
                     cadastral_cost1 = parcel.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}CadastralCost")
                     if cadastral_cost1 is not None:
-                        cadastral_cost_value = cadastral_cost1.attrib["Value"].strip();
-                        cadastral_cost_unit = cadastral_cost1.attrib["Unit"].strip();
+                        cadastral_cost_value = cvt(cadastral_cost1.attrib["Value"]);
+                        cadastral_cost_unit = cvt(cadastral_cost1.attrib["Unit"]);
 
                     entity_spatial = parcel.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}EntitySpatial")
                     poly = []
                     if entity_spatial is not None:
-                        ent_sys = entity_spatial.attrib["EntSys"].strip();
+                        ent_sys = cvt(entity_spatial.attrib["EntSys"]);
                         for spatial_element in entity_spatial.iter(
                                 "{urn://x-artefacts-rosreestr-ru/commons/complex-types/entity-spatial/2.0.1}SpatialElement"):
                             part = []
@@ -159,10 +164,10 @@ def convert_kpt_xml_to_shape(dirName, sourceFileName):
                                 for ordinate in spelement_unit.iter(
                                         "{urn://x-artefacts-rosreestr-ru/commons/complex-types/entity-spatial/2.0.1}Ordinate"):
                                     # specify coordinates in X,Y order (longitude, latitude)
-                                    ord_nmb = ordinate.attrib["OrdNmb"]
+                                    ord_nmb = cvt(ordinate.attrib["OrdNmb"])
                                     poly.append([float(ordinate.attrib['X']), float(ordinate.attrib['Y'])])
                                     if hasattr(ordinate, "DeltaGeopoint"):
-                                        delta_geopoint = ordinate.attrib["DeltaGeopoint"]
+                                        delta_geopoint = cvt(ordinate.attrib["DeltaGeopoint"])
                             coordinates_found = True
                             # copy attributes
 
@@ -171,7 +176,7 @@ def convert_kpt_xml_to_shape(dirName, sourceFileName):
                         w.poly(parts=[poly])
                         note1 = None
                         note2 = None
-                        if note is not None and str.count(note, note) > 250:
+                        if note is not None and note.split(".") > 250:
                             note1 = note[:250]
                             note2 = note[250:]
                         # if note1 is None:
@@ -215,34 +220,41 @@ def convert_kpt_xml_to_shape(dirName, sourceFileName):
         prj.write(projection)
 
 
-def extract_zip(dir_name, file_name):
-    fh = open(dir_name + file_name, 'rb')
+def extract_zip(source_dir_name, source_file_name):
+    fh = open(source_dir_name + "/" + source_file_name, 'rb')
     z = zipfile.ZipFile(fh)
     for name in z.namelist():
-        print("Extracting: ", name)
-        outpath = dir_name
-        z.extract(name, outpath)
+        out_path = source_dir_name + "/" + source_file_name + ".unpacked"
+        print("Extracting: ", name, out_path)
+        z.extract(name, out_path)
     fh.close()
 
 
+def convert_dir(source_dir_name, target_dir_name):
+    for file_name in os.listdir(source_dir_name):
+        if file_name.endswith(".xml"):
+            convert_kpt_xml_to_shape(source_dir_name, file_name, target_dir_name)
+
+
 dir_name = sys.argv[1]
-if not os.path.exists(dir_name + "shp"):
-    os.makedirs(dir_name + "shp")
+shape_dir_name = dir_name + "/" + "shp"
+if not os.path.exists(shape_dir_name):
+    os.makedirs(shape_dir_name)
 
 if len(sys.argv) > 2:
     for i in range(2, len(sys.argv)):
-        file_name = sys.argv[i]
-        if file_name.endswith(".zip"):
-            extract_zip(dir_name, file_name)
-            # convertKPTXmlToShape(dirName, fileName)
+        source_file_name = sys.argv[i]
+        if source_file_name.endswith(".zip"):
+            extract_zip(dir_name, source_file_name)
+            unpacked_dir_name = dir_name + "/" + source_file_name + ".unpacked"
+            convert_dir(unpacked_dir_name, shape_dir_name)
+            shutil.rmtree(unpacked_dir_name)
         else:
-            if file_name.endswith(".xml"):
-                convert_kpt_xml_to_shape(dir_name, file_name)
+            if source_file_name.endswith(".xml"):
+                convert_kpt_xml_to_shape(dir_name, source_file_name, shape_dir_name)
 else:
-    for file_name in os.listdir(dir_name):
-        if file_name.endswith(".zip"):
-            extract_zip(dir_name, file_name)
+    for source_file_name in os.listdir(dir_name):
+        if source_file_name.endswith(".zip"):
+            extract_zip(dir_name, source_file_name)
 
-    for file_name in os.listdir(dir_name):
-        if file_name.endswith(".xml"):
-            convert_kpt_xml_to_shape(dir_name, file_name)
+    convert_dir(dir_name)
