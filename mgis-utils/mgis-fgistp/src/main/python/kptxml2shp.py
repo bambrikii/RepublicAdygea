@@ -57,29 +57,29 @@ def convert_kpt_xml_to_shape(dirName, sourceFileName):
                     # print("cadnum:*", cadastral_number);
                     state = parcel.attrib["State"].strip();
                     date_created = "" + datetime.datetime.strptime(parcel.attrib["DateCreated"].strip(), "%Y-%m-%d").date().strftime("%Y-%m-%d");
-                    area_area = ""
-                    area_unit = ""
-                    name = ""
-                    location_in_bounds = ""
-                    okato = ""
-                    kladr = ""
-                    region = ""
-                    district_name = ""
-                    district_type = ""
-                    city_name = ""
-                    city_type = ""
-                    locality_name = ""
-                    locality_type = ""
-                    street_name = ""
-                    street_type = ""
-                    level1_type = ""
-                    level1_value = ""
-                    note = ""
-                    category = ""
-                    utilization_utilization = ""
-                    utilization_by_doc = ""
-                    cadastral_cost_value = ""
-                    cadastral_cost_unit = ""
+                    area_area = None
+                    area_unit = None
+                    name = None
+                    location_in_bounds = None
+                    okato = None
+                    kladr = None
+                    region = None
+                    district_name = None
+                    district_type = None
+                    city_name = None
+                    city_type = None
+                    locality_name = None
+                    locality_type = None
+                    street_name = None
+                    street_type = None
+                    level1_type = None
+                    level1_value = None
+                    note = None
+                    category = None
+                    utilization_utilization = None
+                    utilization_by_doc = None
+                    cadastral_cost_value = None
+                    cadastral_cost_unit = None
                     for area in parcel.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Area"):
                         area_area1 = area.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Area")
                         if area_area1 is not None:
@@ -169,8 +169,8 @@ def convert_kpt_xml_to_shape(dirName, sourceFileName):
                     if coordinates_found:
                         # print(poly)
                         w.poly(parts=[poly])
-                        note1 = ""
-                        note2 = ""
+                        note1 = None
+                        note2 = None
                         if note is not None and str.count(note, note) > 250:
                             note1 = note[:250]
                             note2 = note[250:]
@@ -179,33 +179,33 @@ def convert_kpt_xml_to_shape(dirName, sourceFileName):
                         # if note2 is None:
                         #     note2 = None
                         w.record(
-                            str.ljust(cadastral_number, 125),
-                            str.ljust(state, 120),
-                            str.ljust(date_created, 10),
-                            str.ljust(area_area, 120),
-                            str.ljust(area_unit, 120),
-                            str.ljust(name, 120),
-                            str.ljust(location_in_bounds, 120),
-                            str.ljust(okato, 120),
-                            str.ljust(kladr, 120),
-                            str.ljust(region, 254),
-                            str.ljust(district_name, 254),
-                            str.ljust(district_type, 254),
-                            str.ljust(city_name, 254),
-                            str.ljust(city_type, 254),
-                            str.ljust(locality_name, 254),
-                            str.ljust(locality_type, 254),
-                            str.ljust(street_name, 254),
-                            str.ljust(street_type, 254),
-                            str.ljust(level1_type, 254),
-                            str.ljust(level1_value, 254),
-                            str.ljust(note1, 254),
-                            str.ljust(note2, 254),
-                            str.ljust(category, 254),
-                            str.ljust(utilization_utilization, 254),
-                            str.ljust(utilization_by_doc, 254),
-                            str.ljust(cadastral_cost_value, 235),
-                            str.ljust(cadastral_cost_unit, 235)
+                            cadastral_number,
+                            state,
+                            date_created,
+                            area_area,
+                            area_unit,
+                            name,
+                            location_in_bounds,
+                            okato,
+                            kladr,
+                            region,
+                            district_name,
+                            district_type,
+                            city_name,
+                            city_type,
+                            locality_name,
+                            locality_type,
+                            street_name,
+                            street_type,
+                            level1_type,
+                            level1_value,
+                            note1,
+                            note2,
+                            category,
+                            utilization_utilization,
+                            utilization_by_doc,
+                            cadastral_cost_value,
+                            cadastral_cost_unit
                         )
                         # print("coord:  ", cadastral_number)
                         print("record: ", cadastral_number)
