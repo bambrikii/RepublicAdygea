@@ -10,7 +10,7 @@ import shapefile;
 
 
 def cvt(param):
-    return param.encode("cp1251").strip()
+    return param.encode("utf-8").strip()
 
 
 def convert_kpt_xml_to_shape(source_dir_name, source_file_name, target_dir_name):
@@ -152,28 +152,33 @@ def convert_kpt_xml_to_shape(source_dir_name, source_file_name, target_dir_name)
                         cadastral_cost_unit = cvt(cadastral_cost1.attrib["Unit"]);
 
                     entity_spatial = parcel.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}EntitySpatial")
-                    poly = []
+                    parts = []
+                    partTypes = []
                     if entity_spatial is not None:
                         ent_sys = cvt(entity_spatial.attrib["EntSys"]);
                         for spatial_element in entity_spatial.iter(
                                 "{urn://x-artefacts-rosreestr-ru/commons/complex-types/entity-spatial/2.0.1}SpatialElement"):
-                            part = []
-                            # poly.append(part)
+                            elem = []
+                            parts.append(elem);
+                            partTypes2 = []
+                            partTypes.append(partTypes2)
                             for spelement_unit in spatial_element.iter(
                                     "{urn://x-artefacts-rosreestr-ru/commons/complex-types/entity-spatial/2.0.1}SpelementUnit"):
+                                # unit = []
+                                # parts.append(unit)
                                 for ordinate in spelement_unit.iter(
                                         "{urn://x-artefacts-rosreestr-ru/commons/complex-types/entity-spatial/2.0.1}Ordinate"):
                                     # specify coordinates in X,Y order (longitude, latitude)
                                     ord_nmb = cvt(ordinate.attrib["OrdNmb"])
-                                    poly.append([float(ordinate.attrib['X']), float(ordinate.attrib['Y'])])
+                                    elem.append([float(cvt(ordinate.attrib['X'])), float(cvt(ordinate.attrib['Y']))])
+                                    partTypes2.append(shapefile.POLYGON)
                                     if hasattr(ordinate, "DeltaGeopoint"):
                                         delta_geopoint = cvt(ordinate.attrib["DeltaGeopoint"])
-                            coordinates_found = True
-                            # copy attributes
+                                    coordinates_found = True
+                                    # copy attributes
 
                     if coordinates_found:
-                        # print(poly)
-                        w.poly(parts=[poly])
+                        w.poly(parts=parts, partTypes=partTypes)
                         note1 = None
                         note2 = None
                         if note is not None and note.split(".") > 250:
