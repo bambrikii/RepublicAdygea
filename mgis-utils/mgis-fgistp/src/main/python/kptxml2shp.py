@@ -1,195 +1,248 @@
 import xml.etree.ElementTree as ET;
-import shapefile;
 import os;
 import sys;
 import re;
 import zipfile;
+import datetime;
+
+import shapefile;
 
 
-def convertKPTXmlToShape(dirName, sourceFileName):
+def convert_kpt_xml_to_shape(dirName, sourceFileName):
     xml_file = dirName + sourceFileName
     shape_file = dirName + "shp/" + re.sub(".xml$", "", sourceFileName) + '.shp'
     projection = 'GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]'
 
     w = shapefile.Writer(shapefile.POLYGON)
+    # w.autoBalance = 1
 
     # create fields
-    w.field("CadastralNumber")
-    w.field("State")
-    w.field("DateCreated")
-    w.field("AreaArea")
-    w.field("AreaUnit")
-    w.field("Name")
-    w.field("LocationInBounds")
-    w.field("LocationAddressOKATO")
-    w.field("LocationAddressKLADR")
-    w.field("LocationAddressRegion")
-    w.field("LocationAddressDistrictName")
-    w.field("LocationAddressDistrictType")
-    w.field("LocationAddressCityName")
-    w.field("LocationAddressCityType")
-    w.field("LocationAddressLocalityName")
-    w.field("LocationAddressLocalityType")
-    w.field("LocationAddressStreetName")
-    w.field("LocationAddressStreetType")
-    w.field("LocationAddressLevel1Type")
-    w.field("LocationAddressLevel1Value")
-    w.field("LocationAddressNode")
-    w.field("Category")
-    w.field("UtilizationUtilization")
-    w.field("UtilizationByDoc")
-    w.field("CadastralCostValue")
-    w.field("CadastralCostUnit")
+    w.field("CadNum", "C", 125)
+    w.field("State", "C", 120)
+    w.field("DtCreatd", "C", 10)
+    w.field("AreaArea", "C", 120)
+    w.field("AreaUnit", "C", 120)
+    w.field("Name", "C", 120)
+    w.field("LInBnds", "C", 120)
+    w.field("AOKATO", "C", 120)
+    w.field("AKLADR", "C", 120)
+    w.field("ARegion", "C", 254)
+    w.field("ADistrNm", "C", 254)
+    w.field("ADistrTp", "C", 254)
+    w.field("ACityNm", "C", 254)
+    w.field("ACityTp", "C", 254)
+    w.field("ALocalNm", "C", 254)
+    w.field("ALocalTyp", "C", 254)
+    w.field("AStreNm", "C", 254)
+    w.field("AStreTp", "C", 254)
+    w.field("ALvl1Tp", "C", 254)
+    w.field("ALvl1Vl", "C", 254)
+    w.field("AddrNote", "C", 254)
+    w.field("AddrNote2", "C", 254)
+    w.field("Category", "C", 254)
+    w.field("UtilUtlz", "C", 254)
+    w.field("UtilByDoc", "C", 254)
+    w.field("CadCstVl", "C", 235)
+    w.field("CadCstUnt", "C", 235)
 
     tree = ET.parse(xml_file)
     root = tree.getroot()
-    shapes = root.getchildren()
 
     for kpt in root.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}CadastralBlocks"):
         for block in kpt.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}CadastralBlock"):
             for parcels in block.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Parcels"):
                 for parcel in parcels.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Parcel"):
-                    coordinatesFound = False
-                    cadastralNumber = parcel.attrib["CadastralNumber"]
-                    print ("CadastralNumber:", cadastralNumber);
-                    state = parcel.attrib["State"]
-                    dateCreated = parcel.attrib["DateCreated"]
-                    areaArea = ""
-                    areaUnit = ""
+                    coordinates_found = False
+                    cadastral_number = parcel.attrib["CadastralNumber"].strip();
+                    # print("cadnum:*", cadastral_number);
+                    state = parcel.attrib["State"].strip();
+                    date_created = "" + datetime.datetime.strptime(parcel.attrib["DateCreated"].strip(), "%Y-%m-%d").date().strftime("%Y-%m-%d");
+                    area_area = ""
+                    area_unit = ""
                     name = ""
-                    locationInBounds = ""
+                    location_in_bounds = ""
                     okato = ""
                     kladr = ""
                     region = ""
-                    districtName = ""
-                    districtType = ""
-                    cityName = ""
-                    cityType = ""
-                    localityName = ""
-                    localityType = ""
-                    streetName = ""
-                    streetType = ""
-                    level1Type = ""
-                    level1Value = ""
+                    district_name = ""
+                    district_type = ""
+                    city_name = ""
+                    city_type = ""
+                    locality_name = ""
+                    locality_type = ""
+                    street_name = ""
+                    street_type = ""
+                    level1_type = ""
+                    level1_value = ""
                     note = ""
                     category = ""
-                    utilizationUtilization = ""
-                    utilizationByDoc = ""
-                    cadastralCostValue = ""
-                    cadastralCostUnit = ""
+                    utilization_utilization = ""
+                    utilization_by_doc = ""
+                    cadastral_cost_value = ""
+                    cadastral_cost_unit = ""
                     for area in parcel.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Area"):
-                        areaArea = area.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Area")
-                        areaUnit = area.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Unit")
+                        area_area1 = area.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Area")
+                        if area_area1 is not None:
+                            area_area = area_area1.text.strip()
+                        area_unit1 = area.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Unit")
+                        if area_unit1 is not None:
+                            area_unit = area_unit1.text.strip();
                     for location in parcel.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Location"):
                         for address in location.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Address"):
                             okato1 = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}OKATO")
                             if okato1 is not None:
-                                okato = okato1.text
+                                okato = okato1.text.strip();
 
                             kladr1 = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}KLADR")
                             if kladr1 is not None:
-                                kladr = kladr1.text
+                                kladr = kladr1.text.strip();
 
                             region1 = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}Region")
                             if region1 is not None:
-                                region = region1.text
+                                region = region1.text.strip();
 
                             district = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}District")
                             if district is not None:
-                                districtName = district.attrib["Name"]
-                                districtType = district.attrib["Type"]
+                                district_name = district.attrib["Name"].strip();
+                                district_type = district.attrib["Type"].strip();
 
                             city = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}City")
                             if city is not None:
-                                cityName = city.attrib["Name"]
-                                cityType = city.attrib["Type"]
+                                city_name = city.attrib["Name"].strip();
+                                city_type = city.attrib["Type"].strip();
 
                             locality = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}Locality")
                             if locality is not None:
-                                localityName = locality.attrib["Name"]
-                                localityType = locality.attrib["Type"]
+                                locality_name = locality.attrib["Name"].strip();
+                                locality_type = locality.attrib["Type"].strip();
 
                             street = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}Street")
                             if street is not None:
-                                streetName = street.attrib["Name"]
-                                streetType = street.attrib["Type"]
+                                street_name = street.attrib["Name"].strip();
+                                street_type = street.attrib["Type"].strip();
 
                             level1 = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}Level1")
                             if level1 is not None:
-                                level1Type = level1.attrib["Type"]
-                                level1Value = level1.attrib["Value"]
+                                level1_type = level1.attrib["Type"].strip();
+                                level1_value = level1.attrib["Value"].strip();
 
-                    category = parcel.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Category")
+                            note1 = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}Note")
+                            if note1 is not None:
+                                note = note1.text.strip();
 
-                    utilization = parcel.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Utilization")
-                    if utilization is not None:
-                        if hasattr(utilization, "Utilization"):
-                            utilizationUtilization = utilization.attrib["Utilization"]
-                        if hasattr(utilization, "ByDoc"):
-                            utilizationByDoc = utilization.attrib["ByDoc"]
+                    category1 = parcel.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Category")
+                    if category1 is not None:
+                        category = category1.text.strip();
 
-                    cadastralCost = parcel.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}CadastralCost")
-                    if cadastralCost is not None:
-                        cadastralCostValue = cadastralCost.attrib["Value"]
-                        cadastralCostUnit = cadastralCost.attrib["Unit"]
+                    utilization1 = parcel.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Utilization")
+                    if utilization1 is not None:
+                        if hasattr(utilization1, "Utilization"):
+                            utilization_utilization = utilization1.attrib["Utilization"].strip();
+                        if hasattr(utilization1, "ByDoc"):
+                            utilization_by_doc = utilization1.attrib["ByDoc"].strip();
 
-                    entitySpatial = parcel.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}EntitySpatial")
-                    if entitySpatial is not None:
-                        entSys = entitySpatial.attrib["EntSys"]
-                        for spatialElement in entitySpatial.iter(
+                    cadastral_cost1 = parcel.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}CadastralCost")
+                    if cadastral_cost1 is not None:
+                        cadastral_cost_value = cadastral_cost1.attrib["Value"].strip();
+                        cadastral_cost_unit = cadastral_cost1.attrib["Unit"].strip();
+
+                    entity_spatial = parcel.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}EntitySpatial")
+                    poly = []
+                    if entity_spatial is not None:
+                        ent_sys = entity_spatial.attrib["EntSys"].strip();
+                        for spatial_element in entity_spatial.iter(
                                 "{urn://x-artefacts-rosreestr-ru/commons/complex-types/entity-spatial/2.0.1}SpatialElement"):
                             part = []
-                            for spelementUnit in spatialElement.iter(
+                            # poly.append(part)
+                            for spelement_unit in spatial_element.iter(
                                     "{urn://x-artefacts-rosreestr-ru/commons/complex-types/entity-spatial/2.0.1}SpelementUnit"):
-                                for ordinate in spelementUnit.iter(
+                                for ordinate in spelement_unit.iter(
                                         "{urn://x-artefacts-rosreestr-ru/commons/complex-types/entity-spatial/2.0.1}Ordinate"):
                                     # specify coordinates in X,Y order (longitude, latitude)
-                                    ordNmb = ordinate.attrib["OrdNmb"]
-                                    part.append([float(ordinate.attrib['X']), float(ordinate.attrib['Y'])])
+                                    ord_nmb = ordinate.attrib["OrdNmb"]
+                                    poly.append([float(ordinate.attrib['X']), float(ordinate.attrib['Y'])])
                                     if hasattr(ordinate, "DeltaGeopoint"):
-                                        deltaGeopoint = ordinate.attrib["DeltaGeopoint"]
-                            w.poly(parts=[part])
-                            coordinatesFound = True
+                                        delta_geopoint = ordinate.attrib["DeltaGeopoint"]
+                            coordinates_found = True
                             # copy attributes
 
-                    if coordinatesFound:
-                        w.record(cadastralNumber, state, dateCreated, areaArea, areaUnit, name, locationInBounds, okato, kladr, region,
-                                 districtName, districtType, cityName, cityType, localityName, localityType, streetName, streetType, level1Type,
-                                 level1Value, note, category, utilizationUtilization, utilizationByDoc, cadastralCostValue, cadastralCostUnit)
-                        w.save(shape_file)  # create the PRJ file
+                    if coordinates_found:
+                        # print(poly)
+                        w.poly(parts=[poly])
+                        note1 = ""
+                        note2 = ""
+                        if note is not None and str.count(note, note) > 250:
+                            note1 = note[:250]
+                            note2 = note[250:]
+                        # if note1 is None:
+                        #     note1 = None
+                        # if note2 is None:
+                        #     note2 = None
+                        w.record(
+                            str.ljust(cadastral_number, 125),
+                            str.ljust(state, 120),
+                            str.ljust(date_created, 10),
+                            str.ljust(area_area, 120),
+                            str.ljust(area_unit, 120),
+                            str.ljust(name, 120),
+                            str.ljust(location_in_bounds, 120),
+                            str.ljust(okato, 120),
+                            str.ljust(kladr, 120),
+                            str.ljust(region, 254),
+                            str.ljust(district_name, 254),
+                            str.ljust(district_type, 254),
+                            str.ljust(city_name, 254),
+                            str.ljust(city_type, 254),
+                            str.ljust(locality_name, 254),
+                            str.ljust(locality_type, 254),
+                            str.ljust(street_name, 254),
+                            str.ljust(street_type, 254),
+                            str.ljust(level1_type, 254),
+                            str.ljust(level1_value, 254),
+                            str.ljust(note1, 254),
+                            str.ljust(note2, 254),
+                            str.ljust(category, 254),
+                            str.ljust(utilization_utilization, 254),
+                            str.ljust(utilization_by_doc, 254),
+                            str.ljust(cadastral_cost_value, 235),
+                            str.ljust(cadastral_cost_unit, 235)
+                        )
+                        # print("coord:  ", cadastral_number)
+                        print("record: ", cadastral_number)
 
+    w.save(shape_file)  # create the PRJ file
     with open(os.path.splitext(shape_file)[0] + os.extsep + 'prj', 'w') as prj:
         prj.write(projection)
 
 
-def extractZIP(dirName, fileName):
-    fh = open(dirName + fileName, 'rb')
+def extract_zip(dir_name, file_name):
+    fh = open(dir_name + file_name, 'rb')
     z = zipfile.ZipFile(fh)
     for name in z.namelist():
         print("Extracting: ", name)
-        outpath = dirName
+        outpath = dir_name
         z.extract(name, outpath)
     fh.close()
 
 
-dirName = sys.argv[1]
-if not os.path.exists(dirName + "shp"):
-    os.makedirs(dirName + "shp")
+dir_name = sys.argv[1]
+if not os.path.exists(dir_name + "shp"):
+    os.makedirs(dir_name + "shp")
 
 if len(sys.argv) > 2:
     for i in range(2, len(sys.argv)):
-        fileName = sys.argv[i]
-        if fileName.endswith(".zip"):
-            extractZIP(dirName, fileName)
+        file_name = sys.argv[i]
+        if file_name.endswith(".zip"):
+            extract_zip(dir_name, file_name)
             # convertKPTXmlToShape(dirName, fileName)
         else:
-            if fileName.endswith(".xml"):
-                convertKPTXmlToShape(dirName, fileName)
+            if file_name.endswith(".xml"):
+                convert_kpt_xml_to_shape(dir_name, file_name)
 else:
-    for fileName in os.listdir(dirName):
-        if fileName.endswith(".zip"):
-            extractZIP(dirName, fileName)
+    for file_name in os.listdir(dir_name):
+        if file_name.endswith(".zip"):
+            extract_zip(dir_name, file_name)
 
-    for fileName in os.listdir(dirName):
-        if fileName.endswith(".xml"):
-            convertKPTXmlToShape(dirName, fileName)
+    for file_name in os.listdir(dir_name):
+        if file_name.endswith(".xml"):
+            convert_kpt_xml_to_shape(dir_name, file_name)

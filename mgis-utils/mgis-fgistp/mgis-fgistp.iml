@@ -8,6 +8,11 @@
       <src_folder value="file://$MODULE_DIR$/src/test/resources" expected_position="4" />
     </src_description>
   </component>
+  <component name="FacetManager">
+    <facet type="Python" name="Python">
+      <configuration sdkName="Python 3.5.0+ (/usr/bin/python3.5)" />
+    </facet>
+  </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
@@ -17,7 +22,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
       <library name="JUnit4">
@@ -70,5 +75,6 @@
     <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: com.vividsolutions:jts:1.12" level="project" />
     <orderEntry type="library" name="Maven: xerces:xercesImpl:2.4.0" level="project" />
+    <orderEntry type="library" name="Python 3.5.0+ (/usr/bin/python3.5) interpreter library" level="application" />
   </component>
 </module>
