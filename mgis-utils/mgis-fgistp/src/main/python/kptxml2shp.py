@@ -1,3 +1,6 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import xml.etree.ElementTree as ET;
 import os;
 import sys;
@@ -8,48 +11,77 @@ import shutil;
 
 import shapefile;
 
+msk_23_zone1 = 'PROJCS["MSK23_zona1",GEOGCS["GCS_Pulkovo_1942",DATUM["D_Pulkovo_1942",SPHEROID["Krasovsky_1940",6378245.0,298.3]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],METADATA["Europe - FSU onshore",19.58,35.15,-168.98,81.9,0.0,0.0174532925199433,0.0,2423]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",1300000.0],PARAMETER["False_Northing",-4511057.628],PARAMETER["Central_Meridian",37.98333333333],PARAMETER["Scale_Factor",1.0],PARAMETER["Latitude_Of_Origin",0.0],UNIT["Meter",1.0]]'
+msk_23_zone2 = 'PROJCS["MSK23_zona2",GEOGCS["GCS_Pulkovo_1942",DATUM["D_Pulkovo_1942",SPHEROID["Krasovsky_1940",6378245.0,298.3]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],METADATA["Europe - FSU onshore",19.58,35.15,-168.98,81.9,0.0,0.0174532925199433,0.0,2423]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",2300000.0],PARAMETER["False_Northing",-4511057.628],PARAMETER["Central_Meridian",40.98333333333],PARAMETER["Scale_Factor",1.0],PARAMETER["Latitude_Of_Origin",0.0],UNIT["Meter",1.0]]'
+available_coord_systems = {
+    'МСК 23, зона 1': msk_23_zone1,
+    'МСК 23, зона 2': msk_23_zone2
+}
+
 
 def cvt(param):
     return param.encode("utf-8").strip()
 
 
+def find_coord_systems(source_dir_name, source_file_name):
+    print("find:", source_dir_name, source_file_name)
+    xml_file = source_dir_name + "/" + source_file_name
+
+    result = {}
+
+    tree = ET.parse(xml_file)
+    root = tree.getroot()
+    for kpt in root.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}CadastralBlocks"):
+        for block in kpt.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}CadastralBlock"):
+            for coord_systems in block.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}CoordSystems"):
+                for coord_system in coord_systems.iter("{urn://x-artefacts-rosreestr-ru/commons/complex-types/entity-spatial/2.0.1}CoordSystem"):
+                    if hasattr(result, coord_system.attrib["CsId"]) is False:
+                        result[cvt(coord_system.attrib["CsId"])] = coord_system.attrib["Name"].encode("utf-8")
+    return result;
+
+
 def convert_kpt_xml_to_shape(source_dir_name, source_file_name, target_dir_name):
+    coord_systems = find_coord_systems(source_dir_name, source_file_name)
+    print("coord. systems:", coord_systems);
+
     print("convert:", source_dir_name, source_file_name, target_dir_name)
     xml_file = source_dir_name + "/" + source_file_name
-    shape_file = target_dir_name + "/" + re.sub(".xml$", "", source_file_name) + '.shp'
-    projection = 'GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]'
 
-    w = shapefile.Writer(shapefile.POLYGON)
-    # w.autoBalance = 1
+    ww = {}
+    for coord_system_id in coord_systems:
+        w = shapefile.Writer(shapefile.POLYGON)
+        ww[coord_system_id] = w
 
-    # create fields
-    w.field("CadNum", "C", 125)
-    w.field("State", "C", 120)
-    w.field("DtCreatd", "C", 10)
-    w.field("AreaArea", "C", 120)
-    w.field("AreaUnit", "C", 120)
-    w.field("Name", "C", 120)
-    w.field("LInBnds", "C", 120)
-    w.field("AOKATO", "C", 120)
-    w.field("AKLADR", "C", 120)
-    w.field("ARegion", "C", 254)
-    w.field("ADistrNm", "C", 254)
-    w.field("ADistrTp", "C", 254)
-    w.field("ACityNm", "C", 254)
-    w.field("ACityTp", "C", 254)
-    w.field("ALocalNm", "C", 254)
-    w.field("ALocalTyp", "C", 254)
-    w.field("AStreNm", "C", 254)
-    w.field("AStreTp", "C", 254)
-    w.field("ALvl1Tp", "C", 254)
-    w.field("ALvl1Vl", "C", 254)
-    w.field("AddrNote", "C", 254)
-    w.field("AddrNote2", "C", 254)
-    w.field("Category", "C", 254)
-    w.field("UtilUtlz", "C", 254)
-    w.field("UtilByDoc", "C", 254)
-    w.field("CadCstVl", "C", 235)
-    w.field("CadCstUnt", "C", 235)
+        # w.autoBalance = 1
+
+        # create fields
+        w.field("CadNum", "C", 125)
+        w.field("State", "C", 120)
+        w.field("DtCreatd", "C", 10)
+        w.field("AreaArea", "C", 120)
+        w.field("AreaUnit", "C", 120)
+        w.field("Name", "C", 120)
+        w.field("LInBnds", "C", 120)
+        w.field("AOKATO", "C", 120)
+        w.field("AKLADR", "C", 120)
+        w.field("ARegion", "C", 254)
+        w.field("ADistrNm", "C", 254)
+        w.field("ADistrTp", "C", 254)
+        w.field("ACityNm", "C", 254)
+        w.field("ACityTp", "C", 254)
+        w.field("ALocalNm", "C", 254)
+        w.field("ALocalTyp", "C", 254)
+        w.field("AStreNm", "C", 254)
+        w.field("AStreTp", "C", 254)
+        w.field("ALvl1Tp", "C", 254)
+        w.field("ALvl1Vl", "C", 254)
+        w.field("AddrNote", "C", 254)
+        w.field("AddrNote2", "C", 254)
+        w.field("Category", "C", 254)
+        w.field("UtilUtlz", "C", 254)
+        w.field("UtilByDoc", "C", 254)
+        w.field("CadCstVl", "C", 235)
+        w.field("CadCstUnt", "C", 235)
 
     tree = ET.parse(xml_file)
     root = tree.getroot()
@@ -85,6 +117,7 @@ def convert_kpt_xml_to_shape(source_dir_name, source_file_name, target_dir_name)
                     utilization_by_doc = None
                     cadastral_cost_value = None
                     cadastral_cost_unit = None
+                    ent_sys = None
                     for area in parcel.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Area"):
                         area_area1 = area.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Area")
                         if area_area1 is not None:
@@ -153,15 +186,15 @@ def convert_kpt_xml_to_shape(source_dir_name, source_file_name, target_dir_name)
 
                     entity_spatial = parcel.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}EntitySpatial")
                     parts = []
-                    partTypes = []
+                    part_types = []
                     if entity_spatial is not None:
                         ent_sys = cvt(entity_spatial.attrib["EntSys"]);
                         for spatial_element in entity_spatial.iter(
                                 "{urn://x-artefacts-rosreestr-ru/commons/complex-types/entity-spatial/2.0.1}SpatialElement"):
                             elem = []
                             parts.append(elem);
-                            partTypes2 = []
-                            partTypes.append(partTypes2)
+                            part_types2 = []
+                            part_types.append(part_types2)
                             for spelement_unit in spatial_element.iter(
                                     "{urn://x-artefacts-rosreestr-ru/commons/complex-types/entity-spatial/2.0.1}SpelementUnit"):
                                 # unit = []
@@ -170,15 +203,16 @@ def convert_kpt_xml_to_shape(source_dir_name, source_file_name, target_dir_name)
                                         "{urn://x-artefacts-rosreestr-ru/commons/complex-types/entity-spatial/2.0.1}Ordinate"):
                                     # specify coordinates in X,Y order (longitude, latitude)
                                     ord_nmb = cvt(ordinate.attrib["OrdNmb"])
-                                    elem.append([float(cvt(ordinate.attrib['X'])), float(cvt(ordinate.attrib['Y']))])
-                                    partTypes2.append(shapefile.POLYGON)
+                                    elem.append([float(cvt(ordinate.attrib['Y'])), float(cvt(ordinate.attrib['X']))])
+                                    part_types2.append(shapefile.POLYGON)
                                     if hasattr(ordinate, "DeltaGeopoint"):
                                         delta_geopoint = cvt(ordinate.attrib["DeltaGeopoint"])
                                     coordinates_found = True
                                     # copy attributes
 
-                    if coordinates_found:
-                        w.poly(parts=parts, partTypes=partTypes)
+                    if ent_sys is not None and coordinates_found:
+                        w = ww[ent_sys]
+                        w.poly(parts=parts, partTypes=part_types)
                         note1 = None
                         note2 = None
                         if note is not None and note.split(".") > 250:
@@ -220,9 +254,14 @@ def convert_kpt_xml_to_shape(source_dir_name, source_file_name, target_dir_name)
                         # print("coord:  ", cadastral_number)
                         print("record: ", cadastral_number)
 
-    w.save(shape_file)  # create the PRJ file
-    with open(os.path.splitext(shape_file)[0] + os.extsep + 'prj', 'w') as prj:
-        prj.write(projection)
+    for coord_system_id in ww:
+        w = ww[coord_system_id]
+        coordinate_system_code = coord_systems[coord_system_id]
+        coord_system_projection = available_coord_systems[coordinate_system_code]
+        shape_file = target_dir_name + "/" + re.sub(".xml$", "", source_file_name) + "-" + coordinate_system_code + '.shp'
+        w.save(shape_file)  # create the PRJ file
+        with open(os.path.splitext(shape_file)[0] + os.extsep + 'prj', 'w') as prj:
+            prj.write(coord_system_projection)
 
 
 def extract_zip(source_dir_name, source_file_name):
