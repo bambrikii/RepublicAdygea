@@ -124,12 +124,18 @@ def convert_kpt_xml_to_shape(source_dir_name, source_file_name, target_dir_name)
 
                     for area in parcel.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Area"):
                         area_area1 = area.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Area")
+
                         if area_area1 is not None:
                             area_area = cvt(area_area1.text)
                         area_unit1 = area.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Unit")
                         if area_unit1 is not None:
                             area_unit = cvt(area_unit1.text);
+
                     for location in parcel.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Location"):
+
+                        for in_bounds1 in location.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}inBounds"):
+                            location_in_bounds = in_bounds1.text
+
                         for address in location.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Address"):
                             okato1 = address.find("{urn://x-artefacts-rosreestr-ru/commons/complex-types/address-output/3.0.1}OKATO")
                             if okato1 is not None:
