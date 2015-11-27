@@ -6,7 +6,6 @@ import os;
 import sys;
 import re;
 import zipfile;
-import datetime;
 import shutil;
 
 import shapefile;
@@ -24,7 +23,7 @@ def cvt(param):
 
 
 def find_coord_systems(source_dir_name, source_file_name):
-    print("find:", source_dir_name, source_file_name)
+    print("looking for coord system:", source_dir_name, source_file_name)
     xml_file = source_dir_name + "/" + source_file_name
 
     result = {}
@@ -93,7 +92,9 @@ def convert_kpt_xml_to_shape(source_dir_name, source_file_name, target_dir_name)
                     coordinates_found = False
                     cadastral_number = cvt(parcel.attrib["CadastralNumber"]);
                     state = cvt(parcel.attrib["State"]);
-                    date_created = "" + datetime.datetime.strptime(cvt(parcel.attrib["DateCreated"]), "%Y-%m-%d").date().strftime("%Y-%m-%d");
+                    date_created = None
+                    if "DateCreated" in parcel.attrib:
+                        date_created = cvt(parcel.attrib["DateCreated"])
                     area_area = None
                     area_unit = None
                     name = None
@@ -174,9 +175,9 @@ def convert_kpt_xml_to_shape(source_dir_name, source_file_name, target_dir_name)
 
                     utilization1 = parcel.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Utilization")
                     if utilization1 is not None:
-                        if hasattr(utilization1, "Utilization"):
+                        if "Utilization" in utilization1.attrib:
                             utilization_utilization = cvt(utilization1.attrib["Utilization"]);
-                        if hasattr(utilization1, "ByDoc"):
+                        if "ByDoc" in utilization1.attrib:
                             utilization_by_doc = cvt(utilization1.attrib["ByDoc"]);
 
                     cadastral_cost1 = parcel.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}CadastralCost")
@@ -218,10 +219,6 @@ def convert_kpt_xml_to_shape(source_dir_name, source_file_name, target_dir_name)
                         if note is not None and note.split(".") > 250:
                             note1 = note[:250]
                             note2 = note[250:]
-                        # if note1 is None:
-                        #     note1 = None
-                        # if note2 is None:
-                        #     note2 = None
                         w.record(
                             cadastral_number,
                             state,
@@ -252,16 +249,19 @@ def convert_kpt_xml_to_shape(source_dir_name, source_file_name, target_dir_name)
                             cadastral_cost_unit
                         )
                         # print("coord:  ", cadastral_number)
-                        print("record: ", cadastral_number)
+                        print("record: ", cadastral_number, coord_system_id)
 
     for coord_system_id in ww:
         w = ww[coord_system_id]
-        coordinate_system_code = coord_systems[coord_system_id]
-        coord_system_projection = available_coord_systems[coordinate_system_code]
-        shape_file = target_dir_name + "/" + re.sub(".xml$", "", source_file_name) + "-" + coordinate_system_code + '.shp'
-        w.save(shape_file)  # create the PRJ file
-        with open(os.path.splitext(shape_file)[0] + os.extsep + 'prj', 'w') as prj:
-            prj.write(coord_system_projection)
+        if len(w.records) > 0:
+            coordinate_system_code = coord_systems[coord_system_id]
+            coord_system_projection = available_coord_systems[coordinate_system_code]
+            shape_file = target_dir_name + "/" + re.sub(".xml$", "", source_file_name) + "-" + coordinate_system_code + '.shp'
+            w.save(shape_file)  # create the PRJ file
+            with open(os.path.splitext(shape_file)[0] + os.extsep + 'prj', 'w') as prj:
+                prj.write(coord_system_projection)
+        else:
+            print("No records found for ", coord_system_id)
 
 
 def extract_zip(source_dir_name, source_file_name):
@@ -301,4 +301,4 @@ else:
         if source_file_name.endswith(".zip"):
             extract_zip(dir_name, source_file_name)
 
-    convert_dir(dir_name)
+    convert_dir(dir_name, shape_dir_name)
