@@ -119,6 +119,9 @@ def convert_kpt_xml_to_shape(source_dir_name, source_file_name, target_dir_name)
                     cadastral_cost_value = None
                     cadastral_cost_unit = None
                     ent_sys = None
+                    for name1 in parcel.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Name"):
+                        name = name1.text
+
                     for area in parcel.iter("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Area"):
                         area_area1 = area.find("{urn://x-artefacts-rosreestr-ru/outgoing/kpt/9.0.3}Area")
                         if area_area1 is not None:
