@@ -259,6 +259,7 @@ def convert_kpt_xml_to_shape(source_dir_name, source_file_name, target_dir_name)
             shape_file = target_dir_name + "/" + re.sub(".xml$", "", source_file_name) + "-" + coordinate_system_code + '.shp'
             w.save(shape_file)  # create the PRJ file
             with open(os.path.splitext(shape_file)[0] + os.extsep + 'prj', 'w') as prj:
+                print("Storing records for ", coord_system_id)
                 prj.write(coord_system_projection)
         else:
             print("No records found for ", coord_system_id)
