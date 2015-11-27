@@ -216,9 +216,12 @@ def convert_kpt_xml_to_shape(source_dir_name, source_file_name, target_dir_name)
                         w.poly(parts=parts, partTypes=part_types)
                         note1 = None
                         note2 = None
-                        if note is not None and note.split(".") > 250:
-                            note1 = note[:250]
-                            note2 = note[250:]
+                        if note is not None:
+                            if note.split(".") > 250:
+                                note1 = note[:250]
+                                note2 = note[250:]
+                            else:
+                                note1 = note
                         w.record(
                             cadastral_number,
                             state,
