@@ -3,7 +3,6 @@
 
 import os;
 import sys;
-import shutil;
 
 import rusregister_converter;
 
@@ -18,16 +17,9 @@ if len(sys.argv) > 2:
     for i in range(2, len(sys.argv)):
         source_file_name = sys.argv[i]
         if source_file_name.endswith(".zip"):
-            converter.extract_zip(dir_name, source_file_name)
-            unpacked_dir_name = dir_name + "/" + source_file_name + ".unpacked"
-            converter.convert_dir(unpacked_dir_name, shape_dir_name)
-            shutil.rmtree(unpacked_dir_name)
+            converter.extract_zip(dir_name, source_file_name, shape_dir_name)
         else:
             if source_file_name.endswith(".xml"):
                 converter.convert_kpt_xml_to_shape(dir_name, source_file_name, shape_dir_name)
 else:
-    for source_file_name in os.listdir(dir_name):
-        if source_file_name.endswith(".zip"):
-            converter.extract_zip(dir_name, source_file_name)
-
     converter.convert_dir(dir_name, shape_dir_name)

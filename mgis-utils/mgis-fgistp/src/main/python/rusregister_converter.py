@@ -6,6 +6,7 @@ import re;
 import zipfile;
 import os;
 import json;
+import shutil;
 
 import shapefile;
 
@@ -16,10 +17,13 @@ class RusRegisterConverter:
 
     def __init__(self):
         logger = None
+        self.load_coord_system_defs()
+
         pass
 
     def __init__(self, logging_handler):
         self.logger = logging_handler
+        self.load_coord_system_defs()
         pass
 
     def log(self, message):
@@ -68,8 +72,6 @@ class RusRegisterConverter:
             self.log("  coord system alias: " + cs_alias + ", " + cs_definition)
 
     def find_coord_systems(self, source_dir_name, source_file_name):
-        self.load_coord_system_defs()
-
         self.log("looking for coord system: " + source_dir_name + ", " + source_file_name)
         xml_file = source_dir_name + "/" + source_file_name
 
@@ -315,16 +317,22 @@ class RusRegisterConverter:
             else:
                 self.log("No records found for " + coord_system_id)
 
-    def extract_zip(self, source_dir_name, source_file_name):
+    def extract_zip(self, source_dir_name, source_file_name, target_dir_name):
         fh = open(source_dir_name + "/" + source_file_name, 'rb')
         z = zipfile.ZipFile(fh)
         for name in z.namelist():
             out_path = source_dir_name + "/" + source_file_name + ".unpacked"
             self.log("Extracting: " + name + ", " + out_path)
             z.extract(name, out_path)
+            self.convert_dir(out_path, target_dir_name)
+            shutil.rmtree(out_path)
         fh.close()
 
     def convert_dir(self, source_dir_name, target_dir_name):
+        self.log("Converting dir: " + source_dir_name + ", " + target_dir_name)
+        for source_file_name in os.listdir(source_dir_name):
+            if source_file_name.endswith(".zip"):
+                self.extract_zip(source_dir_name, source_file_name, target_dir_name)
         for file_name in os.listdir(source_dir_name):
             if file_name.endswith(".xml"):
                 self.convert_kpt_xml_to_shape(source_dir_name, file_name, target_dir_name)

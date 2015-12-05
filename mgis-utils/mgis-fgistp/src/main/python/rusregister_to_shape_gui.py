@@ -95,7 +95,7 @@ class XmlToShapeConverterGUI:
         text['yscrollcommand'] = text_scrollbar.set
         logger = WidgetLogger(text);
 
-        Button(root, text="Start Conversion", command=lambda: start_conversion(logger)).grid(row=row, column=2)
+        Button(root, text="Convert KPT to Shape", command=lambda: start_conversion(logger)).grid(row=row, column=2)
 
         root.mainloop()
 
