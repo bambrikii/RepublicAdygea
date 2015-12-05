@@ -1,10 +1,10 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from tkinter import *;
-from tkinter import filedialog
+from Tkinter import *;
+import tkFileDialog
 import logging
-from tkinter import INSERT
+from Tkinter import INSERT
 
 import rusregister_converter;
 
@@ -32,7 +32,7 @@ class XmlToShapeConverterGUI:
 
     def main_window(self):
         def select_dir(dir_var):
-            dirname = filedialog.askdirectory(parent=root, initialdir=dir_var.get(), title='Please select a directory')
+            dirname = tkFileDialog.askdirectory(parent=root, initialdir=dir_var.get(), title='Please select a directory')
             if dirname:
                 dir_var.set(dirname)
 

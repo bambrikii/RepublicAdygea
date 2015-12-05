@@ -5,17 +5,14 @@ import xml.etree.ElementTree as ET;
 import re;
 import zipfile;
 import os;
+import json;
 
 import shapefile;
 
 
 class RusRegisterConverter:
-    msk_23_zone1 = 'PROJCS["MSK23_zona1",GEOGCS["GCS_Pulkovo_1942",DATUM["D_Pulkovo_1942",SPHEROID["Krasovsky_1940",6378245.0,298.3]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],METADATA["Europe - FSU onshore",19.58,35.15,-168.98,81.9,0.0,0.0174532925199433,0.0,2423]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",1300000.0],PARAMETER["False_Northing",-4511057.628],PARAMETER["Central_Meridian",37.98333333333],PARAMETER["Scale_Factor",1.0],PARAMETER["Latitude_Of_Origin",0.0],UNIT["Meter",1.0]]'
-    msk_23_zone2 = 'PROJCS["MSK23_zona2",GEOGCS["GCS_Pulkovo_1942",DATUM["D_Pulkovo_1942",SPHEROID["Krasovsky_1940",6378245.0,298.3]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433],METADATA["Europe - FSU onshore",19.58,35.15,-168.98,81.9,0.0,0.0174532925199433,0.0,2423]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",2300000.0],PARAMETER["False_Northing",-4511057.628],PARAMETER["Central_Meridian",40.98333333333],PARAMETER["Scale_Factor",1.0],PARAMETER["Latitude_Of_Origin",0.0],UNIT["Meter",1.0]]'
-    available_coord_systems = {
-        u'МСК 23, зона 1': msk_23_zone1,
-        u'МСК 23, зона 2': msk_23_zone2
-    }
+    cs_definitions = {}
+    cs_aliases = {}
 
     def __init__(self):
         logger = None
@@ -53,7 +50,26 @@ class RusRegisterConverter:
                 notes[1] = None
         return notes
 
+    def load_coord_system_defs(self):
+        self.log("loading coord system... ")
+        data = None
+        with open('coordinate_system_defs.json') as coord_system_defs:
+            data = json.load(coord_system_defs)
+
+        for cs_definition in data[u'cs_definitions']:
+            definition = data[u'cs_definitions'][cs_definition]
+            self.cs_definitions[cs_definition] = definition
+            self.log("  coord system: " + cs_definition + ", " + definition)
+
+        for cs_alias in data[u'cs_aliases']:
+            alias = data[u'cs_aliases'][cs_alias]
+            cs_definition = data[u'cs_aliases'][cs_alias]
+            self.cs_aliases[cs_alias] = self.cs_definitions[cs_definition]
+            self.log("  coord system alias: " + alias + ", " + cs_definition)
+
     def find_coord_systems(self, source_dir_name, source_file_name):
+        self.load_coord_system_defs()
+
         self.log("looking for coord system: " + source_dir_name + ", " + source_file_name)
         xml_file = source_dir_name + "/" + source_file_name
 
@@ -290,7 +306,7 @@ class RusRegisterConverter:
             w = ww[coord_system_id]
             if len(w.records) > 0:
                 coordinate_system_code = coord_systems[coord_system_id]  # .decode()
-                coord_system_projection = self.available_coord_systems[coordinate_system_code]
+                coord_system_projection = self.cs_aliases[coordinate_system_code]
                 shape_file = target_dir_name + "/" + re.sub(".xml$", "", source_file_name) + "-" + coordinate_system_code + '.shp'
                 w.save(shape_file)  # create the PRJ file
                 with open(os.path.splitext(shape_file)[0] + os.extsep + 'prj', 'w') as prj:
