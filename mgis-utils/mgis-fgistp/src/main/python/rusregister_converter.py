@@ -65,7 +65,7 @@ class RusRegisterConverter:
             alias = data[u'cs_aliases'][cs_alias]
             cs_definition = data[u'cs_aliases'][cs_alias]
             self.cs_aliases[cs_alias] = self.cs_definitions[cs_definition]
-            self.log("  coord system alias: " + alias + ", " + cs_definition)
+            self.log("  coord system alias: " + cs_alias + ", " + cs_definition)
 
     def find_coord_systems(self, source_dir_name, source_file_name):
         self.load_coord_system_defs()
