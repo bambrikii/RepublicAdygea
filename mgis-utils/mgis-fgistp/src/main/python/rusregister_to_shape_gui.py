@@ -1,12 +1,14 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from Tkinter import *;
+from Tkinter import *
 import tkFileDialog
 import logging
 from Tkinter import INSERT
+from Tkinter import END
+import threading
 
-import rusregister_converter;
+import rusregister_converter
 
 
 class WidgetLogger(logging.Handler):
@@ -17,6 +19,7 @@ class WidgetLogger(logging.Handler):
     def emit(self, record):
         # Append message (record) to the widget
         self.widget.insert(INSERT, record + '\n')
+        self.widget.see(END)
 
 
 class XmlToShapeConverterGUI:
@@ -40,8 +43,14 @@ class XmlToShapeConverterGUI:
 
         def start_conversion(logging_handler):
             converter = rusregister_converter.RusRegisterConverter(logging_handler)
+            logging_handler.emit("--- Starting conversion ---")
             converter.convert_dir(source_directory_var.get(), target_directory_var.get())
+            logging_handler.emit("--- Conversion complete! ---")
             return ""
+
+        def start_conversion_in_background(logging_handler):
+            t1 = threading.Thread(target=lambda: start_conversion(logging_handler))
+            t1.start()
 
         def create_menu(parent_window):
             menu_bar = Menu(parent_window)
@@ -74,28 +83,31 @@ class XmlToShapeConverterGUI:
             if target_directory_var.get() == "":
                 target_directory_var.set(source_directory_var.get() + "/shape_files")
 
-        Button(root, text="Select Source Directory", command=select_source_directory).grid(row=row, column=2)
+        Button(root, text="Choose source directory", command=select_source_directory).grid(row=row, column=2)
 
         row += 1
         Label(root, text="Target Directory").grid(row=row)
         Entry(root, textvariable=target_directory_var, width=80).grid(row=row, column=1)
-        Button(root, text="Select Source Directory", command=lambda: select_dir(target_directory_var)).grid(row=row, column=2)
+        Button(root, text="Choose target directory", command=lambda: select_dir(target_directory_var)).grid(row=row, column=2)
 
         row += 1
 
         Grid.rowconfigure(root, row, weight=1)
-        Label(root, text="Start").grid(row=row)
+        Label(root, text="KPT").grid(row=row)
         text_frame = Frame(root)
         text_frame.grid(row=row, column=1)
 
-        text = Text(text_frame)
-        text_scrollbar = Scrollbar(text, command=text.yview)
+        text_scrollbar = Scrollbar(text_frame)
 
-        text.grid(row=0, column=0, sticky="nsew")
-        text['yscrollcommand'] = text_scrollbar.set
+        text = Text(text_frame, height=25, width=150)
+        text_scrollbar.config(command=text.yview)
+        text_scrollbar.grid(row=0, column=1, sticky='ns')
+        text.grid(row=0, column=0)
+        text.config(yscrollcommand=text_scrollbar.set)
+
         logger = WidgetLogger(text);
 
-        Button(root, text="Convert KPT to Shape", command=lambda: start_conversion(logger)).grid(row=row, column=2)
+        Button(root, text="Convert KPT to Shape", command=lambda: start_conversion_in_background(logger)).grid(row=row, column=2)
 
         root.mainloop()
 

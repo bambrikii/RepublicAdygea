@@ -88,8 +88,9 @@ class RusRegisterConverter:
         return result
 
     def convert_kpt_xml_to_shape(self, source_dir_name, source_file_name, target_dir_name):
+        self.log("- Starting KPT to Shape conversion -")
         coord_systems = self.find_coord_systems(source_dir_name, source_file_name)
-        self.log("coord. systems: " + str(coord_systems));
+        self.log("coord. systems found: " + str(coord_systems))
 
         self.log("convert: " + source_dir_name + ", " + source_file_name + ", " + target_dir_name)
         xml_file = source_dir_name + "/" + source_file_name
@@ -316,8 +317,10 @@ class RusRegisterConverter:
                     prj.write(coord_system_projection)
             else:
                 self.log("No records found for " + coord_system_id)
+        self.log("- KPT to Shape conversion complete! -");
 
     def extract_zip(self, source_dir_name, source_file_name, target_dir_name):
+        self.log("-- Processing ZIP files --")
         fh = open(source_dir_name + "/" + source_file_name, 'rb')
         z = zipfile.ZipFile(fh)
         for name in z.namelist():
@@ -327,12 +330,14 @@ class RusRegisterConverter:
             self.convert_dir(out_path, target_dir_name)
             shutil.rmtree(out_path)
         fh.close()
+        self.log("-- ZIP files processing complete! --")
 
     def convert_dir(self, source_dir_name, target_dir_name):
-        self.log("Converting dir: " + source_dir_name + ", " + target_dir_name)
+        self.log("-- Converting dir: " + source_dir_name + ", " + target_dir_name + " --")
         for source_file_name in os.listdir(source_dir_name):
             if source_file_name.endswith(".zip"):
                 self.extract_zip(source_dir_name, source_file_name, target_dir_name)
         for file_name in os.listdir(source_dir_name):
             if file_name.endswith(".xml"):
                 self.convert_kpt_xml_to_shape(source_dir_name, file_name, target_dir_name)
+        self.log("-- Dir conversion complete! --")
