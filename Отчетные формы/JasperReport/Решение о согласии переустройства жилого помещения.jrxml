@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2015-12-18T12:26:09 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Решение перепланировка" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ae700ba3-699a-475e-9595-48da4317fde6">
+	<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<queryString language="JSON">
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.String">
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<field name="type" class="java.lang.String">
+		<fieldDescription><![CDATA[type]]></fieldDescription>
+	</field>
+	<field name="objectPurpose" class="java.lang.String">
+		<fieldDescription><![CDATA[objectPurpose]]></fieldDescription>
+	</field>
+	<field name="cadastralNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[cadastralNumber]]></fieldDescription>
+	</field>
+	<field name="conditionalNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[conditionalNumber]]></fieldDescription>
+	</field>
+	<field name="inventoryNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[inventoryNumber]]></fieldDescription>
+	</field>
+	<field name="overallArea" class="java.lang.String">
+		<fieldDescription><![CDATA[overallArea]]></fieldDescription>
+	</field>
+	<field name="municipalEntity" class="java.lang.String">
+		<fieldDescription><![CDATA[municipalEntity]]></fieldDescription>
+	</field>
+	<field name="address" class="java.lang.String">
+		<fieldDescription><![CDATA[address]]></fieldDescription>
+	</field>
+	<field name="placement" class="java.lang.String">
+		<fieldDescription><![CDATA[placement]]></fieldDescription>
+	</field>
+	<field name="letter" class="java.lang.String">
+		<fieldDescription><![CDATA[letter]]></fieldDescription>
+	</field>
+	<field name="technicalAccountingStatementDate" class="java.lang.String">
+		<fieldDescription><![CDATA[technicalAccountingStatementDate]]></fieldDescription>
+	</field>
+	<field name="actualUsage" class="java.lang.String">
+		<fieldDescription><![CDATA[actualUsage]]></fieldDescription>
+	</field>
+	<field name="operationStartYear" class="java.lang.String">
+		<fieldDescription><![CDATA[operationStartYear]]></fieldDescription>
+	</field>
+	<field name="buildCompletionYear" class="java.lang.String">
+		<fieldDescription><![CDATA[buildCompletionYear]]></fieldDescription>
+	</field>
+	<field name="lastReconstructionDate" class="java.lang.String">
+		<fieldDescription><![CDATA[lastReconstructionDate]]></fieldDescription>
+	</field>
+	<field name="rebuildingLastYear" class="java.lang.String">
+		<fieldDescription><![CDATA[rebuildingLastYear]]></fieldDescription>
+	</field>
+	<field name="rights" class="java.lang.String">
+		<fieldDescription><![CDATA[rights]]></fieldDescription>
+	</field>
+	<field name="characteristics" class="java.lang.String">
+		<fieldDescription><![CDATA[characteristics]]></fieldDescription>
+	</field>
+	<field name="constructiveElements" class="java.lang.String">
+		<fieldDescription><![CDATA[constructiveElements]]></fieldDescription>
+	</field>
+	<field name="rightRightownerFirstName" class="java.lang.String">
+		<fieldDescription><![CDATA[rights.rightOwner.firstName]]></fieldDescription>
+	</field>
+	<field name="rightRightOwnerSurname" class="java.lang.String">
+		<fieldDescription><![CDATA[rights.rightOwner.surname]]></fieldDescription>
+	</field>
+	<field name="rightsRightOwnerPatronymic" class="java.lang.String">
+		<fieldDescription><![CDATA[rights.rightOwner.patronymic]]></fieldDescription>
+	</field>
+	<field name="rightsRightOwnerName" class="java.lang.String">
+		<fieldDescription><![CDATA[rights.rightOwner.name]]></fieldDescription>
+	</field>
+	<field name="rightsRegistrationDocumentsDocNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[rights.registrationDocuments.docNumber]]></fieldDescription>
+	</field>
+	<field name="rightsRegistrationDocumentsName" class="java.lang.String">
+		<fieldDescription><![CDATA[rights.registrationDocuments.name]]></fieldDescription>
+	</field>
+	<title>
+		<band height="169" splitType="Stretch">
+			<staticText>
+				<reportElement x="107" y="98" width="350" height="65" uuid="4767d880-a8e2-4885-aed9-e651ad70fa91"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Решение
+о согласовании переустройства
+и (или) перепланировки жилого помещения
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="8" width="190" height="60" uuid="0f636a8c-e657-43c6-9f93-1e3fb4d4af2a"/>
+				<textElement textAlignment="Right">
+					<font fontName="SansSerif"/>
+				</textElement>
+				<text><![CDATA[Утв. постановлением
+Правительства Российской Федерации
+от 28 апреля 2005 г. № 266
+(в ред. от 21 сентября 2005 г.)
+]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="618" splitType="Stretch">
+			<staticText>
+				<reportElement x="260" y="130" width="179" height="20" uuid="6b62bdd0-f0bb-4656-9cc7-5cdf53a930b2"/>
+				<textElement>
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[на основании:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="48" width="174" height="20" uuid="f6e3b41d-d16c-4f33-8dfc-50944dc2eced"/>
+				<textElement>
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[о намерении провести]]></text>
+			</staticText>
+			<textField pattern="">
+				<reportElement x="159" y="86" width="386" height="44" uuid="f5ad5ed5-2c32-4beb-aa2f-595738ca3e31"/>
+				<textElement>
+					<font fontName="SansSerif" size="14" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="440" y="48" width="110" height="20" uuid="4916f3b9-be04-4493-9992-b19e108a389e"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[жилых помеще-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="234" width="538" height="20" uuid="8c6ca120-2986-47e3-9e38-5f3c593c1f6c"/>
+				<textElement>
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[по результатам рассмотрения представленных документов принято решение:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="206" y="48" width="229" height="20" uuid="4d8c4939-51ea-453d-98d8-72625f431e18"/>
+				<textElement>
+					<font fontName="SansSerif" size="14" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["переустройство"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="546" y="110" width="10" height="20" uuid="6f56c756-b817-4f61-9dab-481e7eed45f3"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14"/>
+				</textElement>
+				<text><![CDATA[,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="132" width="235" height="20" uuid="ca1a3cc4-9605-44b7-99d6-2ffd032a3e0b"/>
+				<textElement>
+					<font fontName="SansSerif" size="14" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[занимаемых (принадлежащих)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="174" y="29" width="379" height="14" uuid="2b639bd7-2f83-4fbd-9353-5a613bde723b"/>
+				<textElement>
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[(Ф. И. О. физического лица, наименование юридического лица — заявителя)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="227" y="68" width="172" height="14" uuid="e32e0c0d-ab2a-405a-836d-826c6042e794"/>
+				<textElement>
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[(ненужное зачеркнуть)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="152" width="384" height="14" uuid="f4fe763e-1802-4ce7-8984-cee0be9fec04"/>
+				<textElement>
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[(ненужное зачеркнуть)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="10" width="150" height="20" uuid="39ca2a61-fb1c-40b0-a754-3199abe6568d"/>
+				<textElement>
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[В связи с обращением]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="15" y="170" width="534" height="40" uuid="7b66f9fc-a192-4744-bd4f-8479f48584a3"/>
+				<textElement>
+					<font fontName="SansSerif" size="14" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rightsRegistrationDocumentsName} + " № " + $F{rightsRegistrationDocumentsDocNumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="150" y="285" width="400" height="24" uuid="3411e817-e199-4b69-9374-930dd93e8d93"/>
+				<textElement>
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[(переустройство, перепланировку, переустройство и перепланировку — нужное указать)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="86" width="143" height="20" uuid="ba2a0462-5251-49cc-87ce-710b0739b7f0"/>
+				<textElement>
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[ний по адресу:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="210" width="540" height="23" uuid="7a55bf3e-24f8-44a5-8698-47cde65d2c6e"/>
+				<textElement>
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[(вид и реквизиты правоустанавливающего документа на переустраиваемое и (или) перепланируемое жилое помещение)]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="215" y="265" width="334" height="20" uuid="f1c9514c-fa99-48ce-82b5-065f9e13677e"/>
+				<textElement>
+					<font fontName="SansSerif" size="14" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["переустройство"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="15" y="265" width="174" height="20" uuid="c1f99d0f-0656-4777-b899-3fca0e649717"/>
+				<textElement>
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[1. Дать согласие на]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="310" width="533" height="40" uuid="7a84ef87-5abc-42cd-a27e-869e682a4767"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[жилых помещений в соответствии с представленным проектом (проектной документацией).]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="380" width="533" height="70" uuid="91c6d16b-8fcd-4884-9aa8-4c35940c0e58"/>
+				<textElement textAlignment="Left">
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[срок производства ремонтно-строительных работ с 	«___» _______________ 20___ г. 
+по «___» _____________20___ г. 
+
+режим производства ремонтно-строительных работ с ____________ по ___________
+
+часов в ____________________	 дни.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="173" y="9" width="380" height="20" uuid="7463b23b-d914-43af-ae89-83aee7efb28d"/>
+				<textElement>
+					<font fontName="SansSerif" size="14" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rightsRightOwnerName}==null?($F{rightRightOwnerSurname} + " " + $F{rightRightownerFirstName}+ " " +  $F{rightsRightOwnerPatronymic}):($F{rightsRightOwnerName})]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="15" y="450" width="533" height="70" uuid="15776d97-9f15-4a03-8ced-21b3b37c5c32"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[____________________________________________________________________________________________________________________________________________________________________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="550" width="531" height="51" uuid="043a21ef-9a8d-407a-a5dd-a6d28bc6dae9"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[* Срок и режим производства ремонтно-строительных работ определяются в соответствии с заявлением. В случае если орган, осуществляющий согласование, изменяет указанные в заявлении срок и режим производства ремонтно-строительных работ, в решении излагаются мотивы принятия такого решения.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="530" width="134" height="20" uuid="c6d32055-199b-4ac9-b9fe-6bbb9207f6ca"/>
+				<textElement>
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[_________________]]></text>
+			</staticText>
+			<break>
+				<reportElement x="0" y="611" width="524" height="1" uuid="f9af012d-ddec-4888-8d94-4f8fde7ecefe"/>
+			</break>
+			<staticText>
+				<reportElement x="17" y="360" width="230" height="20" uuid="f28f3da7-9a60-4cc7-9855-ba1ebc562a2b"/>
+				<textElement>
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[2. Установить*:]]></text>
+			</staticText>
+		</band>
+		<band height="658">
+			<staticText>
+				<reportElement x="270" y="489" width="158" height="43" uuid="05ccee01-994f-4d10-ab32-30499695e6b9"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[(подпись заявителя или
+лица заявителей)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="162" width="530" height="130" uuid="2598d44f-f6c2-4e30-a3ae-ab2c963b040a"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[4. Установить, что приемочная комиссия осуществляет приемку выполненных ремонтно-строительных работ и подписание акта о завершении переустройства и (или) перепланировки жилого помещения в установленном порядке.
+5. Приемочной комиссии после подписания акта о завершении переустройства и (или) перепланировки жилого помещения направить подписанный акт в орган местного самоуправления.
+6. Контроль за исполнением настоящего решения возложить на ___________________________________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="247" y="469" width="184" height="20" uuid="192a5ee6-7266-4646-90ab-810fed9bcadf"/>
+				<textElement>
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[__________________________________________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="159" y="70" width="371" height="14" uuid="415a950c-1d4b-4b29-8fda-f7279f11e801"/>
+				<textElement>
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[(указываются реквизиты нормативного правового акта субъекта]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="11" width="532" height="58" uuid="e084b372-1689-45f4-9b47-6c2feed0a5ce"/>
+				<textElement textAlignment="Justified">
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[3. Обязать заявителя осуществить переустройство и (или) перепланировку жилого помещения в соответствии с проектом (проектной документацией) и с соблюдением требований _________________________________________________________________
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="22" y="315" width="523" height="14" uuid="65d357f7-e8c9-40f3-9e99-7a1ed4905a0b"/>
+				<textElement>
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[(наименование структурного подразделения и (или) Ф. И. О. должностного лица органа,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="22" y="147" width="524" height="14" uuid="e87e8f65-d613-43ba-8a9f-dc3e3facc855"/>
+				<textElement>
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[проведения ремонтно-строительных работ по переустройству и (или) перепланировке жилых помещений)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="86" width="528" height="20" uuid="c5f4551c-aa93-4147-a21f-c1f20d4e511a"/>
+				<textElement>
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[__________________________________________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="72" y="109" width="420" height="14" uuid="befa8632-65b1-47d3-bcb8-e8afc200610d"/>
+				<textElement>
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[Российской Федерации или акта органа местного самоуправления, регламентирующего порядок]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="22" y="332" width="528" height="20" uuid="ac3607f2-edae-4739-a6b1-12bf12eba277"/>
+				<textElement>
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[__________________________________________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="135" y="352" width="294" height="14" uuid="5d0e0e91-02da-41c4-871d-9eb26818e010"/>
+				<textElement>
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[осуществляющего согласование)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="430" width="60" height="20" uuid="3cbd94d4-b8ac-427f-8841-5dbf2697b093"/>
+				<textElement>
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[М.П.]]></text>
+			</staticText>
+			<textField pattern="dd.MM.yyyy г.">
+				<reportElement x="107" y="469" width="132" height="20" uuid="c0cbff0a-3b18-48e8-97c8-60b11b4d7be2"/>
+				<textElement>
+					<font fontName="SansSerif" size="14" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="25" y="469" width="82" height="20" uuid="16f5b4ca-9158-4311-812c-2f848d8977cb"/>
+				<textElement>
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[Получил:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="325" y="373" width="216" height="20" uuid="61e79a0e-d918-4004-8ac9-57ea9fd71077"/>
+				<textElement>
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[__________________________________________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="331" y="390" width="210" height="40" uuid="9655aed3-61cf-41c0-8220-857e0612c497"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[(подпись должностного лица органа,
+осуществляющего согласование)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="474" width="110" height="58" uuid="479f281c-49ca-419e-8cc5-bd0a2d345399"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[(заполняется в случае получения решения лично)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="532" width="324" height="20" uuid="6db66325-21f8-461d-a043-68a59e1d1fb5"/>
+				<textElement>
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[Решение направлено в адрес заявителя (ей) ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="552" width="310" height="30" uuid="02da6b52-5cba-45cf-8dec-edf9be8aac18"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[(заполняется в случае направления решения по почте)]]></text>
+			</staticText>
+			<textField pattern="dd.MM.yyyy г.">
+				<reportElement x="360" y="532" width="132" height="20" uuid="fd50e71b-0cd0-4365-a73d-5ce10cf4014d"/>
+				<textElement>
+					<font fontName="SansSerif" size="14" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="331" y="589" width="216" height="20" uuid="f1526a46-00a9-4d82-88ad-29e7755e41c0"/>
+				<textElement>
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[__________________________________________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="327" y="609" width="216" height="40" uuid="bd200ea9-e140-4ad1-a978-840c75cca8fb"/>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="10"/>
+				</textElement>
+				<text><![CDATA[(подпись должностного лица,
+направившего решение в адрес
+заявителя (ей)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="22" y="125" width="528" height="20" uuid="d9fde2f5-de19-4b5a-9bcc-201d25ba649f"/>
+				<textElement>
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[__________________________________________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="292" width="528" height="20" uuid="1772e0fc-aead-45ed-8a88-d7d03aaccb5b"/>
+				<textElement>
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[__________________________________________________________________________________]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

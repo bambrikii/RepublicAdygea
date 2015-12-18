@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2015-12-18T10:53:07 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Решение об отказе в согласовании переустройства" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9efe7203-a712-48b3-ae3f-83f0ac395b46">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<subDataset name="Dataset2" uuid="d208f172-85c7-4327-b67c-e2491c98d9e4">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+		<queryString language="json">
+			<![CDATA[rights.registrationDocuments]]>
+		</queryString>
+		<field name="docNumber" class="java.lang.String">
+			<fieldDescription><![CDATA[docNumber]]></fieldDescription>
+		</field>
+		<field name="name" class="java.lang.String">
+			<fieldDescription><![CDATA[name]]></fieldDescription>
+		</field>
+	</subDataset>
+	<queryString language="JSON">
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.String">
+		<fieldDescription><![CDATA[id]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[name]]></fieldDescription>
+	</field>
+	<field name="type" class="java.lang.String">
+		<fieldDescription><![CDATA[type]]></fieldDescription>
+	</field>
+	<field name="objectPurpose" class="java.lang.String">
+		<fieldDescription><![CDATA[objectPurpose]]></fieldDescription>
+	</field>
+	<field name="cadastralNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[cadastralNumber]]></fieldDescription>
+	</field>
+	<field name="conditionalNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[conditionalNumber]]></fieldDescription>
+	</field>
+	<field name="inventoryNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[inventoryNumber]]></fieldDescription>
+	</field>
+	<field name="overallArea" class="java.lang.String">
+		<fieldDescription><![CDATA[overallArea]]></fieldDescription>
+	</field>
+	<field name="municipalEntity" class="java.lang.String">
+		<fieldDescription><![CDATA[municipalEntity]]></fieldDescription>
+	</field>
+	<field name="address" class="java.lang.String">
+		<fieldDescription><![CDATA[address]]></fieldDescription>
+	</field>
+	<field name="placement" class="java.lang.String">
+		<fieldDescription><![CDATA[placement]]></fieldDescription>
+	</field>
+	<field name="letter" class="java.lang.String">
+		<fieldDescription><![CDATA[letter]]></fieldDescription>
+	</field>
+	<field name="technicalAccountingStatementDate" class="java.lang.String">
+		<fieldDescription><![CDATA[technicalAccountingStatementDate]]></fieldDescription>
+	</field>
+	<field name="actualUsage" class="java.lang.String">
+		<fieldDescription><![CDATA[actualUsage]]></fieldDescription>
+	</field>
+	<field name="operationStartYear" class="java.lang.String">
+		<fieldDescription><![CDATA[operationStartYear]]></fieldDescription>
+	</field>
+	<field name="buildCompletionYear" class="java.lang.String">
+		<fieldDescription><![CDATA[buildCompletionYear]]></fieldDescription>
+	</field>
+	<field name="lastReconstructionDate" class="java.lang.String">
+		<fieldDescription><![CDATA[lastReconstructionDate]]></fieldDescription>
+	</field>
+	<field name="rebuildingLastYear" class="java.lang.String">
+		<fieldDescription><![CDATA[rebuildingLastYear]]></fieldDescription>
+	</field>
+	<field name="rights" class="java.lang.String">
+		<fieldDescription><![CDATA[rights]]></fieldDescription>
+	</field>
+	<field name="characteristics" class="java.lang.String">
+		<fieldDescription><![CDATA[characteristics]]></fieldDescription>
+	</field>
+	<field name="constructiveElements" class="java.lang.String">
+		<fieldDescription><![CDATA[constructiveElements]]></fieldDescription>
+	</field>
+	<field name="rightsRightownerPantronymic" class="java.lang.String">
+		<fieldDescription><![CDATA[rights.rightOwner.patronymic]]></fieldDescription>
+	</field>
+	<field name="rightsRightownerSurname" class="java.lang.String">
+		<fieldDescription><![CDATA[rights.rightOwner.surname]]></fieldDescription>
+	</field>
+	<field name="rightsRightownerFirstname" class="java.lang.String">
+		<fieldDescription><![CDATA[rights.rightOwner.firstName]]></fieldDescription>
+	</field>
+	<field name="rightsRightownerName" class="java.lang.String">
+		<fieldDescription><![CDATA[rights.rightOwner.name]]></fieldDescription>
+	</field>
+	<field name="rightsRegistrationDocumentsName" class="java.lang.String">
+		<fieldDescription><![CDATA[rights.registrationDocuments.name]]></fieldDescription>
+	</field>
+	<field name="rightsRegistrationDocumentsDocNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[rights.registrationDocuments.docNumber]]></fieldDescription>
+	</field>
+	<field name="rightsRegistrationDocumentsDocDate" class="java.lang.String">
+		<fieldDescription><![CDATA[rights.registrationDocuments.docDate]]></fieldDescription>
+	</field>
+	<field name="rightsOwnershipDate" class="java.lang.String">
+		<fieldDescription><![CDATA[rights.ownershipDate]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="103" splitType="Stretch">
+			<staticText>
+				<reportElement x="32" y="30" width="490" height="72" uuid="2eed6fdb-7fb2-476b-8055-5d7422ef215d"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[РЕШЕНИЕ
+об отказе в согласовании переустройства и (или) перепланировки жилого помещения
+]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="654" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="70" width="519" height="40" uuid="95aa66e0-8c8a-43b8-9586-8b9b995c504d"/>
+				<textElement textAlignment="Left">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[о намерении провести  	переустройство и (или) перепланировку	жилых помещений]]></text>
+			</staticText>
+			<textField pattern="" isBlankWhenNull="false">
+				<reportElement x="180" y="20" width="358" height="20" uuid="9072633c-8c94-4c08-b0cc-656fe8f8b8f7"/>
+				<textElement>
+					<font size="14" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rightsRightownerName}==null?($F{rightsRightownerSurname} + " " + $F{rightsRightownerFirstname}+ " " +  $F{rightsRightownerPantronymic}):($F{rightsRightownerName})]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="179" y="40" width="360" height="30" uuid="71a4d3e2-4daf-4e3c-9cb5-35bcf5785ca1"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[(Ф.И.О. физического лица, наименование юридического лица – заявителя)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="140" width="119" height="20" uuid="42116858-2ea8-44c8-8582-8f7970034a35"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[по адресу:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="190" width="160" height="20" uuid="1ce4515e-ab0e-4238-a51d-37446fb2aba6"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[(ненужное зачеркнуть)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="540" y="140" width="10" height="20" uuid="f497e256-1133-43b2-9923-9b00bd594f39"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[,]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="150" y="140" width="387" height="20" uuid="4fc019c5-bf8e-4283-babc-79619728071c"/>
+				<textElement>
+					<font size="14" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="25" y="20" width="154" height="20" uuid="244b862e-bb3d-4b3c-a87b-92bb9c361664"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[В связи с обращением]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="170" width="419" height="20" uuid="74216ecc-825e-4001-9506-c9e6aaa6e96b"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[занимаемых (принадлежащих) на основании:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="110" width="160" height="20" uuid="6c2954d6-f0d2-4143-a9be-b7ecda9c66ab"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[(ненужное зачеркнуть)]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="20" y="220" width="524" height="20" uuid="a3ac7ed6-785b-4a76-839e-45d3b87283a2"/>
+				<textElement>
+					<font size="14" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rightsRegistrationDocumentsName}
++ " № " + $F{rightsRegistrationDocumentsDocNumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="240" width="519" height="30" uuid="437daf2f-3d8a-4bbf-8815-2efb56f0fd88"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[(вид и реквизиты правоустанавливающего документа на переустраиваемое и (или) перепланируемое жилое помещение)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="271" width="519" height="20" uuid="33cc146b-8170-4703-959f-863ea785fdb4"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[по результатам рассмотрения представленных документов принято решение:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="293" width="239" height="20" uuid="be157410-d58a-4ff6-92e0-cb5807cb6b22"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[1. Отказать в даче согласия на]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="290" y="293" width="249" height="20" uuid="928a4071-312f-4759-9555-9a841ac586d2"/>
+				<textElement>
+					<font size="14" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["переустройство"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="259" y="313" width="280" height="26" uuid="6a13bfb4-a5a9-4990-9599-23dfb5452b0a"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[(переустройство, перепланировку, переустройство и перепланировку – нужное указать)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="350" width="513" height="40" uuid="f9d68dde-b616-4507-9085-246603e5ec64"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[жилых помещений в связи___________________________________________ _________________________________________________________________]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="385" width="159" height="20" uuid="d0ea8f81-32f8-4061-a870-09078e5c1bfd"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[(указать причины)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="365" y="420" width="173" height="50" uuid="c6a5ce63-2231-4826-b296-f99e290db8d8"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[______________________________
+(подпись должностного лица органа, осуществляющего согласование)
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="470" width="40" height="20" uuid="9d8fe359-760f-43b0-8373-a6bb84e29e54"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[М.П.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="480" width="65" height="20" uuid="d507c1f1-1c82-40b1-bd88-f808b8774281"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Получил:]]></text>
+			</staticText>
+			<textField pattern="dd.MM.yyyy г.">
+				<reportElement x="25" y="510" width="165" height="30" uuid="ec35e16b-8d50-4140-8762-ff9615a4257a"/>
+				<textElement>
+					<font size="14" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="240" y="516" width="173" height="54" uuid="73dbc0d5-5718-4eec-9d69-5aa69b94d375"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[______________________________
+(подпись заявителя или уполномоченного лица заявителей)
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="496" width="114" height="44" uuid="b9f70bef-642a-4c9c-a57e-de3435670cc5"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[(заполняется
+в случае получения решения лично)
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="585" width="299" height="20" uuid="d7325647-e5b0-4ce4-9187-8679415aebea"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Решение направлено в адрес заявителя(ей)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="605" width="330" height="19" uuid="a276df2a-6533-4712-825c-d931bd75c378"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[(заполняется в случае направления решения по почте)]]></text>
+			</staticText>
+			<textField pattern="dd.MM.yyyy г.">
+				<reportElement x="351" y="588" width="165" height="30" uuid="3a03b25d-6a40-46c4-9147-3c276d81de40"/>
+				<textElement>
+					<font size="14" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="357" y="80" width="164" height="1" uuid="2a9632b1-682d-4c5a-b6f2-e4027b7c518d"/>
+			</line>
+		</band>
+	</detail>
+</jasperReport>
