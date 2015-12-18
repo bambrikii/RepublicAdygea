@@ -1,5 +1,8 @@
-/target/
-.settings/
+target
+.settings
 .project
 .classpath
 *.iml
+*.dbf
+*.shp
+*.shx
