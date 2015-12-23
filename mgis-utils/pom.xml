@@ -7,7 +7,7 @@
 	<artifactId>mgis-utils-parent</artifactId>
 	<version>0.0.1</version>
 	<packaging>pom</packaging>
-	<name>mgis2 parent</name>
+	<name>mgis2 utils parent</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
